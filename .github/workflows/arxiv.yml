@@ -1,0 +1,24 @@
+name: Fetch arXiv Papers
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # 每小时执行一次
+
+jobs:
+  fetch-arxiv:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Fetch arXiv articles
+        run: |
+          python fetch_arxiv.py
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "linaom1214@gmail.com"
+          git config --local user.name "Linaom1214"
+          git add arxiv_data.json
+          git commit -m "Update arXiv articles"
+          git push
