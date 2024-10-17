@@ -50,43 +50,43 @@ def fetch_arxiv():
     for keyword, data in config["keywords"].items():
         filters = data["filters"]    
         filters = parse_filters(filters)
-            search_engine = arxiv.Search(
-                query=filter_query,
-                max_results=max_results,
-                sort_by=arxiv.SortCriterion.SubmittedDate
-            )
+        search_engine = arxiv.Search(
+            query=filter_query,
+            max_results=max_results,
+            sort_by=arxiv.SortCriterion.SubmittedDate
+        )
 
-            for result in search_engine.results():
-                paper_id = result.get_short_id()
-                paper_title = result.title
-                paper_url = result.entry_id
-                paper_abstract = result.summary.replace("\n", " ")
-                paper_authors = get_authors(result.authors)
-                paper_first_author = get_authors(result.authors, first_author=True)
-                publish_time = result.published.date()
+        for result in search_engine.results():
+            paper_id = result.get_short_id()
+            paper_title = result.title
+            paper_url = result.entry_id
+            paper_abstract = result.summary.replace("\n", " ")
+            paper_authors = get_authors(result.authors)
+            paper_first_author = get_authors(result.authors, first_author=True)
+            publish_time = result.published.date()
 
-                logging.info(f"Title: {paper_title}, Author: {paper_first_author}")
+            logging.info(f"Title: {paper_title}, Author: {paper_first_author}")
 
-                # 获取代码链接（如果有）
-                code_url = f"{base_url}{paper_id}"
-                try:
-                    r = requests.get(code_url).json()
-                    repo_url = None
-                    if "official" in r and r["official"]:
-                        repo_url = r["official"]["url"]
-                except Exception as e:
-                    logging.error(f"Error fetching code URL: {e}")
-                    repo_url = None
+            # 获取代码链接（如果有）
+            code_url = f"{base_url}{paper_id}"
+            try:
+                r = requests.get(code_url).json()
+                repo_url = None
+                if "official" in r and r["official"]:
+                    repo_url = r["official"]["url"]
+            except Exception as e:
+                logging.error(f"Error fetching code URL: {e}")
+                repo_url = None
 
-                new_articles.append({
-                    "title": paper_title,
-                    "author": paper_authors,
-                    "summary": paper_abstract,
-                    "published": publish_time.isoformat(),
-                    "link": paper_url,
-                    "code_url": repo_url,
-                    "category":keyword +"-"+ filter_query
-                })
+            new_articles.append({
+                "title": paper_title,
+                "author": paper_authors,
+                "summary": paper_abstract,
+                "published": publish_time.isoformat(),
+                "link": paper_url,
+                "code_url": repo_url,
+                "category":keyword +"-"+ filter_query
+            })
 
     # 如果没有新文章，则使用缓存数据
     if new_articles:
