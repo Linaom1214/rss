@@ -7,6 +7,8 @@ import yaml
 
 # 设置日志记录
 logging.basicConfig(level=logging.INFO)
+EXCAPE = '\"'
+OR = 'OR'
 
 def get_authors(authors, first_author=False):
     if first_author:
