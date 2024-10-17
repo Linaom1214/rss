@@ -1,21 +1,21 @@
 [
   {
-    "title": "Dual Prototype Evolving for Test-Time Generalization of Vision-Language Models",
-    "author": "Ce Zhang, Simon Stepputtis, Katia Sycara, Yaqi Xie",
-    "summary": "Test-time adaptation, which enables models to generalize to diverse data with unlabeled test samples, holds significant value in real-world scenarios. Recently, researchers have applied this setting to advanced pre-trained vision-language models (VLMs), developing approaches such as test-time prompt tuning to further extend their practical applicability. However, these methods typically focus solely on adapting VLMs from a single modality and fail to accumulate task-specific knowledge as more samples are processed. To address this, we introduce Dual Prototype Evolving (DPE), a novel test-time adaptation approach for VLMs that effectively accumulates task-specific knowledge from multi-modalities. Specifically, we create and evolve two sets of prototypes--textual and visual--to progressively capture more accurate multi-modal representations for target classes during test time. Moreover, to promote consistent multi-modal representations, we introduce and optimize learnable residuals for each test sample to align the prototypes from both modalities. Extensive experimental results on 15 benchmark datasets demonstrate that our proposed DPE consistently outperforms previous state-of-the-art methods while also exhibiting competitive computational efficiency. Code is available at https://github.com/zhangce01/DPE-CLIP.",
-    "published": "2024-10-16",
-    "link": "http://arxiv.org/abs/2410.12790v1",
+    "title": "Robust infrared small target detection using self-supervised and a contrario paradigms",
+    "author": "Alina Ciocarlan, Sylvie Le H\u00e9garat-Mascle, Sidonie Lefebvre, Arnaud Woiselle",
+    "summary": "Detecting small targets in infrared images poses significant challenges in defense applications due to the presence of complex backgrounds and the small size of the targets. Traditional object detection methods often struggle to balance high detection rates with low false alarm rates, especially when dealing with small objects. In this paper, we introduce a novel approach that combines a contrario paradigm with Self-Supervised Learning (SSL) to improve Infrared Small Target Detection (IRSTD). On the one hand, the integration of an a contrario criterion into a YOLO detection head enhances feature map responses for small and unexpected objects while effectively controlling false alarms. On the other hand, we explore SSL techniques to overcome the challenges of limited annotated data, common in IRSTD tasks. Specifically, we benchmark several representative SSL strategies for their effectiveness in improving small object detection performance. Our findings show that instance discrimination methods outperform masked image modeling strategies when applied to YOLO-based small object detection. Moreover, the combination of the a contrario and SSL paradigms leads to significant performance improvements, narrowing the gap with state-of-the-art segmentation methods and even outperforming them in frugal settings. This two-pronged approach offers a robust solution for improving IRSTD performance, particularly under challenging conditions.",
+    "published": "2024-10-09",
+    "link": "http://arxiv.org/abs/2410.07437v1",
     "code_url": null,
-    "category": "ISTD-infrared small target"
+    "category": "ISTD-\"infrared small target\""
   },
   {
-    "title": "Long-LRM: Long-sequence Large Reconstruction Model for Wide-coverage Gaussian Splats",
-    "author": "Chen Ziwen, Hao Tan, Kai Zhang, Sai Bi, Fujun Luan, Yicong Hong, Li Fuxin, Zexiang Xu",
-    "summary": "We propose Long-LRM, a generalizable 3D Gaussian reconstruction model that is capable of reconstructing a large scene from a long sequence of input images. Specifically, our model can process 32 source images at 960x540 resolution within only 1.3 seconds on a single A100 80G GPU. Our architecture features a mixture of the recent Mamba2 blocks and the classical transformer blocks which allowed many more tokens to be processed than prior work, enhanced by efficient token merging and Gaussian pruning steps that balance between quality and efficiency. Unlike previous feed-forward models that are limited to processing 1~4 input images and can only reconstruct a small portion of a large scene, Long-LRM reconstructs the entire scene in a single feed-forward step. On large-scale scene datasets such as DL3DV-140 and Tanks and Temples, our method achieves performance comparable to optimization-based approaches while being two orders of magnitude more efficient. Project page: https://arthurhero.github.io/projects/llrm",
-    "published": "2024-10-16",
-    "link": "http://arxiv.org/abs/2410.12781v1",
+    "title": "Gradient is All You Need: Gradient-Based Attention Fusion for Infrared Small Target Detection",
+    "author": "Chen Hu, Yian Huang, Kexuan Li, Luping Zhang, Yiming Zhu, Yufei Peng, Tian Pu, Zhenming Peng",
+    "summary": "Infrared small target detection (IRSTD) is widely used in civilian and military applications. However, IRSTD encounters several challenges, including the tendency for small and dim targets to be obscured by complex backgrounds. To address this issue, we propose the Gradient Network (GaNet), which aims to extract and preserve edge and gradient information of small targets. GaNet employs the Gradient Transformer (GradFormer) module, simulating central difference convolutions (CDC) to extract and integrate gradient features with deeper features. Furthermore, we propose a global feature extraction model (GFEM) that offers a comprehensive perspective to prevent the network from focusing solely on details while neglecting the background information. We compare the network with state-of-the-art (SOTA) approaches, and the results demonstrate that our method performs effectively. Our source code is available at https://github.com/greekinRoma/Gradient-Transformer.",
+    "published": "2024-09-29",
+    "link": "http://arxiv.org/abs/2409.19599v1",
     "code_url": null,
-    "category": "ISTD-infrared small target"
+    "category": "ISTD-\"infrared small target\""
   },
   {
     "title": "WorldMedQA-V: a multilingual, multimodal medical examination dataset for multimodal language models evaluation",
@@ -24,7 +24,7 @@
     "published": "2024-10-16",
     "link": "http://arxiv.org/abs/2410.12722v1",
     "code_url": null,
-    "category": "segmentation-medical"
+    "category": "segmentation-medical OR seg"
   },
   {
     "title": "VividMed: Vision Language Model with Versatile Visual Grounding for Medicine",
@@ -33,25 +33,7 @@
     "published": "2024-10-16",
     "link": "http://arxiv.org/abs/2410.12694v1",
     "code_url": null,
-    "category": "segmentation-medical"
-  },
-  {
-    "title": "Adaptive Prompt Learning with SAM for Few-shot Scanning Probe Microscope Image Segmentation",
-    "author": "Yao Shen, Ziwei Wei, Chunmeng Liu, Shuming Wei, Qi Zhao, Kaiyang Zeng, Guangyao Li",
-    "summary": "The Segment Anything Model (SAM) has demonstrated strong performance in image segmentation of natural scene images. However, its effectiveness diminishes markedly when applied to specific scientific domains, such as Scanning Probe Microscope (SPM) images. This decline in accuracy can be attributed to the distinct data distribution and limited availability of the data inherent in the scientific images. On the other hand, the acquisition of adequate SPM datasets is both time-intensive and laborious as well as skill-dependent. To address these challenges, we propose an Adaptive Prompt Learning with SAM (APL-SAM) framework tailored for few-shot SPM image segmentation. Our approach incorporates two key innovations to enhance SAM: 1) An Adaptive Prompt Learning module leverages few-shot embeddings derived from limited support set to learn adaptively central representatives, serving as visual prompts. This innovation eliminates the need for time-consuming online user interactions for providing prompts, such as exhaustively marking points and bounding boxes slice by slice; 2) A multi-source, multi-level mask decoder specifically designed for few-shot SPM image segmentation is introduced, which can effectively capture the correspondence between the support and query images. To facilitate comprehensive training and evaluation, we introduce a new dataset, SPM-Seg, curated for SPM image segmentation. Extensive experiments on this dataset reveal that the proposed APL-SAM framework significantly outperforms the original SAM, achieving over a 30% improvement in terms of Dice Similarity Coefficient with only one-shot guidance. Moreover, APL-SAM surpasses state-of-the-art few-shot segmentation methods and even fully supervised approaches in performance. Code and dataset used in this study will be made available upon acceptance.",
-    "published": "2024-10-16",
-    "link": "http://arxiv.org/abs/2410.12562v1",
-    "code_url": null,
-    "category": "segmentation-seg"
-  },
-  {
-    "title": "A Holistic Weakly Supervised Approach for Liver Tumor Segmentation with Clinical Knowledge-Informed Label Smoothing",
-    "author": "Hairong Wang, Lingchao Mao, Zihan Zhang, Jing Li",
-    "summary": "Liver cancer is a leading cause of mortality worldwide, and accurate CT-based tumor segmentation is essential for diagnosis and treatment. Manual delineation is time-intensive, prone to variability, and highlights the need for reliable automation. While deep learning has shown promise for automated liver segmentation, precise liver tumor segmentation remains challenging due to the heterogeneous nature of tumors, imprecise tumor margins, and limited labeled data. We present a novel holistic weakly supervised framework that integrates clinical knowledge to address these challenges with (1) A knowledge-informed label smoothing technique that leverages clinical data to generate smooth labels, which regularizes model training reducing the risk of overfitting and enhancing model performance; (2) A global and local-view segmentation framework, breaking down the task into two simpler sub-tasks, allowing optimized preprocessing and training for each; and (3) Pre- and post-processing pipelines customized to the challenges of each subtask, which enhances tumor visibility and refines tumor boundaries. We evaluated the proposed method on the HCC-TACE-Seg dataset and showed that these three key components complementarily contribute to the improved performance. Lastly, we prototyped a tool for automated liver tumor segmentation and diagnosis summary generation called MedAssistLiver. The app and code are published at https://github.com/lingchm/medassist-liver-cancer.",
-    "published": "2024-10-13",
-    "link": "http://arxiv.org/abs/2410.10005v1",
-    "code_url": "https://github.com/lingchm/medassist-liver-cancer",
-    "category": "segmentation-seg"
+    "category": "segmentation-medical OR seg"
   },
   {
     "title": "MambaBEV: An efficient 3D detection model with Mamba2",
@@ -60,16 +42,7 @@
     "published": "2024-10-16",
     "link": "http://arxiv.org/abs/2410.12673v1",
     "code_url": null,
-    "category": "mamba-mamba"
-  },
-  {
-    "title": "UmambaTSF: A U-shaped Multi-Scale Long-Term Time Series Forecasting Method Using Mamba",
-    "author": "Li Wu, Wenbin Pei, Jiulong Jiao, Qiang Zhang",
-    "summary": "Multivariate Time series forecasting is crucial in domains such as transportation, meteorology, and finance, especially for predicting extreme weather events. State-of-the-art methods predominantly rely on Transformer architectures, which utilize attention mechanisms to capture temporal dependencies. However, these methods are hindered by quadratic time complexity, limiting the model's scalability with respect to input sequence length. This significantly restricts their practicality in the real world. Mamba, based on state space models (SSM), provides a solution with linear time complexity, increasing the potential for efficient forecasting of sequential data. In this study, we propose UmambaTSF, a novel long-term time series forecasting framework that integrates multi-scale feature extraction capabilities of U-shaped encoder-decoder multilayer perceptrons (MLP) with Mamba's long sequence representation. To improve performance and efficiency, the Mamba blocks introduced in the framework adopt a refined residual structure and adaptable design, enabling the capture of unique temporal signals and flexible channel processing. In the experiments, UmambaTSF achieves state-of-the-art performance and excellent generality on widely used benchmark datasets while maintaining linear time complexity and low memory consumption.",
-    "published": "2024-10-15",
-    "link": "http://arxiv.org/abs/2410.11278v1",
-    "code_url": null,
-    "category": "mamba-mamba"
+    "category": "mamba-mamba OR seg"
   },
   {
     "title": "Adaptive Prompt Learning with SAM for Few-shot Scanning Probe Microscope Image Segmentation",
@@ -78,15 +51,6 @@
     "published": "2024-10-16",
     "link": "http://arxiv.org/abs/2410.12562v1",
     "code_url": null,
-    "category": "mamba-seg"
-  },
-  {
-    "title": "A Holistic Weakly Supervised Approach for Liver Tumor Segmentation with Clinical Knowledge-Informed Label Smoothing",
-    "author": "Hairong Wang, Lingchao Mao, Zihan Zhang, Jing Li",
-    "summary": "Liver cancer is a leading cause of mortality worldwide, and accurate CT-based tumor segmentation is essential for diagnosis and treatment. Manual delineation is time-intensive, prone to variability, and highlights the need for reliable automation. While deep learning has shown promise for automated liver segmentation, precise liver tumor segmentation remains challenging due to the heterogeneous nature of tumors, imprecise tumor margins, and limited labeled data. We present a novel holistic weakly supervised framework that integrates clinical knowledge to address these challenges with (1) A knowledge-informed label smoothing technique that leverages clinical data to generate smooth labels, which regularizes model training reducing the risk of overfitting and enhancing model performance; (2) A global and local-view segmentation framework, breaking down the task into two simpler sub-tasks, allowing optimized preprocessing and training for each; and (3) Pre- and post-processing pipelines customized to the challenges of each subtask, which enhances tumor visibility and refines tumor boundaries. We evaluated the proposed method on the HCC-TACE-Seg dataset and showed that these three key components complementarily contribute to the improved performance. Lastly, we prototyped a tool for automated liver tumor segmentation and diagnosis summary generation called MedAssistLiver. The app and code are published at https://github.com/lingchm/medassist-liver-cancer.",
-    "published": "2024-10-13",
-    "link": "http://arxiv.org/abs/2410.10005v1",
-    "code_url": "https://github.com/lingchm/medassist-liver-cancer",
-    "category": "mamba-seg"
+    "category": "mamba-mamba OR seg"
   }
 ]
