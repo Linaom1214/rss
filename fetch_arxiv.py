@@ -51,7 +51,7 @@ def fetch_arxiv():
 
     for keyword, data in config["keywords"].items():
         filters = data["filters"]    
-        filters = parse_filters(filters)
+        filter_query = parse_filters(filters)
         search_engine = arxiv.Search(
             query=filter_query,
             max_results=max_results,
