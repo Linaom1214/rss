@@ -4,7 +4,6 @@ import requests
 import logging
 import os
 import yaml
-
 # 设置日志记录
 logging.basicConfig(level=logging.INFO)
 EXCAPE = '\"'
@@ -27,7 +26,6 @@ def parse_filters(filters: list) -> str:
             ret += f" {OR} "
     return ret
 
-
 def fetch_arxiv():
     config = load_config()
     max_results = config["max_results"]
@@ -36,7 +34,7 @@ def fetch_arxiv():
     
     cache_file = "arxiv_data.json"
 
-    # 读取缓存数据
+    # Read cached data
     if os.path.exists(cache_file):
         try:
             with open(cache_file, "r") as f:
@@ -47,22 +45,14 @@ def fetch_arxiv():
     else:
         articles = []
 
+    existing_titles = {article['title'] for article in articles}  # Collect existing titles
     new_articles = []
-
-    # 获取当前日期
-    today = datetime.datetime.now()
-    
-    # 设置日期过滤条件（例如，过去一周）
-    start_date = today - datetime.timedelta(days=7)
-    
-    # 格式化日期为字符串
-    start_date_str = start_date.strftime('%Y%m%d')
     
     for keyword, data in config["keywords"].items():
         filters = data["filters"]    
         filter_query = parse_filters(filters)
         search_engine = arxiv.Search(
-            query=f"({filter_query}) AND submittedDate:[{start_date_str} TO {today.strftime('%Y%m%d')}]",
+            query=filter_query,
             max_results=max_results,
             sort_by=arxiv.SortCriterion.SubmittedDate
         )
@@ -78,13 +68,16 @@ def fetch_arxiv():
 
             logging.info(f"Title: {paper_title}, Author: {paper_first_author}")
 
-            # 获取代码链接（如果有）
+            # Skip if the article already exists
+            if paper_title in existing_titles:
+                logging.info(f"Article '{paper_title}' already exists. Skipping.")
+                continue
+
+            # Get code link (if available)
             code_url = f"{base_url}{paper_id}"
             try:
                 r = requests.get(code_url).json()
-                repo_url = None
-                if "official" in r and r["official"]:
-                    repo_url = r["official"]["url"]
+                repo_url = r.get("official", {}).get("url")
             except Exception as e:
                 logging.error(f"Error fetching code URL: {e}")
                 repo_url = None
@@ -96,19 +89,19 @@ def fetch_arxiv():
                 "published": publish_time.isoformat(),
                 "link": paper_url,
                 "code_url": repo_url,
-                "category":keyword +"-"+ filter_query
+                "category": keyword + "-" + filter_query
             })
 
-    # 如果没有新文章，则使用缓存数据
+    # If new articles exist, write to cache
     if new_articles:
-        articles = new_articles
-        # 写入缓存文件
+        articles.extend(new_articles)
         with open(cache_file, "w") as f:
             json.dump(articles, f, indent=2)
     else:
         logging.info("No new articles found. Using cached data.")
 
     return articles
+
 
 if __name__ == "__main__":
     fetch_arxiv()
