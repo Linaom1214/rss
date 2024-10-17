@@ -76,7 +76,7 @@ def fetch_arxiv():
                     "published": publish_time.isoformat(),
                     "link": paper_url,
                     "code_url": repo_url,
-                    "category":keyword +"-"+ filters
+                    "category":keyword +"-"+ filter_query
                 })
 
     # 如果没有新文章，则使用缓存数据
