@@ -6,5 +6,5 @@ keywords:
   "segmentation":
     filters: ["medical", "seg"]
   "mamba":
-    filters: ["mamba", "seg]
+    filters: ["mamba", "seg"]
 
