@@ -18,6 +18,33 @@
     "category": "ISTD-\"infrared small target\""
   },
   {
+    "title": "Infrared Small Target Detection in Satellite Videos: A New Dataset and A Novel Recurrent Feature Refinement Framework",
+    "author": "Xinyi Ying, Li Liu, Zaipin Lin, Yangsi Shi, Yingqian Wang, Ruojing Li, Xu Cao, Boyang Li, Shilin Zhou",
+    "summary": "Multi-frame infrared small target (MIRST) detection in satellite videos is a long-standing, fundamental yet challenging task for decades, and the challenges can be summarized as: First, extremely small target size, highly complex clutters & noises, various satellite motions result in limited feature representation, high false alarms, and difficult motion analyses. Second, the lack of large-scale public available MIRST dataset in satellite videos greatly hinders the algorithm development. To address the aforementioned challenges, in this paper, we first build a large-scale dataset for MIRST detection in satellite videos (namely IRSatVideo-LEO), and then develop a recurrent feature refinement (RFR) framework as the baseline method. Specifically, IRSatVideo-LEO is a semi-simulated dataset with synthesized satellite motion, target appearance, trajectory and intensity, which can provide a standard toolbox for satellite video generation and a reliable evaluation platform to facilitate the algorithm development. For baseline method, RFR is proposed to be equipped with existing powerful CNN-based methods for long-term temporal dependency exploitation and integrated motion compensation & MIRST detection. Specifically, a pyramid deformable alignment (PDA) module and a temporal-spatial-frequency modulation (TSFM) module are proposed to achieve effective and efficient feature alignment, propagation, aggregation and refinement. Extensive experiments have been conducted to demonstrate the effectiveness and superiority of our scheme. The comparative results show that ResUNet equipped with RFR outperforms the state-of-the-art MIRST detection methods. Dataset and code are released at https://github.com/XinyiYing/RFR.",
+    "published": "2024-09-19",
+    "link": "http://arxiv.org/abs/2409.12448v2",
+    "code_url": "https://github.com/xinyiying/rfr",
+    "category": "ISTD-\"infrared small target\""
+  },
+  {
+    "title": "Unleashing the Power of Generic Segmentation Models: A Simple Baseline for Infrared Small Target Detection",
+    "author": "Mingjin Zhang, Chi Zhang, Qiming Zhang, Yunsong Li, Xinbo Gao, Jing Zhang",
+    "summary": "Recent advancements in deep learning have greatly advanced the field of infrared small object detection (IRSTD). Despite their remarkable success, a notable gap persists between these IRSTD methods and generic segmentation approaches in natural image domains. This gap primarily arises from the significant modality differences and the limited availability of infrared data. In this study, we aim to bridge this divergence by investigating the adaptation of generic segmentation models, such as the Segment Anything Model (SAM), to IRSTD tasks. Our investigation reveals that many generic segmentation models can achieve comparable performance to state-of-the-art IRSTD methods. However, their full potential in IRSTD remains untapped. To address this, we propose a simple, lightweight, yet effective baseline model for segmenting small infrared objects. Through appropriate distillation strategies, we empower smaller student models to outperform state-of-the-art methods, even surpassing fine-tuned teacher results. Furthermore, we enhance the model's performance by introducing a novel query design comprising dense and sparse queries to effectively encode multi-scale features. Through extensive experimentation across four popular IRSTD datasets, our model demonstrates significantly improved performance in both accuracy and throughput compared to existing approaches, surpassing SAM and Semantic-SAM by over 14 IoU on NUDT and 4 IoU on IRSTD1k. The source code and models will be released at https://github.com/O937-blip/SimIR.",
+    "published": "2024-09-07",
+    "link": "http://arxiv.org/abs/2409.04714v1",
+    "code_url": null,
+    "category": "ISTD-\"infrared small target\""
+  },
+  {
+    "title": "Hybrid Mask Generation for Infrared Small Target Detection with Single-Point Supervision",
+    "author": "Weijie He, Mushui Liu, Yunlong Yu, Zheming Lu, Xi Li",
+    "summary": "Single-frame infrared small target (SIRST) detection poses a significant challenge due to the requirement to discern minute targets amidst complex infrared background clutter. Recently, deep learning approaches have shown promising results in this domain. However, these methods heavily rely on extensive manual annotations, which are particularly cumbersome and resource-intensive for infrared small targets owing to their minute sizes. To address this limitation, we introduce a Hybrid Mask Generation (HMG) approach that recovers high-quality masks for each target from only a single-point label for network training. Specifically, our HMG approach consists of a handcrafted Points-to-Mask Generation strategy coupled with a pseudo mask updating strategy to recover and refine pseudo masks from point labels. The Points-to-Mask Generation strategy divides two distinct stages: Points-to-Box conversion, where individual point labels are transformed into bounding boxes, and subsequently, Box-to-Mask prediction, where these bounding boxes are elaborated into precise masks. The mask updating strategy integrates the complementary strengths of handcrafted and deep-learning algorithms to iteratively refine the initial pseudo masks. Experimental results across three datasets demonstrate that our method outperforms the existing methods for infrared small target detection with single-point supervision.",
+    "published": "2024-09-06",
+    "link": "http://arxiv.org/abs/2409.04011v1",
+    "code_url": null,
+    "category": "ISTD-\"infrared small target\""
+  },
+  {
     "title": "WorldMedQA-V: a multilingual, multimodal medical examination dataset for multimodal language models evaluation",
     "author": "Jo\u00e3o Matos, Shan Chen, Siena Placino, Yingya Li, Juan Carlos Climent Pardo, Daphna Idan, Takeshi Tohyama, David Restrepo, Luis F. Nakayama, Jose M. M. Pascual-Leone, Guergana Savova, Hugo Aerts, Leo A. Celi, A. Ian Wong, Danielle S. Bitterman, Jack Gallifant",
     "summary": "Multimodal/vision language models (VLMs) are increasingly being deployed in healthcare settings worldwide, necessitating robust benchmarks to ensure their safety, efficacy, and fairness. Multiple-choice question and answer (QA) datasets derived from national medical examinations have long served as valuable evaluation tools, but existing datasets are largely text-only and available in a limited subset of languages and countries. To address these challenges, we present WorldMedQA-V, an updated multilingual, multimodal benchmarking dataset designed to evaluate VLMs in healthcare. WorldMedQA-V includes 568 labeled multiple-choice QAs paired with 568 medical images from four countries (Brazil, Israel, Japan, and Spain), covering original languages and validated English translations by native clinicians, respectively. Baseline performance for common open- and closed-source models are provided in the local language and English translations, and with and without images provided to the model. The WorldMedQA-V benchmark aims to better match AI systems to the diverse healthcare environments in which they are deployed, fostering more equitable, effective, and representative applications.",
@@ -36,6 +63,33 @@
     "category": "segmentation-medical OR seg"
   },
   {
+    "title": "Machine Learning Approach to Brain Tumor Detection and Classification",
+    "author": "Alice Oh, Inyoung Noh, Jian Choo, Jihoo Lee, Justin Park, Kate Hwang, Sanghyeon Kim, Soo Min Oh",
+    "summary": "Brain tumor detection and classification are critical tasks in medical image analysis, particularly in early-stage diagnosis, where accurate and timely detection can significantly improve treatment outcomes. In this study, we apply various statistical and machine learning models to detect and classify brain tumors using brain MRI images. We explore a variety of statistical models including linear, logistic, and Bayesian regressions, and the machine learning models including decision tree, random forest, single-layer perceptron, multi-layer perceptron, convolutional neural network (CNN), recurrent neural network, and long short-term memory. Our findings show that CNN outperforms other models, achieving the best performance. Additionally, we confirm that the CNN model can also work for multi-class classification, distinguishing between four categories of brain MRI images such as normal, glioma, meningioma, and pituitary tumor images. This study demonstrates that machine learning approaches are suitable for brain tumor detection and classification, facilitating real-world medical applications in assisting radiologists with early and accurate diagnosis.",
+    "published": "2024-10-16",
+    "link": "http://arxiv.org/abs/2410.12692v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Automatic Mapping of Anatomical Landmarks from Free-Text Using Large Language Models: Insights from Llama-2",
+    "author": "Mohamad Abdi, Gerardo Hemosillo Valadez, Halid Ziya Yerebakan",
+    "summary": "Anatomical landmarks are vital in medical imaging for navigation and anomaly detection. Modern large language models (LLMs), like Llama-2, offer promise for automating the mapping of these landmarks in free-text radiology reports to corresponding positions in image data. Recent studies propose LLMs may develop coherent representations of generative processes. Motivated by these insights, we investigated whether LLMs accurately represent the spatial positions of anatomical landmarks. Through experiments with Llama-2 models, we found that they can linearly represent anatomical landmarks in space with considerable robustness to different prompts. These results underscore the potential of LLMs to enhance the efficiency and accuracy of medical imaging workflows.",
+    "published": "2024-10-16",
+    "link": "http://arxiv.org/abs/2410.12686v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Cascade learning in multi-task encoder-decoder networks for concurrent bone segmentation and glenohumeral joint assessment in shoulder CT scans",
+    "author": "Luca Marsilio, Davide Marzorati, Matteo Rossi, Andrea Moglia, Luca Mainardi, Alfonso Manzotti, Pietro Cerveri",
+    "summary": "Osteoarthritis is a degenerative condition affecting bones and cartilage, often leading to osteophyte formation, bone density loss, and joint space narrowing. Treatment options to restore normal joint function vary depending on the severity of the condition. This work introduces an innovative deep-learning framework processing shoulder CT scans. It features the semantic segmentation of the proximal humerus and scapula, the 3D reconstruction of bone surfaces, the identification of the glenohumeral (GH) joint region, and the staging of three common osteoarthritic-related pathologies: osteophyte formation (OS), GH space reduction (JS), and humeroscapular alignment (HSA). The pipeline comprises two cascaded CNN architectures: 3D CEL-UNet for segmentation and 3D Arthro-Net for threefold classification. A retrospective dataset of 571 CT scans featuring patients with various degrees of GH osteoarthritic-related pathologies was used to train, validate, and test the pipeline. Root mean squared error and Hausdorff distance median values for 3D reconstruction were 0.22mm and 1.48mm for the humerus and 0.24mm and 1.48mm for the scapula, outperforming state-of-the-art architectures and making it potentially suitable for a PSI-based shoulder arthroplasty preoperative plan context. The classification accuracy for OS, JS, and HSA consistently reached around 90% across all three categories. The computational time for the inference pipeline was less than 15s, showcasing the framework's efficiency and compatibility with orthopedic radiology practice. The outcomes represent a promising advancement toward the medical translation of artificial intelligence tools. This progress aims to streamline the preoperative planning pipeline delivering high-quality bone surfaces and supporting surgeons in selecting the most suitable surgical approach according to the unique patient joint conditions.",
+    "published": "2024-10-16",
+    "link": "http://arxiv.org/abs/2410.12641v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
     "title": "MambaBEV: An efficient 3D detection model with Mamba2",
     "author": "Zihan You, Hao Wang, Qichao Zhao, Jinxiang Wang",
     "summary": "A stable 3D object detection model based on BEV paradigm with temporal information is very important for autonomous driving systems. However, current temporal fusion model use convolutional layer or deformable self-attention is not conducive to the exchange of global information of BEV space and has more computational cost. Recently, a newly proposed based model specialized in processing sequence called mamba has shown great potential in multiple downstream task. In this work, we proposed a mamba2-based BEV 3D object detection model named MambaBEV. We also adapt an end to end self driving paradigm to test the performance of the model. Our work performs pretty good results on nucences datasets:Our base version achieves 51.7% NDS. Our code will be available soon.",
@@ -50,6 +104,33 @@
     "summary": "The Segment Anything Model (SAM) has demonstrated strong performance in image segmentation of natural scene images. However, its effectiveness diminishes markedly when applied to specific scientific domains, such as Scanning Probe Microscope (SPM) images. This decline in accuracy can be attributed to the distinct data distribution and limited availability of the data inherent in the scientific images. On the other hand, the acquisition of adequate SPM datasets is both time-intensive and laborious as well as skill-dependent. To address these challenges, we propose an Adaptive Prompt Learning with SAM (APL-SAM) framework tailored for few-shot SPM image segmentation. Our approach incorporates two key innovations to enhance SAM: 1) An Adaptive Prompt Learning module leverages few-shot embeddings derived from limited support set to learn adaptively central representatives, serving as visual prompts. This innovation eliminates the need for time-consuming online user interactions for providing prompts, such as exhaustively marking points and bounding boxes slice by slice; 2) A multi-source, multi-level mask decoder specifically designed for few-shot SPM image segmentation is introduced, which can effectively capture the correspondence between the support and query images. To facilitate comprehensive training and evaluation, we introduce a new dataset, SPM-Seg, curated for SPM image segmentation. Extensive experiments on this dataset reveal that the proposed APL-SAM framework significantly outperforms the original SAM, achieving over a 30% improvement in terms of Dice Similarity Coefficient with only one-shot guidance. Moreover, APL-SAM surpasses state-of-the-art few-shot segmentation methods and even fully supervised approaches in performance. Code and dataset used in this study will be made available upon acceptance.",
     "published": "2024-10-16",
     "link": "http://arxiv.org/abs/2410.12562v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "UmambaTSF: A U-shaped Multi-Scale Long-Term Time Series Forecasting Method Using Mamba",
+    "author": "Li Wu, Wenbin Pei, Jiulong Jiao, Qiang Zhang",
+    "summary": "Multivariate Time series forecasting is crucial in domains such as transportation, meteorology, and finance, especially for predicting extreme weather events. State-of-the-art methods predominantly rely on Transformer architectures, which utilize attention mechanisms to capture temporal dependencies. However, these methods are hindered by quadratic time complexity, limiting the model's scalability with respect to input sequence length. This significantly restricts their practicality in the real world. Mamba, based on state space models (SSM), provides a solution with linear time complexity, increasing the potential for efficient forecasting of sequential data. In this study, we propose UmambaTSF, a novel long-term time series forecasting framework that integrates multi-scale feature extraction capabilities of U-shaped encoder-decoder multilayer perceptrons (MLP) with Mamba's long sequence representation. To improve performance and efficiency, the Mamba blocks introduced in the framework adopt a refined residual structure and adaptable design, enabling the capture of unique temporal signals and flexible channel processing. In the experiments, UmambaTSF achieves state-of-the-art performance and excellent generality on widely used benchmark datasets while maintaining linear time complexity and low memory consumption.",
+    "published": "2024-10-15",
+    "link": "http://arxiv.org/abs/2410.11278v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "Mimetic Initialization Helps State Space Models Learn to Recall",
+    "author": "Asher Trockman, Hrayr Harutyunyan, J. Zico Kolter, Sanjiv Kumar, Srinadh Bhojanapalli",
+    "summary": "Recent work has shown that state space models such as Mamba are significantly worse than Transformers on recall-based tasks due to the fact that their state size is constant with respect to their input sequence length. But in practice, state space models have fairly large state sizes, and we conjecture that they should be able to perform much better at these tasks than previously reported. We investigate whether their poor copying and recall performance could be due in part to training difficulties rather than fundamental capacity constraints. Based on observations of their \"attention\" maps, we propose a structured initialization technique that allows state space layers to more readily mimic attention. Across a variety of architecture settings, our initialization makes it substantially easier for Mamba to learn to copy and do associative recall from scratch.",
+    "published": "2024-10-14",
+    "link": "http://arxiv.org/abs/2410.11135v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "CleanUMamba: A Compact Mamba Network for Speech Denoising using Channel Pruning",
+    "author": "Sjoerd Groot, Qinyu Chen, Jan C. van Gemert, Chang Gao",
+    "summary": "This paper presents CleanUMamba, a time-domain neural network architecture designed for real-time causal audio denoising directly applied to raw waveforms. CleanUMamba leverages a U-Net encoder-decoder structure, incorporating the Mamba state-space model in the bottleneck layer. By replacing conventional self-attention and LSTM mechanisms with Mamba, our architecture offers superior denoising performance while maintaining a constant memory footprint, enabling streaming operation. To enhance efficiency, we applied structured channel pruning, achieving an 8X reduction in model size without compromising audio quality. Our model demonstrates strong results in the Interspeech 2020 Deep Noise Suppression challenge. Specifically, CleanUMamba achieves a PESQ score of 2.42 and STOI of 95.1% with only 442K parameters and 468M MACs, matching or outperforming larger models in real-time performance. Code will be available at: https://github.com/lab-emi/CleanUMamba",
+    "published": "2024-10-14",
+    "link": "http://arxiv.org/abs/2410.11062v1",
     "code_url": null,
     "category": "mamba-mamba OR seg"
   }
