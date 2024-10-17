@@ -1,0 +1,10 @@
+max_results: 20
+
+keywords:
+  "ISTD": 
+    filters: ["infrared small target"]
+  "segmentation":
+    filters: ["medical", "seg"]
+  "mamba":
+    filters: ["mamba"]
+
