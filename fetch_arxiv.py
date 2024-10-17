@@ -74,7 +74,7 @@ def fetch_arxiv():
                     "summary": paper_abstract,
                     "published": publish_time.isoformat(),
                     "link": paper_url,
-                    "code_url": repo_url
+                    "code_url": repo_url,
                     "category":keyword +"-"+ filters
                 })
 
