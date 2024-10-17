@@ -27,11 +27,12 @@ def fetch_arxiv():
 
     # 读取缓存数据
     if os.path.exists(cache_file):
-        with open(cache_file, "r") as f:
-            articles = json.load(f)
-        if len(articles) > 0:
+        try:
+            with open(cache_file, "r") as f:
+                articles = json.load(f)
+            logging.info("Using cached data.")
+        except:
             articles = []
-        logging.info("Using cached data.")
     else:
         articles = []
 
