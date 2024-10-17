@@ -27,9 +27,11 @@ jobs:
         run: python fetch_arxiv.py
 
       - name: Commit and push changes
-        run: |
-          git config --local user.email "linaom1214@gmail.com"
-          git config --local user.name "Linaom1214"
-          git add arxiv_data.json
-          git commit -m "Update arXiv data" || echo "No changes to commit"
-          git push
+        uses: EndBug/add-and-commit@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Update arXiv data"
+          files: arxiv_data.json
+          rebase: 'true'
+          name: github-actions
+          email: github-actions@github.com
