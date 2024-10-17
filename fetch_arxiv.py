@@ -29,6 +29,8 @@ def fetch_arxiv():
     if os.path.exists(cache_file):
         with open(cache_file, "r") as f:
             articles = json.load(f)
+        if len(articles) > 0:
+            articles = []
         logging.info("Using cached data.")
     else:
         articles = []
@@ -73,6 +75,7 @@ def fetch_arxiv():
                     "published": publish_time.isoformat(),
                     "link": paper_url,
                     "code_url": repo_url
+                    "category":keyword +"-"+ filters
                 })
 
     # 如果没有新文章，则使用缓存数据
