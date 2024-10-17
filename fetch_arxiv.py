@@ -49,11 +49,20 @@ def fetch_arxiv():
 
     new_articles = []
 
+    # 获取当前日期
+    today = datetime.datetime.now()
+    
+    # 设置日期过滤条件（例如，过去一周）
+    start_date = today - datetime.timedelta(days=7)
+    
+    # 格式化日期为字符串
+    start_date_str = start_date.strftime('%Y%m%d')
+    
     for keyword, data in config["keywords"].items():
         filters = data["filters"]    
         filter_query = parse_filters(filters)
         search_engine = arxiv.Search(
-            query=filter_query,
+            query=f"({filter_query}) AND submittedDate:[{start_date_str} TO {today.strftime('%Y%m%d')}]",
             max_results=max_results,
             sort_by=arxiv.SortCriterion.SubmittedDate
         )
