@@ -17,6 +17,15 @@ def load_config():
     with open("config.yml", "r") as f:
         return yaml.safe_load(f)
 
+def parse_filters(filters: list) -> str:
+    ret = ''
+    for idx, filter in enumerate(filters):
+        ret += (EXCAPE + filter + EXCAPE) if len(filter.split()) > 1 else filter
+        if idx != len(filters) - 1:
+            ret += f" {OR} "
+    return ret
+
+
 def fetch_arxiv():
     config = load_config()
     max_results = config["max_results"]
@@ -39,8 +48,8 @@ def fetch_arxiv():
     new_articles = []
 
     for keyword, data in config["keywords"].items():
-        filters = data["filters"]
-        for filter_query in filters:
+        filters = data["filters"]    
+        filters = parse_filters(filters)
             search_engine = arxiv.Search(
                 query=filter_query,
                 max_results=max_results,
