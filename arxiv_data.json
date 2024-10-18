@@ -808,5 +808,311 @@
     "link": "http://arxiv.org/abs/2410.12239v2",
     "code_url": null,
     "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "The Disparate Benefits of Deep Ensembles",
+    "author": "Kajetan Schweighofer, Adrian Arnaiz-Rodriguez, Sepp Hochreiter, Nuria Oliver",
+    "summary": "Ensembles of Deep Neural Networks, Deep Ensembles, are widely used as a simple way to boost predictive performance. However, their impact on algorithmic fairness is not well understood yet. Algorithmic fairness investigates how a model's performance varies across different groups, typically defined by protected attributes such as age, gender, or race. In this work, we investigate the interplay between the performance gains from Deep Ensembles and fairness. Our analysis reveals that they unevenly favor different groups in what we refer to as a disparate benefits effect. We empirically investigate this effect with Deep Ensembles applied to popular facial analysis and medical imaging datasets, where protected group attributes are given and find that it occurs for multiple established group fairness metrics, including statistical parity and equal opportunity. Furthermore, we identify the per-group difference in predictive diversity of ensemble members as the potential cause of the disparate benefits effect. Finally, we evaluate different approaches to reduce unfairness due to the disparate benefits effect. Our findings show that post-processing is an effective method to mitigate this unfairness while preserving the improved performance of Deep Ensembles.",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13831v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Deep Generative Models Unveil Patterns in Medical Images Through Vision-Language Conditioning",
+    "author": "Xiaodan Xing, Junzhi Ning, Yang Nan, Guang Yang",
+    "summary": "Deep generative models have significantly advanced medical imaging analysis by enhancing dataset size and quality. Beyond mere data augmentation, our research in this paper highlights an additional, significant capacity of deep generative models: their ability to reveal and demonstrate patterns in medical images. We employ a generative structure with hybrid conditions, combining clinical data and segmentation masks to guide the image synthesis process. Furthermore, we innovatively transformed the tabular clinical data into textual descriptions. This approach simplifies the handling of missing values and also enables us to leverage large pre-trained vision-language models that investigate the relations between independent clinical entries and comprehend general terms, such as gender and smoking status. Our approach differs from and presents a more challenging task than traditional medical report-guided synthesis due to the less visual correlation of our clinical information with the images. To overcome this, we introduce a text-visual embedding mechanism that strengthens the conditions, ensuring the network effectively utilizes the provided information. Our pipeline is generalizable to both GAN-based and diffusion models. Experiments on chest CT, particularly focusing on the smoking status, demonstrated a consistent intensity shift in the lungs which is in agreement with clinical observations, indicating the effectiveness of our method in capturing and visualizing the impact of specific attributes on medical image patterns. Our methods offer a new avenue for the early detection and precise visualization of complex clinical conditions with deep generative models. All codes are https://github.com/junzhin/DGM-VLC.",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13823v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Optimizing Probabilistic Conformal Prediction with Vectorized Non-Conformity Scores",
+    "author": "Minxing Zheng, Shixiang Zhu",
+    "summary": "Generative models have shown significant promise in critical domains such as medical diagnosis, autonomous driving, and climate science, where reliable decision-making hinges on accurate uncertainty quantification. While probabilistic conformal prediction (PCP) offers a powerful framework for this purpose, its coverage efficiency -- the size of the uncertainty set -- is limited when dealing with complex underlying distributions and a finite number of generated samples. In this paper, we propose a novel PCP framework that enhances efficiency by first vectorizing the non-conformity scores with ranked samples and then optimizing the shape of the prediction set by varying the quantiles for samples at the same rank. Our method delivers valid coverage while producing discontinuous and more efficient prediction sets, making it particularly suited for high-stakes applications. We demonstrate the effectiveness of our approach through experiments on both synthetic and real-world datasets.",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13735v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "HEALTH-PARIKSHA: Assessing RAG Models for Health Chatbots in Real-World Multilingual Settings",
+    "author": "Varun Gumma, Anandhita Raghunath, Mohit Jain, Sunayana Sitaram",
+    "summary": "Assessing the capabilities and limitations of large language models (LLMs) has garnered significant interest, yet the evaluation of multiple models in real-world scenarios remains rare. Multilingual evaluation often relies on translated benchmarks, which typically do not capture linguistic and cultural nuances present in the source language. This study provides an extensive assessment of 24 LLMs on real world data collected from Indian patients interacting with a medical chatbot in Indian English and 4 other Indic languages. We employ a uniform Retrieval Augmented Generation framework to generate responses, which are evaluated using both automated techniques and human evaluators on four specific metrics relevant to our application. We find that models vary significantly in their performance and that instruction tuned Indic models do not always perform well on Indic language queries. Further, we empirically show that factual correctness is generally lower for responses to Indic queries compared to English queries. Finally, our qualitative work shows that code-mixed and culturally relevant queries in our dataset pose challenges to evaluated models.",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13671v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Multimodal growth and development assessment model",
+    "author": "Ying Li, Zichen Song, Zijie Gong, Sitan Huang, Jiewei Ge",
+    "summary": "With the development of social economy and the improvement of people's attention to health, the growth and development of children and adolescents has become an important indicator to measure the level of national health. Therefore, accurate and timely assessment of children's growth and development has become increasingly important. At the same time, global health inequalities, especially child malnutrition and stunting in developing countries, urgently require effective assessment tools to monitor and intervene. In recent years, the rapid development of technologies such as big data, artificial intelligence, and cloud computing, and the cross-integration of multiple disciplines such as biomedicine, statistics, and computer science have promoted the rapid development of large-scale models for growth and development assessment. However, there are still problems such as too single evaluation factors, inaccurate diagnostic results, and inability to give accurate and reasonable recommendations. The multi-modal growth and development assessment model uses the public data set of RSNA ( North American College of Radiology ) as the training set, and the data set of the Department of Pediatrics of Huaibei People's Hospital as the open source test set. The embedded ICL module enables the model to quickly adapt and identify the tasks that need to be done to ensure that under the premise of considering multiple evaluation factors, accurate diagnosis results and reasonable medical recommendations are given, so as to provide solutions to the above problems and promote the development of the medical field.",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13647v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "MeNTi: Bridging Medical Calculator and LLM Agent with Nested Tool Calling",
+    "author": "Yakun Zhu, Shaohang Wei, Xu Wang, Kui Xue, Xiaofan Zhang, Shaoting Zhang",
+    "summary": "Integrating tools into Large Language Models (LLMs) has facilitated the widespread application. Despite this, in specialized downstream task contexts, reliance solely on tools is insufficient to fully address the complexities of the real world. This particularly restricts the effective deployment of LLMs in fields such as medicine. In this paper, we focus on the downstream tasks of medical calculators, which use standardized tests to assess an individual's health status. We introduce MeNTi, a universal agent architecture for LLMs. MeNTi integrates a specialized medical toolkit and employs meta-tool and nested calling mechanisms to enhance LLM tool utilization. Specifically, it achieves flexible tool selection and nested tool calling to address practical issues faced in intricate medical scenarios, including calculator selection, slot filling, and unit conversion. To assess the capabilities of LLMs for quantitative assessment throughout the clinical process of calculator scenarios, we introduce CalcQA. This benchmark requires LLMs to use medical calculators to perform calculations and assess patient health status. CalcQA is constructed by professional physicians and includes 100 case-calculator pairs, complemented by a toolkit of 281 medical tools. The experimental results demonstrate significant performance improvements with our framework. This research paves new directions for applying LLMs in demanding scenarios of medicine.",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13610v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "OAH-Net: A Deep Neural Network for Hologram Reconstruction of Off-axis Digital Holographic Microscope",
+    "author": "Wei Liu, Kerem Delikoyun, Qianyu Chen, Alperen Yildiz, Si Ko Myo, Win Sen Kuan, John Tshon Yit Soong, Matthew Edward Cove, Oliver Hayden, Hweekuan Lee",
+    "summary": "Off-axis digital holographic microscopy is a high-throughput, label-free imaging technology that provides three-dimensional, high-resolution information about samples, particularly useful in large-scale cellular imaging. However, the hologram reconstruction process poses a significant bottleneck for timely data analysis. To address this challenge, we propose a novel reconstruction approach that integrates deep learning with the physical principles of off-axis holography. We initialized part of the network weights based on the physical principle and then fine-tuned them via weakly supersized learning. Our off-axis hologram network (OAH-Net) retrieves phase and amplitude images with errors that fall within the measurement error range attributable to hardware, and its reconstruction speed significantly surpasses the microscope's acquisition rate. Crucially, OAH-Net demonstrates remarkable external generalization capabilities on unseen samples with distinct patterns and can be seamlessly integrated with other models for downstream tasks to achieve end-to-end real-time hologram analysis. This capability further expands off-axis holography's applications in both biological and medical studies.",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13592v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Three-Input Ciphertext Multiplication for Homomorphic Encryption",
+    "author": "Sajjad Akherati, Yok Jye Tang, Xinmiao Zhang",
+    "summary": "Homomorphic encryption (HE) allows computations to be directly carried out on ciphertexts and is essential to privacy-preserving computing, such as neural network inference, medical diagnosis, and financial data analysis. Only addition and 2-input multiplication are defined over ciphertexts in popular HE schemes. However, many HE applications involve non-linear functions and they need to be approximated using high-order polynomials to maintain precision. To reduce the complexity of these computations, this paper proposes 3-input ciphertext multiplication. One extra evaluation key is introduced to carry out the relinearization step of ciphertext multiplication, and new formulas are proposed to combine computations and share intermediate results. Compared to using two consecutive 2- input multiplications, computing the product of three ciphertexts utilizing the proposed scheme leads to almost a half of the latency, 29% smaller silicon area, and lower noise without scarifying the throughput.",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13545v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Can Medical Vision-Language Pre-training Succeed with Purely Synthetic Data?",
+    "author": "Che Liu, Zhongwei Wan, Haozhe Wang, Yinda Chen, Talha Qaiser, Chen Jin, Fariba Yousefi, Nikolay Burlutskiy, Rossella Arcucci",
+    "summary": "Medical Vision-Language Pre-training (MedVLP) has made significant progress in enabling zero-shot tasks for medical image understanding. However, training MedVLP models typically requires large-scale datasets with paired, high-quality image-text data, which are scarce in the medical domain. Recent advancements in Large Language Models (LLMs) and diffusion models have made it possible to generate large-scale synthetic image-text pairs. This raises the question: *Can MedVLP succeed using purely synthetic data?* To address this, we use off-the-shelf generative models to create synthetic radiology reports and paired Chest X-ray (CXR) images, and propose an automated pipeline to build a diverse, high-quality synthetic dataset, enabling a rigorous study that isolates model and training settings, focusing entirely from the data perspective. Our results show that MedVLP models trained *exclusively on synthetic data* outperform those trained on real data by **3.8%** in averaged AUC on zero-shot classification. Moreover, using a combination of synthetic and real data leads to a further improvement of **9.07%**. Additionally, MedVLP models trained on synthetic or mixed data consistently outperform those trained on real data in zero-shot grounding, as well as in fine-tuned classification and segmentation tasks. Our analysis suggests MedVLP trained on well-designed synthetic data can outperform models trained on real datasets, which may be limited by low-quality samples and long-tailed distributions.",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13523v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "SemSim: Revisiting Weak-to-Strong Consistency from a Semantic Similarity Perspective for Semi-supervised Medical Image Segmentation",
+    "author": "Shiao Xie, Hongyi Wang, Ziwei Niu, Hao Sun, Shuyi Ouyang, Yen-Wei Chen, Lanfen Lin",
+    "summary": "Semi-supervised learning (SSL) for medical image segmentation is a challenging yet highly practical task, which reduces reliance on large-scale labeled dataset by leveraging unlabeled samples. Among SSL techniques, the weak-to-strong consistency framework, popularized by FixMatch, has emerged as a state-of-the-art method in classification tasks. Notably, such a simple pipeline has also shown competitive performance in medical image segmentation. However, two key limitations still persist, impeding its efficient adaptation: (1) the neglect of contextual dependencies results in inconsistent predictions for similar semantic features, leading to incomplete object segmentation; (2) the lack of exploitation of semantic similarity between labeled and unlabeled data induces considerable class-distribution discrepancy. To address these limitations, we propose a novel semi-supervised framework based on FixMatch, named SemSim, powered by two appealing designs from semantic similarity perspective: (1) rectifying pixel-wise prediction by reasoning about the intra-image pair-wise affinity map, thus integrating contextual dependencies explicitly into the final prediction; (2) bridging labeled and unlabeled data via a feature querying mechanism for compact class representation learning, which fully considers cross-image anatomical similarities. As the reliable semantic similarity extraction depends on robust features, we further introduce an effective spatial-aware fusion module (SFM) to explore distinctive information from multiple scales. Extensive experiments show that SemSim yields consistent improvements over the state-of-the-art methods across three public segmentation benchmarks.",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13486v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Day-Night Adaptation: An Innovative Source-free Adaptation Framework for Medical Image Segmentation",
+    "author": "Ziyang Chen, Yiwen Ye, Yongsheng Pan, Yong Xia",
+    "summary": "Distribution shifts widely exist in medical images acquired from different medical centers, hindering the deployment of semantic segmentation models trained on data from one center (source domain) to another (target domain). While unsupervised domain adaptation (UDA) has shown significant promise in mitigating these shifts, it poses privacy risks due to sharing data between centers. To facilitate adaptation while preserving data privacy, source-free domain adaptation (SFDA) and test-time adaptation (TTA) have emerged as effective paradigms, relying solely on target domain data. However, the scenarios currently addressed by SFDA and TTA are limited, making them less suitable for clinical applications. In a more realistic clinical scenario, the pre-trained model is deployed in a medical centre to assist with clinical tasks during the day and rest at night. During the daytime process, TTA can be employed to enhance inference performance. During the nighttime process, after collecting the test data from the day, the model can be fine-tuned utilizing SFDA to further adapt to the target domain. With above insights, we propose a novel adaptation framework called Day-Night Adaptation (DyNA). This framework adapts the model to the target domain through day-night loops without requiring access to source data. Specifically, we implement distinct adaptation strategies for daytime and nighttime to better meet the demands of clinical settings. During the daytime, model parameters are frozen, and a specific low-frequency prompt is trained for each test sample. Additionally, we construct a memory bank for prompt initialization and develop a warm-up mechanism to enhance prompt training. During nighttime, we integrate a global student model into the traditional teacher-student self-training paradigm to fine-tune the model while ensuring training stability...",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13472v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "MedINST: Meta Dataset of Biomedical Instructions",
+    "author": "Wenhan Han, Meng Fang, Zihan Zhang, Yu Yin, Zirui Song, Ling Chen, Mykola Pechenizkiy, Qingyu Chen",
+    "summary": "The integration of large language model (LLM) techniques in the field of medical analysis has brought about significant advancements, yet the scarcity of large, diverse, and well-annotated datasets remains a major challenge. Medical data and tasks, which vary in format, size, and other parameters, require extensive preprocessing and standardization for effective use in training LLMs. To address these challenges, we introduce MedINST, the Meta Dataset of Biomedical Instructions, a novel multi-domain, multi-task instructional meta-dataset. MedINST comprises 133 biomedical NLP tasks and over 7 million training samples, making it the most comprehensive biomedical instruction dataset to date. Using MedINST as the meta dataset, we curate MedINST32, a challenging benchmark with different task difficulties aiming to evaluate LLMs' generalization ability. We fine-tune several LLMs on MedINST and evaluate on MedINST32, showcasing enhanced cross-task generalization.",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13458v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Augmentation Policy Generation for Image Classification Using Large Language Models",
+    "author": "Ant Duru, Alptekin Temizel",
+    "summary": "Automated data augmentation methods have significantly improved the performance and generalization capability of deep learning models in image classification. Yet, most state-of-the-art methods are optimized on common benchmark datasets, limiting their applicability to more diverse or domain-specific data, such as medical datasets. In this paper, we propose a strategy that uses large language models to automatically generate efficient augmentation policies, customized to fit the specific characteristics of any dataset and model architecture. The proposed method iteratively interacts with an LLM to obtain and refine the augmentation policies on model performance feedback, creating a dataset-agnostic data augmentation pipeline. The proposed method was evaluated on medical imaging datasets, showing a clear improvement over state-of-the-art methods. The proposed approach offers an adaptive and scalable solution. Although it increases computational cost, it significantly boosts model robustness, automates the process, and minimizes the need for human involvement during model development.",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13453v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Unsupervised Skull Segmentation via Contrastive MR-to-CT Modality Translation",
+    "author": "Kamil Kwarciak, Mateusz Daniol, Daria Hemmerling, Marek Wodzinski",
+    "summary": "The skull segmentation from CT scans can be seen as an already solved problem. However, in MR this task has a significantly greater complexity due to the presence of soft tissues rather than bones. Capturing the bone structures from MR images of the head, where the main visualization objective is the brain, is very demanding. The attempts that make use of skull stripping seem to not be well suited for this task and fail to work in many cases. On the other hand, supervised approaches require costly and time-consuming skull annotations. To overcome the difficulties we propose a fully unsupervised approach, where we do not perform the segmentation directly on MR images, but we rather perform a synthetic CT data generation via MR-to-CT translation and perform the segmentation there. We address many issues associated with unsupervised skull segmentation including the unpaired nature of MR and CT datasets (contrastive learning), low resolution and poor quality (super-resolution), and generalization capabilities. The research has a significant value for downstream tasks requiring skull segmentation from MR volumes such as craniectomy or surgery planning and can be seen as an important step towards the utilization of synthetic data in medical imaging.",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13427v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Statistical testing on generative AI anomaly detection tools in Alzheimer's Disease diagnosis",
+    "author": "Rosemary He, Ichiro Takeuchi",
+    "summary": "Alzheimer's Disease is challenging to diagnose due to our limited understanding of its mechanism and large heterogeneity among patients. Neurodegeneration is studied widely as a biomarker for clinical diagnosis, which can be measured from time series MRI progression. On the other hand, generative AI has shown promise in anomaly detection in medical imaging and used for tasks including tumor detection. However, testing the reliability of such data-driven methods is non-trivial due to the issue of double-dipping in hypothesis testing. In this work, we propose to solve this issue with selective inference and develop a reliable generative AI method for Alzheimer's prediction. We show that compared to traditional statistical methods with highly inflated p-values, selective inference successfully controls the false discovery rate under the desired alpha level while retaining statistical power. In practice, our pipeline could assist clinicians in Alzheimer's diagnosis and early intervention.",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13363v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "On the new and accurate (Goudsmit-Saunderson) model for describing e-/e+ multiple Coulomb scattering (Geant4 Technical Note)",
+    "author": "Mihaly Novak",
+    "summary": "A new model, for the accurate simulation of multiple Coulomb scattering (MSC) of e-/e+, has been implemented in Geant4 recently and made available with version Geant4-10.4. The model is based on Goudsmit-Saunderson (GS) angular distributions computed by utilising the screen Rutherford (SR) DCS and follows very closely the formulation developed by Kawrakow [1, 2] and utilised in the EGSnrc toolkit [3]. Corrections, for taking into accountenergy loss [2] neglected by the GS theory, spin-relativistic effects [3] not included in the SR but might be accounted on the basis of Mott DCS as well as the so-called scattering power correction [4], i.e. appropriately incorporating deflections due to sub-threshold delta ray productions, are all included similarly to the EGSnrc model [3]. Furthermore, an accurate electron-step algorithm [5, 6, 2] is utilised for path length correction, i.e. for calculating the post-step position in each condensed history simulation steps such that the corresponding single-scattering longitudinal and lateral (post step point) distributions are very well reproduced. An e-/e+ stepping algorithm, including the simulation step-limit due to the MSC and boundary crossing [2]), free from step-size artefacts, makes the model complete. Details on this new model, including all the above-mentioned components and corrections, are provided in this Geant4 technical note.   It must be noted, that a Goudsmit-Saunderson model for MSC was available before Geant4-10.4., documented in [7], that has been completely replaced by the model described in this technical note (keeping only the G4GoudsmitSaundersonMscModel name of the C++ class from that previous version)",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13361v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Representation Learning of Structured Data for Medical Foundation Models",
+    "author": "Vijay Prakash Dwivedi, Viktor Schlegel, Andy T. Liu, Thanh-Tung Nguyen, Abhinav Ramesh Kashyap, Jeng Wei, Wei-Hsian Yin, Stefan Winkler, Robby T. Tan",
+    "summary": "Large Language Models (LLMs) have demonstrated remarkable performance across various domains, including healthcare. However, their ability to effectively represent structured non-textual data, such as the alphanumeric medical codes used in records like ICD-10 or SNOMED-CT, is limited and has been particularly exposed in recent research. This paper examines the challenges LLMs face in processing medical codes due to the shortcomings of current tokenization methods. As a result, we introduce the UniStruct architecture to design a multimodal medical foundation model of unstructured text and structured data, which addresses these challenges by adapting subword tokenization techniques specifically for the structured medical codes. Our approach is validated through model pre-training on both an extensive internal medical database and a public repository of structured medical records. Trained on over 1 billion tokens on the internal medical database, the proposed model achieves up to a 23% improvement in evaluation metrics, with around 2% gain attributed to our proposed tokenization. Additionally, when evaluated on the EHRSHOT public benchmark with a 1/1000 fraction of the pre-training data, the UniStruct model improves performance on over 42% of the downstream tasks. Our approach not only enhances the representation and generalization capabilities of patient-centric models but also bridges a critical gap in representation learning models' ability to handle complex structured medical data, alongside unstructured text.",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13351v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Technical Note: Vendor-Specific Approach for Standardized Uptake Value Calculation",
+    "author": "Maksym Fritsak, Hubert S. Gabry\u015b, Preethi Mohan, Matthias Guckenberger, Stephanie Tanadini-Lang",
+    "summary": "The Standardized Uptake Value (SUV) is a critical metric in positron emission tomography (PET) imaging, used to assess metabolic activity. However, calculating SUV from DICOM files presents challenges due to vendor-specific DICOM attributes and variations in the encoding of radiotracer accumulation times. This technical note introduces a robust, vendor-specific SUV calculation strategy that addresses inconsistencies in current methodologies. We also integrate this strategy into an open-source software solution, Z-Rad, capable of converting raw PET DICOM data into body-weight normalized SUV NIfTI files.   Our SUV calculation strategy was developed by reviewing DICOM conformance statements from GE, Philips, and Siemens. Validation was conducted using real-world PET datasets, and the proposed strategy was compared to existing software solutions.   Our SUV calculation approach demonstrated improved accuracy, particularly in resolving time-related discrepancies in the studied data. Our analysis also identified inconsistencies in the SUV calculation methods used by popular commercial and open-source software solutions, which do not fully account for vendor-specific DICOM attributes and PET image acquisition times. These limitations resulted in errors in SUV estimation reaching 33\\% when comparing our strategy to studied software.   The proposed vendor-specific SUV calculation strategy significantly enhances accuracy in PET imaging by addressing key inconsistencies caused by variations in DICOM attributes and image acquisition times across different vendors. This method effectively reduces SUV calculation errors and has been integrated into an open-source software, Z-Rad.",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13348v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Active inference and deep generative modeling for cognitive ultrasound",
+    "author": "Ruud JG van Sloun",
+    "summary": "Ultrasound (US) has the unique potential to offer access to medical imaging to anyone, everywhere. Devices have become ultra-portable and cost-effective, akin to the stethoscope. Nevertheless US image quality and diagnostic efficacy are still highly operator- and patient-dependent. In difficult-to-image patients, image quality is often insufficient for reliable diagnosis. In this paper, we put forth that US imaging systems can be recast as information-seeking agents that engage in reciprocal interactions with their anatomical environment. Such agents autonomously adapt their transmit-receive sequences to fully personalize imaging and actively maximize information gain in-situ. To that end, we will show that the sequence of pulse-echo experiments that a US system performs can be interpreted as a perception-action loop: the action is the data acquisition, probing tissue with acoustic waves and recording reflections at the detection array, and perception is the inference of the anatomical and or functional state, potentially including associated diagnostic quantities. We then equip systems with a mechanism to actively reduce uncertainty and maximize diagnostic value across a sequence of experiments, treating action and perception jointly using Bayesian inference given generative models of the environment and action-conditional pulse-echo observations. Since the representation capacity of the generative models dictates both the quality of inferred anatomical states and the effectiveness of inferred sequences of future imaging actions, we will be greatly leveraging the enormous advances in deep generative modelling that are currently disrupting many fields and society at large. Finally, we show some examples of cognitive, closed-loop, US systems that perform active beamsteering and adaptive scanline selection, based on deep generative models that track anatomical belief states.",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13310v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "MixEHR-Nest: Identifying Subphenotypes within Electronic Health Records through Hierarchical Guided-Topic Modeling",
+    "author": "Ruohan Wang, Zilong Wang, Ziyang Song, David Buckeridge, Yue Li",
+    "summary": "Automatic subphenotyping from electronic health records (EHRs)provides numerous opportunities to understand diseases with unique subgroups and enhance personalized medicine for patients. However, existing machine learning algorithms either focus on specific diseases for better interpretability or produce coarse-grained phenotype topics without considering nuanced disease patterns. In this study, we propose a guided topic model, MixEHR-Nest, to infer sub-phenotype topics from thousands of disease using multi-modal EHR data. Specifically, MixEHR-Nest detects multiple subtopics from each phenotype topic, whose prior is guided by the expert-curated phenotype concepts such as Phenotype Codes (PheCodes) or Clinical Classification Software (CCS) codes. We evaluated MixEHR-Nest on two EHR datasets: (1) the MIMIC-III dataset consisting of over 38 thousand patients from intensive care unit (ICU) from Beth Israel Deaconess Medical Center (BIDMC) in Boston, USA; (2) the healthcare administrative database PopHR, comprising 1.3 million patients from Montreal, Canada. Experimental results demonstrate that MixEHR-Nest can identify subphenotypes with distinct patterns within each phenotype, which are predictive for disease progression and severity. Consequently, MixEHR-Nest distinguishes between type 1 and type 2 diabetes by inferring subphenotypes using CCS codes, which do not differentiate these two subtype concepts. Additionally, MixEHR-Nest not only improved the prediction accuracy of short-term mortality of ICU patients and initial insulin treatment in diabetic patients but also revealed the contributions of subphenotypes. For longitudinal analysis, MixEHR-Nest identified subphenotypes of distinct age prevalence under the same phenotypes, such as asthma, leukemia, epilepsy, and depression. The MixEHR-Nest software is available at GitHub: https://github.com/li-lab-mcgill/MixEHR-Nest.",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13217v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "MCQG-SRefine: Multiple Choice Question Generation and Evaluation with Iterative Self-Critique, Correction, and Comparison Feedback",
+    "author": "Zonghai Yao, Aditya Parashar, Huixue Zhou, Won Seok Jang, Feiyun Ouyang, Zhichao Yang, Hong Yu",
+    "summary": "Automatic question generation (QG) is essential for AI and NLP, particularly in intelligent tutoring, dialogue systems, and fact verification. Generating multiple-choice questions (MCQG) for professional exams, like the United States Medical Licensing Examination (USMLE), is particularly challenging, requiring domain expertise and complex multi-hop reasoning for high-quality questions. However, current large language models (LLMs) like GPT-4 struggle with professional MCQG due to outdated knowledge, hallucination issues, and prompt sensitivity, resulting in unsatisfactory quality and difficulty. To address these challenges, we propose MCQG-SRefine, an LLM self-refine-based (Critique and Correction) framework for converting medical cases into high-quality USMLE-style questions. By integrating expert-driven prompt engineering with iterative self-critique and self-correction feedback, MCQG-SRefine significantly enhances human expert satisfaction regarding both the quality and difficulty of the questions. Furthermore, we introduce an LLM-as-Judge-based automatic metric to replace the complex and costly expert evaluation process, ensuring reliable and expert-aligned assessments.",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13191v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Scalable Drift Monitoring in Medical Imaging AI",
+    "author": "Jameson Merkow, Felix J. Dorfner, Xiyu Yang, Alexander Ersoy, Giridhar Dasegowda, Mannudeep Kalra, Matthew P. Lungren, Christopher P. Bridge, Ivan Tarapov",
+    "summary": "The integration of artificial intelligence (AI) into medical imaging has advanced clinical diagnostics but poses challenges in managing model drift and ensuring long-term reliability. To address these challenges, we develop MMC+, an enhanced framework for scalable drift monitoring, building upon the CheXstray framework that introduced real-time drift detection for medical imaging AI models using multi-modal data concordance. This work extends the original framework's methodologies, providing a more scalable and adaptable solution for real-world healthcare settings and offers a reliable and cost-effective alternative to continuous performance monitoring addressing limitations of both continuous and periodic monitoring methods. MMC+ introduces critical improvements to the original framework, including more robust handling of diverse data streams, improved scalability with the integration of foundation models like MedImageInsight for high-dimensional image embeddings without site-specific training, and the introduction of uncertainty bounds to better capture drift in dynamic clinical environments. Validated with real-world data from Massachusetts General Hospital during the COVID-19 pandemic, MMC+ effectively detects significant data shifts and correlates them with model performance changes. While not directly predicting performance degradation, MMC+ serves as an early warning system, indicating when AI systems may deviate from acceptable performance bounds and enabling timely interventions. By emphasizing the importance of monitoring diverse data streams and evaluating data shifts alongside model performance, this work contributes to the broader adoption and integration of AI solutions in clinical settings.",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13174v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Adversarial Neural Networks in Medical Imaging Advancements and Challenges in Semantic Segmentation",
+    "author": "Houze Liu, Bo Zhang, Yanlin Xiang, Yuxiang Hu, Aoran Shen, Yang Lin",
+    "summary": "Recent advancements in artificial intelligence (AI) have precipitated a paradigm shift in medical imaging, particularly revolutionizing the domain of brain imaging. This paper systematically investigates the integration of deep learning -- a principal branch of AI -- into the semantic segmentation of brain images. Semantic segmentation serves as an indispensable technique for the delineation of discrete anatomical structures and the identification of pathological markers, essential for the diagnosis of complex neurological disorders. Historically, the reliance on manual interpretation by radiologists, while noteworthy for its accuracy, is plagued by inherent subjectivity and inter-observer variability. This limitation becomes more pronounced with the exponential increase in imaging data, which traditional methods struggle to process efficiently and effectively. In response to these challenges, this study introduces the application of adversarial neural networks, a novel AI approach that not only automates but also refines the semantic segmentation process. By leveraging these advanced neural networks, our approach enhances the precision of diagnostic outputs, reducing human error and increasing the throughput of imaging data analysis. The paper provides a detailed discussion on how adversarial neural networks facilitate a more robust, objective, and scalable solution, thereby significantly improving diagnostic accuracies in neurological evaluations. This exploration highlights the transformative impact of AI on medical imaging, setting a new benchmark for future research and clinical practice in neurology.",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13099v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models",
+    "author": "Peng Xia, Kangyu Zhu, Haoran Li, Tianze Wang, Weijia Shi, Sheng Wang, Linjun Zhang, James Zou, Huaxiu Yao",
+    "summary": "Artificial Intelligence (AI) has demonstrated significant potential in healthcare, particularly in disease diagnosis and treatment planning. Recent progress in Medical Large Vision-Language Models (Med-LVLMs) has opened up new possibilities for interactive diagnostic tools. However, these models often suffer from factual hallucination, which can lead to incorrect diagnoses. Fine-tuning and retrieval-augmented generation (RAG) have emerged as methods to address these issues. However, the amount of high-quality data and distribution shifts between training data and deployment data limit the application of fine-tuning methods. Although RAG is lightweight and effective, existing RAG-based approaches are not sufficiently general to different medical domains and can potentially cause misalignment issues, both between modalities and between the model and the ground truth. In this paper, we propose a versatile multimodal RAG system, MMed-RAG, designed to enhance the factuality of Med-LVLMs. Our approach introduces a domain-aware retrieval mechanism, an adaptive retrieved contexts selection method, and a provable RAG-based preference fine-tuning strategy. These innovations make the RAG process sufficiently general and reliable, significantly improving alignment when introducing retrieved contexts. Experimental results across five medical datasets (involving radiology, ophthalmology, pathology) on medical VQA and report generation demonstrate that MMed-RAG can achieve an average improvement of 43.8% in the factual accuracy of Med-LVLMs. Our data and code are available in https://github.com/richard-peng-xia/MMed-RAG.",
+    "published": "2024-10-16",
+    "link": "http://arxiv.org/abs/2410.13085v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "UniCoN: Universal Conditional Networks for Multi-Age Embryonic Cartilage Segmentation with Sparsely Annotated Data",
+    "author": "Nishchal Sapkota, Yejia Zhang, Zihao Zhao, Maria Gomez, Yuhan Hsi, Jordan A. Wilson, Kazuhiko Kawasaki, Greg Holmes, Meng Wu, Ethylin Wang Jabs, Joan T. Richtsmeier, Susan M. Motch Perrine, Danny Z. Chen",
+    "summary": "Osteochondrodysplasia, affecting 2-3% of newborns globally, is a group of bone and cartilage disorders that often result in head malformations, contributing to childhood morbidity and reduced quality of life. Current research on this disease using mouse models faces challenges since it involves accurately segmenting the developing cartilage in 3D micro-CT images of embryonic mice. Tackling this segmentation task with deep learning (DL) methods is laborious due to the big burden of manual image annotation, expensive due to the high acquisition costs of 3D micro-CT images, and difficult due to embryonic cartilage's complex and rapidly changing shapes. While DL approaches have been proposed to automate cartilage segmentation, most such models have limited accuracy and generalizability, especially across data from different embryonic age groups. To address these limitations, we propose novel DL methods that can be adopted by any DL architectures -- including CNNs, Transformers, or hybrid models -- which effectively leverage age and spatial information to enhance model performance. Specifically, we propose two new mechanisms, one conditioned on discrete age categories and the other on continuous image crop locations, to enable an accurate representation of cartilage shape changes across ages and local shape details throughout the cranial region. Extensive experiments on multi-age cartilage segmentation datasets show significant and consistent performance improvements when integrating our conditional modules into popular DL segmentation architectures. On average, we achieve a 1.7% Dice score increase with minimal computational overhead and a 7.5% improvement on unseen data. These results highlight the potential of our approach for developing robust, universal models capable of handling diverse datasets with limited annotated data, a key challenge in DL-based medical image analysis.",
+    "published": "2024-10-16",
+    "link": "http://arxiv.org/abs/2410.13043v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Design and Feasibility of a Community Motorcycle Ambulance System in the Philippines",
+    "author": "Aaron Rodriguez, Aidan Chen, Ryan Rodriguez",
+    "summary": "This study investigates the potential for motorcycle ambulance (motorlance) deployment in Metro Manila and Iloilo City to improve emergency medical care in high-traffic, underserved regions of the Philippines. VSee, a humanitarian technology company, has organized numerous free clinics in the Philippines and identified a critical need for improved emergency services. Motorlances offer a fast, affordable alternative to traditional ambulances, particularly in congested urban settings and remote rural locations. Pilot programs in Malawi, Thailand, and Iran have demonstrated significant improvements in response times and cost-efficiency with motorlance systems. This study presents a framework for motorlance operation and identifies three potential pilot locations: Mandaluyong, Smokey Mountain, and Iloilo City. Site visits, driver interviews, and user surveys indicate public trust in the motorlance concept and positive reception to potential motorlance deployment. Cost analysis verifies the financial feasibility of motorlance systems. Future work will focus on implementing a physical pilot in Mandaluyong, with the aim of expanding service to similar regions contingent on the Mandaluyong pilot's success.",
+    "published": "2024-10-16",
+    "link": "http://arxiv.org/abs/2410.13026v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Leveraging LLMs for Translating and Classifying Mental Health Data",
+    "author": "Konstantinos Skianis, A. Seza Do\u011fru\u00f6z, John Pavlopoulos",
+    "summary": "Large language models (LLMs) are increasingly used in medical fields. In mental health support, the early identification of linguistic markers associated with mental health conditions can provide valuable support to mental health professionals, and reduce long waiting times for patients. Despite the benefits of LLMs for mental health support, there is limited research on their application in mental health systems for languages other than English. Our study addresses this gap by focusing on the detection of depression severity in Greek through user-generated posts which are automatically translated from English. Our results show that GPT3.5-turbo is not very successful in identifying the severity of depression in English, and it has a varying performance in Greek as well. Our study underscores the necessity for further research, especially in languages with less resources. Also, careful implementation is necessary to ensure that LLMs are used effectively in mental health platforms, and human supervision remains crucial to avoid misdiagnosis.",
+    "published": "2024-10-16",
+    "link": "http://arxiv.org/abs/2410.12985v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Gradient Map-Assisted Head and Neck Tumor Segmentation: A Pre-RT to Mid-RT Approach in MRI-Guided Radiotherapy",
+    "author": "Jintao Ren, Kim Hochreuter, Mathis Ersted Rasmussen, Jesper Folsted Kallehauge, Stine Sofia Korreman",
+    "summary": "Radiation therapy (RT) is a vital part of treatment for head and neck cancer, where accurate segmentation of gross tumor volume (GTV) is essential for effective treatment planning. This study investigates the use of pre-RT tumor regions and local gradient maps to enhance mid-RT tumor segmentation for head and neck cancer in MRI-guided adaptive radiotherapy. By leveraging pre-RT images and their segmentations as prior knowledge, we address the challenge of tumor localization in mid-RT segmentation. A gradient map of the tumor region from the pre-RT image is computed and applied to mid-RT images to improve tumor boundary delineation. Our approach demonstrated improved segmentation accuracy for both primary GTV (GTVp) and nodal GTV (GTVn), though performance was limited by data constraints. The final DSCagg scores from the challenge's test set evaluation were 0.534 for GTVp, 0.867 for GTVn, and a mean score of 0.70. This method shows potential for enhancing segmentation and treatment planning in adaptive radiotherapy. Team: DCPT-Stine's group.",
+    "published": "2024-10-16",
+    "link": "http://arxiv.org/abs/2410.12941v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "UMambaAdj: Advancing GTV Segmentation for Head and Neck Cancer in MRI-Guided RT with UMamba and nnU-Net ResEnc Planner",
+    "author": "Jintao Ren, Kim Hochreuter, Jesper Folsted Kallehauge, Stine Sofia Korreman",
+    "summary": "Magnetic Resonance Imaging (MRI) plays a crucial role in MRI-guided adaptive radiotherapy for head and neck cancer (HNC) due to its superior soft-tissue contrast. However, accurately segmenting the gross tumor volume (GTV), which includes both the primary tumor (GTVp) and lymph nodes (GTVn), remains challenging. Recently, two deep learning segmentation innovations have shown great promise: UMamba, which effectively captures long-range dependencies, and the nnU-Net Residual Encoder (ResEnc), which enhances feature extraction through multistage residual blocks. In this study, we integrate these strengths into a novel approach, termed 'UMambaAdj'. Our proposed method was evaluated on the HNTS-MRG 2024 challenge test set using pre-RT T2-weighted MRI images, achieving an aggregated Dice Similarity Coefficient (DSCagg) of 0.751 for GTVp and 0.842 for GTVn, with a mean DSCagg of 0.796. This approach demonstrates potential for more precise tumor delineation in MRI-guided adaptive radiotherapy, ultimately improving treatment outcomes for HNC patients. Team: DCPT-Stine's group.",
+    "published": "2024-10-16",
+    "link": "http://arxiv.org/abs/2410.12940v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "DEeR: Deviation Eliminating and Noise Regulating for Privacy-preserving Federated Low-rank Adaptation",
+    "author": "Meilu Zhu, Axiu Mao, Jun Liu, Yixuan Yuan",
+    "summary": "Integrating low-rank adaptation (LoRA) with federated learning (FL) has received widespread attention recently, aiming to adapt pretrained foundation models (FMs) to downstream medical tasks via privacy-preserving decentralized training. However, owing to the direct combination of LoRA and FL, current methods generally undergo two problems, i.e., aggregation deviation, and differential privacy (DP) noise amplification effect. To address these problems, we propose a novel privacy-preserving federated finetuning framework called \\underline{D}eviation \\underline{E}liminating and Nois\\underline{e} \\underline{R}egulating (DEeR). Specifically, we firstly theoretically prove that the necessary condition to eliminate aggregation deviation is guaranteing the equivalence between LoRA parameters of clients. Based on the theoretical insight, a deviation eliminator is designed to utilize alternating minimization algorithm to iteratively optimize the zero-initialized and non-zero-initialized parameter matrices of LoRA, ensuring that aggregation deviation always be zeros during training. Furthermore, we also conduct an in-depth analysis of the noise amplification effect and find that this problem is mainly caused by the ``linear relationship'' between DP noise and LoRA parameters. To suppress the noise amplification effect, we propose a noise regulator that exploits two regulator factors to decouple relationship between DP and LoRA, thereby achieving robust privacy protection and excellent finetuning performance. Additionally, we perform comprehensive ablated experiments to verify the effectiveness of the deviation eliminator and noise regulator. DEeR shows better performance on public medical datasets in comparison with state-of-the-art approaches. The code is available at https://github.com/CUHK-AIM-Group/DEeR.",
+    "published": "2024-10-16",
+    "link": "http://arxiv.org/abs/2410.12926v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "RemoteDet-Mamba: A Hybrid Mamba-CNN Network for Multi-modal Object Detection in Remote Sensing Images",
+    "author": "Kejun Ren, Xin Wu, Lianming Xu, Li Wang",
+    "summary": "Unmanned aerial vehicle (UAV) remote sensing is widely applied in fields such as emergency response, owing to its advantages of rapid information acquisition and low cost. However, due to the effects of shooting distance and imaging mechanisms, the objects in the images present challenges such as small size, dense distribution, and low inter-class differentiation. To this end, we propose a multimodal remote sensing detection network that employs a quad-directional selective scanning fusion strategy called RemoteDet-Mamba. RemoteDet-Mamba simultaneously facilitates the learning of single-modal local features and the integration of patch-level global features across modalities, enhancing the distinguishability for small objects and utilizing local information to improve discrimination between different classes. Additionally, the use of Mamba's serial processing significantly increases detection speed. Experimental results on the DroneVehicle dataset demonstrate the effectiveness of RemoteDet-Mamba, which achieves superior detection accuracy compared to state-of-the-art methods while maintaining computational efficiency and parameter count.",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13532v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "DiffImp: Efficient Diffusion Model for Probabilistic Time Series Imputation with Bidirectional Mamba Backbone",
+    "author": "Hongfan Gao, Wangmeng Shen, Xiangfei Qiu, Ronghui Xu, Jilin Hu, Bin Yang",
+    "summary": "Probabilistic time series imputation has been widely applied in real-world scenarios due to its ability to estimate uncertainty of imputation results. Meanwhile, denoising diffusion probabilistic models (DDPMs) have achieved great success in probabilistic time series imputation tasks with its power to model complex distributions. However, current DDPM-based probabilistic time series imputation methodologies are confronted with two types of challenges: 1)~\\textit{~The backbone modules of the denoising parts are not capable of achieving sequence modeling with low time complexity.} 2)~\\textit{The architecture of denoising modules can not handle the inter-variable and bidirectional dependencies in the time series imputation problem effectively.} To address the first challenge, we integrate the computational efficient state space model, namely Mamba, as the backbone denosing module for DDPMs. To tackle the second challenge, we carefully devise several SSM-based blocks for bidirectional modeling and inter-variable relation understanding. Experimental results demonstrate that our approach can achieve state-of-the-art time series imputation results on multiple datasets, different missing scenarios and missing ratios.",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13338v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "Quamba: A Post-Training Quantization Recipe for Selective State Space Models",
+    "author": "Hung-Yueh Chiang, Chi-Chih Chang, Natalia Frumkin, Kai-Chiang Wu, Diana Marculescu",
+    "summary": "State Space Models (SSMs) have emerged as an appealing alternative to Transformers for large language models, achieving state-of-the-art accuracy with constant memory complexity which allows for holding longer context lengths than attention-based networks. The superior computational efficiency of SSMs in long sequence modeling positions them favorably over Transformers in many scenarios. However, improving the efficiency of SSMs on request-intensive cloud-serving and resource-limited edge applications is still a formidable task. SSM quantization is a possible solution to this problem, making SSMs more suitable for wide deployment, while still maintaining their accuracy. Quantization is a common technique to reduce the model size and to utilize the low bit-width acceleration features on modern computing units, yet existing quantization techniques are poorly suited for SSMs. Most notably, SSMs have highly sensitive feature maps within the selective scan mechanism (i.e., linear recurrence) and massive outliers in the output activations which are not present in the output of token-mixing in the self-attention modules. To address this issue, we propose a static 8-bit per-tensor SSM quantization method which suppresses the maximum values of the input activations to the selective SSM for finer quantization precision and quantizes the output activations in an outlier-free space with Hadamard transform. Our 8-bit weight-activation quantized Mamba 2.8B SSM benefits from hardware acceleration and achieves a 1.72x lower generation latency on an Nvidia Orin Nano 8G, with only a 0.9% drop in average accuracy on zero-shot tasks. The experiments demonstrate the effectiveness and practical applicability of our approach for deploying SSM-based models of all sizes on both cloud and edge platforms.",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13229v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "RecurFormer: Not All Transformer Heads Need Self-Attention",
+    "author": "Ruiqing Yan, Linghan Zheng, Xingbo Du, Han Zou, Yufeng Guo, Jianfei Yang",
+    "summary": "Transformer-based large language models (LLMs) excel in modeling complex language patterns but face significant computational costs during inference, especially with long inputs due to the attention mechanism's memory overhead. We observe that certain attention heads exhibit a distribution where the attention weights concentrate on tokens near the query token, termed as recency aware, which focuses on local and short-range dependencies. Leveraging this insight, we propose RecurFormer, a novel architecture that replaces these attention heads with linear recurrent neural networks (RNNs), specifically the Mamba architecture. This replacement reduces the cache size without evicting tokens, thus maintaining generation quality. RecurFormer retains the ability to model long-range dependencies through the remaining attention heads and allows for reusing pre-trained Transformer-based LLMs weights with continual training. Experiments demonstrate that RecurFormer matches the original model's performance while significantly enhancing inference efficiency. Our approach provides a practical solution to the computational challenges of Transformer-based LLMs inference, making it highly attractive for tasks involving long inputs.",
+    "published": "2024-10-10",
+    "link": "http://arxiv.org/abs/2410.12850v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
   }
 ]
