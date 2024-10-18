@@ -1,1 +1,56 @@
-
+[
+  {
+    "title": "Robust infrared small target detection using self-supervised and a contrario paradigms",
+    "author": "Alina Ciocarlan, Sylvie Le H\u00e9garat-Mascle, Sidonie Lefebvre, Arnaud Woiselle",
+    "summary": "Detecting small targets in infrared images poses significant challenges in defense applications due to the presence of complex backgrounds and the small size of the targets. Traditional object detection methods often struggle to balance high detection rates with low false alarm rates, especially when dealing with small objects. In this paper, we introduce a novel approach that combines a contrario paradigm with Self-Supervised Learning (SSL) to improve Infrared Small Target Detection (IRSTD). On the one hand, the integration of an a contrario criterion into a YOLO detection head enhances feature map responses for small and unexpected objects while effectively controlling false alarms. On the other hand, we explore SSL techniques to overcome the challenges of limited annotated data, common in IRSTD tasks. Specifically, we benchmark several representative SSL strategies for their effectiveness in improving small object detection performance. Our findings show that instance discrimination methods outperform masked image modeling strategies when applied to YOLO-based small object detection. Moreover, the combination of the a contrario and SSL paradigms leads to significant performance improvements, narrowing the gap with state-of-the-art segmentation methods and even outperforming them in frugal settings. This two-pronged approach offers a robust solution for improving IRSTD performance, particularly under challenging conditions.",
+    "published": "2024-10-09",
+    "link": "http://arxiv.org/abs/2410.07437v1",
+    "code_url": null,
+    "category": "ISTD-\"infrared small target\""
+  },
+  {
+    "title": "Gradient is All You Need: Gradient-Based Attention Fusion for Infrared Small Target Detection",
+    "author": "Chen Hu, Yian Huang, Kexuan Li, Luping Zhang, Yiming Zhu, Yufei Peng, Tian Pu, Zhenming Peng",
+    "summary": "Infrared small target detection (IRSTD) is widely used in civilian and military applications. However, IRSTD encounters several challenges, including the tendency for small and dim targets to be obscured by complex backgrounds. To address this issue, we propose the Gradient Network (GaNet), which aims to extract and preserve edge and gradient information of small targets. GaNet employs the Gradient Transformer (GradFormer) module, simulating central difference convolutions (CDC) to extract and integrate gradient features with deeper features. Furthermore, we propose a global feature extraction model (GFEM) that offers a comprehensive perspective to prevent the network from focusing solely on details while neglecting the background information. We compare the network with state-of-the-art (SOTA) approaches, and the results demonstrate that our method performs effectively. Our source code is available at https://github.com/greekinRoma/Gradient-Transformer.",
+    "published": "2024-09-29",
+    "link": "http://arxiv.org/abs/2409.19599v1",
+    "code_url": null,
+    "category": "ISTD-\"infrared small target\""
+  },
+  {
+    "title": "The Disparate Benefits of Deep Ensembles",
+    "author": "Kajetan Schweighofer, Adrian Arnaiz-Rodriguez, Sepp Hochreiter, Nuria Oliver",
+    "summary": "Ensembles of Deep Neural Networks, Deep Ensembles, are widely used as a simple way to boost predictive performance. However, their impact on algorithmic fairness is not well understood yet. Algorithmic fairness investigates how a model's performance varies across different groups, typically defined by protected attributes such as age, gender, or race. In this work, we investigate the interplay between the performance gains from Deep Ensembles and fairness. Our analysis reveals that they unevenly favor different groups in what we refer to as a disparate benefits effect. We empirically investigate this effect with Deep Ensembles applied to popular facial analysis and medical imaging datasets, where protected group attributes are given and find that it occurs for multiple established group fairness metrics, including statistical parity and equal opportunity. Furthermore, we identify the per-group difference in predictive diversity of ensemble members as the potential cause of the disparate benefits effect. Finally, we evaluate different approaches to reduce unfairness due to the disparate benefits effect. Our findings show that post-processing is an effective method to mitigate this unfairness while preserving the improved performance of Deep Ensembles.",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13831v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Deep Generative Models Unveil Patterns in Medical Images Through Vision-Language Conditioning",
+    "author": "Xiaodan Xing, Junzhi Ning, Yang Nan, Guang Yang",
+    "summary": "Deep generative models have significantly advanced medical imaging analysis by enhancing dataset size and quality. Beyond mere data augmentation, our research in this paper highlights an additional, significant capacity of deep generative models: their ability to reveal and demonstrate patterns in medical images. We employ a generative structure with hybrid conditions, combining clinical data and segmentation masks to guide the image synthesis process. Furthermore, we innovatively transformed the tabular clinical data into textual descriptions. This approach simplifies the handling of missing values and also enables us to leverage large pre-trained vision-language models that investigate the relations between independent clinical entries and comprehend general terms, such as gender and smoking status. Our approach differs from and presents a more challenging task than traditional medical report-guided synthesis due to the less visual correlation of our clinical information with the images. To overcome this, we introduce a text-visual embedding mechanism that strengthens the conditions, ensuring the network effectively utilizes the provided information. Our pipeline is generalizable to both GAN-based and diffusion models. Experiments on chest CT, particularly focusing on the smoking status, demonstrated a consistent intensity shift in the lungs which is in agreement with clinical observations, indicating the effectiveness of our method in capturing and visualizing the impact of specific attributes on medical image patterns. Our methods offer a new avenue for the early detection and precise visualization of complex clinical conditions with deep generative models. All codes are https://github.com/junzhin/DGM-VLC.",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13823v1",
+    "code_url": "https://github.com/junzhin/dgm-vlc",
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "RemoteDet-Mamba: A Hybrid Mamba-CNN Network for Multi-modal Object Detection in Remote Sensing Images",
+    "author": "Kejun Ren, Xin Wu, Lianming Xu, Li Wang",
+    "summary": "Unmanned aerial vehicle (UAV) remote sensing is widely applied in fields such as emergency response, owing to its advantages of rapid information acquisition and low cost. However, due to the effects of shooting distance and imaging mechanisms, the objects in the images present challenges such as small size, dense distribution, and low inter-class differentiation. To this end, we propose a multimodal remote sensing detection network that employs a quad-directional selective scanning fusion strategy called RemoteDet-Mamba. RemoteDet-Mamba simultaneously facilitates the learning of single-modal local features and the integration of patch-level global features across modalities, enhancing the distinguishability for small objects and utilizing local information to improve discrimination between different classes. Additionally, the use of Mamba's serial processing significantly increases detection speed. Experimental results on the DroneVehicle dataset demonstrate the effectiveness of RemoteDet-Mamba, which achieves superior detection accuracy compared to state-of-the-art methods while maintaining computational efficiency and parameter count.",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13532v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "DiffImp: Efficient Diffusion Model for Probabilistic Time Series Imputation with Bidirectional Mamba Backbone",
+    "author": "Hongfan Gao, Wangmeng Shen, Xiangfei Qiu, Ronghui Xu, Jilin Hu, Bin Yang",
+    "summary": "Probabilistic time series imputation has been widely applied in real-world scenarios due to its ability to estimate uncertainty of imputation results. Meanwhile, denoising diffusion probabilistic models (DDPMs) have achieved great success in probabilistic time series imputation tasks with its power to model complex distributions. However, current DDPM-based probabilistic time series imputation methodologies are confronted with two types of challenges: 1)~\\textit{~The backbone modules of the denoising parts are not capable of achieving sequence modeling with low time complexity.} 2)~\\textit{The architecture of denoising modules can not handle the inter-variable and bidirectional dependencies in the time series imputation problem effectively.} To address the first challenge, we integrate the computational efficient state space model, namely Mamba, as the backbone denosing module for DDPMs. To tackle the second challenge, we carefully devise several SSM-based blocks for bidirectional modeling and inter-variable relation understanding. Experimental results demonstrate that our approach can achieve state-of-the-art time series imputation results on multiple datasets, different missing scenarios and missing ratios.",
+    "published": "2024-10-17",
+    "link": "http://arxiv.org/abs/2410.13338v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
+  }
+]
