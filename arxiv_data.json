@@ -124,5 +124,32 @@
     "link": "http://arxiv.org/abs/2410.16020v1",
     "code_url": null,
     "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "Frontiers in Intelligent Colonoscopy",
+    "author": "Ge-Peng Ji, Jingyi Liu, Peng Xu, Nick Barnes, Fahad Shahbaz Khan, Salman Khan, Deng-Ping Fan",
+    "summary": "Colonoscopy is currently one of the most sensitive screening methods for colorectal cancer. This study investigates the frontiers of intelligent colonoscopy techniques and their prospective implications for multimodal medical applications. With this goal, we begin by assessing the current data-centric and model-centric landscapes through four tasks for colonoscopic scene perception, including classification, detection, segmentation, and vision-language understanding. This assessment enables us to identify domain-specific challenges and reveals that multimodal research in colonoscopy remains open for further exploration. To embrace the coming multimodal era, we establish three foundational initiatives: a large-scale multimodal instruction tuning dataset ColonINST, a colonoscopy-designed multimodal language model ColonGPT, and a multimodal benchmark. To facilitate ongoing monitoring of this rapidly evolving field, we provide a public website for the latest updates: https://github.com/ai4colonoscopy/IntelliScope.",
+    "published": "2024-10-22",
+    "link": "http://arxiv.org/abs/2410.17241v1",
+    "code_url": "https://github.com/ai4colonoscopy/intelliscope",
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Automated Spinal MRI Labelling from Reports Using a Large Language Model",
+    "author": "Robin Y. Park, Rhydian Windsor, Amir Jamaludin, Andrew Zisserman",
+    "summary": "We propose a general pipeline to automate the extraction of labels from radiology reports using large language models, which we validate on spinal MRI reports. The efficacy of our labelling method is measured on five distinct conditions: spinal cancer, stenosis, spondylolisthesis, cauda equina compression and herniation. Using open-source models, our method equals or surpasses GPT-4 on a held-out set of reports. Furthermore, we show that the extracted labels can be used to train imaging models to classify the identified conditions in the accompanying MR scans. All classifiers trained using automated labels achieve comparable performance to models trained using scans manually annotated by clinicians. Code can be found at https://github.com/robinyjpark/AutoLabelClassifier.",
+    "published": "2024-10-22",
+    "link": "http://arxiv.org/abs/2410.17235v1",
+    "code_url": "https://github.com/robinyjpark/autolabelclassifier",
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "SpikMamba: When SNN meets Mamba in Event-based Human Action Recognition",
+    "author": "Jiaqi Chen, Yan Yang, Shizhuo Deng, Da Teng, Liyuan Pan",
+    "summary": "Human action recognition (HAR) plays a key role in various applications such as video analysis, surveillance, autonomous driving, robotics, and healthcare. Most HAR algorithms are developed from RGB images, which capture detailed visual information. However, these algorithms raise concerns in privacy-sensitive environments due to the recording of identifiable features. Event cameras offer a promising solution by capturing scene brightness changes sparsely at the pixel level, without capturing full images. Moreover, event cameras have high dynamic ranges that can effectively handle scenarios with complex lighting conditions, such as low light or high contrast environments. However, using event cameras introduces challenges in modeling the spatially sparse and high temporal resolution event data for HAR. To address these issues, we propose the SpikMamba framework, which combines the energy efficiency of spiking neural networks and the long sequence modeling capability of Mamba to efficiently capture global features from spatially sparse and high a temporal resolution event data. Additionally, to improve the locality of modeling, a spiking window-based linear attention mechanism is used. Extensive experiments show that SpikMamba achieves remarkable recognition performance, surpassing the previous state-of-the-art by 1.45%, 7.22%, 0.15%, and 3.92% on the PAF, HARDVS, DVS128, and E-FAction datasets, respectively. The code is available at https://github.com/Typistchen/SpikMamba.",
+    "published": "2024-10-22",
+    "link": "http://arxiv.org/abs/2410.16746v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
   }
 ]
