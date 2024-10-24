@@ -151,5 +151,23 @@
     "link": "http://arxiv.org/abs/2410.16746v1",
     "code_url": null,
     "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "Explaining Bayesian Networks in Natural Language using Factor Arguments. Evaluation in the medical domain",
+    "author": "Jaime Sevilla, Nikolay Babakov, Ehud Reiter, Alberto Bugarin",
+    "summary": "In this paper, we propose a model for building natural language explanations for Bayesian Network Reasoning in terms of factor arguments, which are argumentation graphs of flowing evidence, relating the observed evidence to a target variable we want to learn about. We introduce the notion of factor argument independence to address the outstanding question of defining when arguments should be presented jointly or separately and present an algorithm that, starting from the evidence nodes and a target node, produces a list of all independent factor arguments ordered by their strength. Finally, we implemented a scheme to build natural language explanations of Bayesian Reasoning using this approach. Our proposal has been validated in the medical domain through a human-driven evaluation study where we compare the Bayesian Network Reasoning explanations obtained using factor arguments with an alternative explanation method. Evaluation results indicate that our proposed explanation approach is deemed by users as significantly more useful for understanding Bayesian Network Reasoning than another existing explanation method it is compared to.",
+    "published": "2024-10-23",
+    "link": "http://arxiv.org/abs/2410.18060v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "AI driven health recommender",
+    "author": "K. Vignesh, B. Pranavi, Ch. Sreenidhi",
+    "summary": "As AI emerged as highest valued technology, We used that to create a web application that makes a patient work easier .It detects the disease name based on the symptoms given by the patient and recommends medication for respective disease, precautions to take, diet to follow and workouts to do, so the disease can be minimized. The web application is made with clean and Realtime data by using Machine learning as root. We used flask to create a user-friendly platform.",
+    "published": "2024-10-23",
+    "link": "http://arxiv.org/abs/2410.17991v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
   }
 ]
