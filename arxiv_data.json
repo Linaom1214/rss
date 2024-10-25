@@ -169,5 +169,32 @@
     "link": "http://arxiv.org/abs/2410.17991v1",
     "code_url": null,
     "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "CAMEL-Bench: A Comprehensive Arabic LMM Benchmark",
+    "author": "Sara Ghaboura, Ahmed Heakl, Omkar Thawakar, Ali Alharthi, Ines Riahi, Abduljalil Saif, Jorma Laaksonen, Fahad S. Khan, Salman Khan, Rao M. Anwer",
+    "summary": "Recent years have witnessed a significant interest in developing large multimodal models (LMMs) capable of performing various visual reasoning and understanding tasks. This has led to the introduction of multiple LMM benchmarks to evaluate LMMs on different tasks. However, most existing LMM evaluation benchmarks are predominantly English-centric. In this work, we develop a comprehensive LMM evaluation benchmark for the Arabic language to represent a large population of over 400 million speakers. The proposed benchmark, named CAMEL-Bench, comprises eight diverse domains and 38 sub-domains including, multi-image understanding, complex visual perception, handwritten document understanding, video understanding, medical imaging, plant diseases, and remote sensing-based land use understanding to evaluate broad scenario generalizability. Our CAMEL-Bench comprises around 29,036 questions that are filtered from a larger pool of samples, where the quality is manually verified by native speakers to ensure reliable model assessment. We conduct evaluations of both closed-source, including GPT-4 series, and open-source LMMs. Our analysis reveals the need for substantial improvement, especially among the best open-source models, with even the closed-source GPT-4o achieving an overall score of 62%. Our benchmark and evaluation scripts are open-sourced.",
+    "published": "2024-10-24",
+    "link": "http://arxiv.org/abs/2410.18976v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Deep Insights into Cognitive Decline: A Survey of Leveraging Non-Intrusive Modalities with Deep Learning Techniques",
+    "author": "David Ortiz-Perez, Manuel Benavent-Lledo, Jose Garcia-Rodriguez, David Tom\u00e1s, M. Flores Vizcaya-Moreno",
+    "summary": "Cognitive decline is a natural part of aging, often resulting in reduced cognitive abilities. In some cases, however, this decline is more pronounced, typically due to disorders such as Alzheimer's disease. Early detection of anomalous cognitive decline is crucial, as it can facilitate timely professional intervention. While medical data can help in this detection, it often involves invasive procedures. An alternative approach is to employ non-intrusive techniques such as speech or handwriting analysis, which do not necessarily affect daily activities. This survey reviews the most relevant methodologies that use deep learning techniques to automate the cognitive decline estimation task, including audio, text, and visual processing. We discuss the key features and advantages of each modality and methodology, including state-of-the-art approaches like Transformer architecture and foundation models. In addition, we present works that integrate different modalities to develop multimodal models. We also highlight the most significant datasets and the quantitative results from studies using these resources. From this review, several conclusions emerge. In most cases, the textual modality achieves the best results and is the most relevant for detecting cognitive decline. Moreover, combining various approaches from individual modalities into a multimodal model consistently enhances performance across nearly all scenarios.",
+    "published": "2024-10-24",
+    "link": "http://arxiv.org/abs/2410.18972v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Taipan: Efficient and Expressive State Space Language Models with Selective Attention",
+    "author": "Chien Van Nguyen, Huy Huu Nguyen, Thang M. Pham, Ruiyi Zhang, Hanieh Deilamsalehy, Puneet Mathur, Ryan A. Rossi, Trung Bui, Viet Dac Lai, Franck Dernoncourt, Thien Huu Nguyen",
+    "summary": "Efficient long-context language modeling remains a significant challenge in Natural Language Processing (NLP). While Transformers dominate language tasks, they struggle with long sequences due to quadratic computational complexity in training and linearly scaling memory costs during inference. Recent State Space Models (SSMs) such as Mamba offer alternatives with constant memory usage, but they underperform in tasks requiring extensive in-context retrieval. We introduce Taipan, a novel hybrid architecture that combines Mamba-2 with Selective Attention Layers (SALs). These SALs identify tokens requiring long-range interactions, remove less important features, and then augment their representations using the attention module. This approach balances Mamba's efficiency with Transformer-like performance in memory-intensive tasks. By constraining the attention budget, Taipan extends accurate predictions to context lengths of up to 1 million tokens while preserving computational efficiency. Our experiments demonstrate Taipan's superior performance across various scales and tasks, offering a promising solution for efficient long-context language modeling.",
+    "published": "2024-10-24",
+    "link": "http://arxiv.org/abs/2410.18572v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
   }
 ]
