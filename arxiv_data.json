@@ -232,5 +232,41 @@
     "link": "http://arxiv.org/abs/2410.19297v1",
     "code_url": null,
     "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "Belief in the Machine: Investigating Epistemological Blind Spots of Language Models",
+    "author": "Mirac Suzgun, Tayfun Gur, Federico Bianchi, Daniel E. Ho, Thomas Icard, Dan Jurafsky, James Zou",
+    "summary": "As language models (LMs) become integral to fields like healthcare, law, and journalism, their ability to differentiate between fact, belief, and knowledge is essential for reliable decision-making. Failure to grasp these distinctions can lead to significant consequences in areas such as medical diagnosis, legal judgments, and dissemination of fake news. Despite this, current literature has largely focused on more complex issues such as theory of mind, overlooking more fundamental epistemic challenges. This study systematically evaluates the epistemic reasoning capabilities of modern LMs, including GPT-4, Claude-3, and Llama-3, using a new dataset, KaBLE, consisting of 13,000 questions across 13 tasks. Our results reveal key limitations. First, while LMs achieve 86% accuracy on factual scenarios, their performance drops significantly with false scenarios, particularly in belief-related tasks. Second, LMs struggle with recognizing and affirming personal beliefs, especially when those beliefs contradict factual data, which raises concerns for applications in healthcare and counseling, where engaging with a person's beliefs is critical. Third, we identify a salient bias in how LMs process first-person versus third-person beliefs, performing better on third-person tasks (80.7%) compared to first-person tasks (54.4%). Fourth, LMs lack a robust understanding of the factive nature of knowledge, namely, that knowledge inherently requires truth. Fifth, LMs rely on linguistic cues for fact-checking and sometimes bypass the deeper reasoning. These findings highlight significant concerns about current LMs' ability to reason about truth, belief, and knowledge while emphasizing the need for advancements in these areas before broad deployment in critical sectors.",
+    "published": "2024-10-28",
+    "link": "http://arxiv.org/abs/2410.21195v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Extrapolating Prospective Glaucoma Fundus Images through Diffusion Model in Irregular Longitudinal Sequences",
+    "author": "Zhihao Zhao, Junjie Yang, Shahrooz Faghihroohi, Yinzheng Zhao, Daniel Zapp, Kai Huang, Nassir Navab, M. Ali Nasseri",
+    "summary": "The utilization of longitudinal datasets for glaucoma progression prediction offers a compelling approach to support early therapeutic interventions. Predominant methodologies in this domain have primarily focused on the direct prediction of glaucoma stage labels from longitudinal datasets. However, such methods may not adequately encapsulate the nuanced developmental trajectory of the disease. To enhance the diagnostic acumen of medical practitioners, we propose a novel diffusion-based model to predict prospective images by extrapolating from existing longitudinal fundus images of patients. The methodology delineated in this study distinctively leverages sequences of images as inputs. Subsequently, a time-aligned mask is employed to select a specific year for image generation. During the training phase, the time-aligned mask resolves the issue of irregular temporal intervals in longitudinal image sequence sampling. Additionally, we utilize a strategy of randomly masking a frame in the sequence to establish the ground truth. This methodology aids the network in continuously acquiring knowledge regarding the internal relationships among the sequences throughout the learning phase. Moreover, the introduction of textual labels is instrumental in categorizing images generated within the sequence. The empirical findings from the conducted experiments indicate that our proposed model not only effectively generates longitudinal data but also significantly improves the precision of downstream classification tasks.",
+    "published": "2024-10-28",
+    "link": "http://arxiv.org/abs/2410.21130v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Exploring contextual modeling with linear complexity for point cloud segmentation",
+    "author": "Yong Xien Chng, Xuchong Qiu, Yizeng Han, Yifan Pu, Jiewei Cao, Gao Huang",
+    "summary": "Point cloud segmentation is an important topic in 3D understanding that has traditionally has been tackled using either the CNN or Transformer. Recently, Mamba has emerged as a promising alternative, offering efficient long-range contextual modeling capabilities without the quadratic complexity associated with Transformer's attention mechanisms. However, despite Mamba's potential, early efforts have all failed to achieve better performance than the best CNN-based and Transformer-based methods. In this work, we address this challenge by identifying the key components of an effective and efficient point cloud segmentation architecture. Specifically, we show that: 1) Spatial locality and robust contextual understanding are critical for strong performance, and 2) Mamba features linear computational complexity, offering superior data and inference efficiency compared to Transformers, while still being capable of delivering strong contextual understanding. Additionally, we further enhance the standard Mamba specifically for point cloud segmentation by identifying its two key shortcomings. First, the enforced causality in the original Mamba is unsuitable for processing point clouds that have no such dependencies. Second, its unidirectional scanning strategy imposes a directional bias, hampering its ability to capture the full context of unordered point clouds in a single pass. To address these issues, we carefully remove the causal convolutions and introduce a novel Strided Bidirectional SSM to enhance the model's capability to capture spatial relationships. Our efforts culminate in the development of a novel architecture named MEEPO, which effectively integrates the strengths of CNN and Mamba. MEEPO surpasses the previous state-of-the-art method, PTv3, by up to +0.8 mIoU on multiple key benchmark datasets, while being 42.1% faster and 5.53x more memory efficient.",
+    "published": "2024-10-28",
+    "link": "http://arxiv.org/abs/2410.21211v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "SepMamba: State-space models for speaker separation using Mamba",
+    "author": "Thor H\u00f8jhus Avenstrup, Boldizs\u00e1r Elek, Istv\u00e1n L\u00e1szl\u00f3 M\u00e1di, Andr\u00e1s Bence Schin, Morten M\u00f8rup, Bj\u00f8rn Sand Jensen, Kenny Falk\u00e6r Olsen",
+    "summary": "Deep learning-based single-channel speaker separation has improved significantly in recent years largely due to the introduction of the transformer-based attention mechanism. However, these improvements come at the expense of intense computational demands, precluding their use in many practical applications. As a computationally efficient alternative with similar modeling capabilities, Mamba was recently introduced. We propose SepMamba, a U-Net-based architecture composed primarily of bidirectional Mamba layers. We find that our approach outperforms similarly-sized prominent models - including transformer-based models - on the WSJ0 2-speaker dataset while enjoying a significant reduction in computational cost, memory usage, and forward pass time. We additionally report strong results for causal variants of SepMamba. Our approach provides a computationally favorable alternative to transformer-based architectures for deep speech separation.",
+    "published": "2024-10-28",
+    "link": "http://arxiv.org/abs/2410.20997v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
   }
 ]
