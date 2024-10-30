@@ -268,5 +268,41 @@
     "link": "http://arxiv.org/abs/2410.20997v1",
     "code_url": null,
     "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "NCA-Morph: Medical Image Registration with Neural Cellular Automata",
+    "author": "Amin Ranem, John Kalkhof, Anirban Mukhopadhyay",
+    "summary": "Medical image registration is a critical process that aligns various patient scans, facilitating tasks like diagnosis, surgical planning, and tracking. Traditional optimization based methods are slow, prompting the use of Deep Learning (DL) techniques, such as VoxelMorph and Transformer-based strategies, for faster results. However, these DL methods often impose significant resource demands. In response to these challenges, we present NCA-Morph, an innovative approach that seamlessly blends DL with a bio-inspired communication and networking approach, enabled by Neural Cellular Automata (NCAs). NCA-Morph not only harnesses the power of DL for efficient image registration but also builds a network of local communications between cells and respective voxels over time, mimicking the interaction observed in living systems. In our extensive experiments, we subject NCA-Morph to evaluations across three distinct 3D registration tasks, encompassing Brain, Prostate and Hippocampus images from both healthy and diseased patients. The results showcase NCA-Morph's ability to achieve state-of-the-art performance. Notably, NCA-Morph distinguishes itself as a lightweight architecture with significantly fewer parameters; 60% and 99.7% less than VoxelMorph and TransMorph. This characteristic positions NCA-Morph as an ideal solution for resource-constrained medical applications, such as primary care settings and operating rooms.",
+    "published": "2024-10-29",
+    "link": "http://arxiv.org/abs/2410.22265v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "MAPUNetR: A Hybrid Vision Transformer and U-Net Architecture for Efficient and Interpretable Medical Image Segmentation",
+    "author": "Ovais Iqbal Shah, Danish Raza Rizvi, Aqib Nazir Mir",
+    "summary": "Medical image segmentation is pivotal in healthcare, enhancing diagnostic accuracy, informing treatment strategies, and tracking disease progression. This process allows clinicians to extract critical information from visual data, enabling personalized patient care. However, developing neural networks for segmentation remains challenging, especially when preserving image resolution, which is essential in detecting subtle details that influence diagnoses. Moreover, the lack of transparency in these deep learning models has slowed their adoption in clinical practice. Efforts in model interpretability are increasingly focused on making these models' decision-making processes more transparent. In this paper, we introduce MAPUNetR, a novel architecture that synergizes the strengths of transformer models with the proven U-Net framework for medical image segmentation. Our model addresses the resolution preservation challenge and incorporates attention maps highlighting segmented regions, increasing accuracy and interpretability. Evaluated on the BraTS 2020 dataset, MAPUNetR achieved a dice score of 0.88 and a dice coefficient of 0.92 on the ISIC 2018 dataset. Our experiments show that the model maintains stable performance and potential as a powerful tool for medical image segmentation in clinical practice.",
+    "published": "2024-10-29",
+    "link": "http://arxiv.org/abs/2410.22223v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Advancing Efficient Brain Tumor Multi-Class Classification -- New Insights from the Vision Mamba Model in Transfer Learning",
+    "author": "Yinyi Lai, Anbo Cao, Yuan Gao, Jiaqi Shang, Zongyu Li, Jia Guo",
+    "summary": "Early and accurate diagnosis of brain tumors is crucial for improving patient survival rates. However, the detection and classification of brain tumors are challenging due to their diverse types and complex morphological characteristics. This study investigates the application of pre-trained models for brain tumor classification, with a particular focus on deploying the Mamba model. We fine-tuned several mainstream transfer learning models and applied them to the multi-class classification of brain tumors. By comparing these models to those trained from scratch, we demonstrated the significant advantages of transfer learning, especially in the medical imaging field, where annotated data is often limited. Notably, we introduced the Vision Mamba (Vim), a novel network architecture, and applied it for the first time in brain tumor classification, achieving exceptional classification accuracy. Experimental results indicate that the Vim model achieved 100% classification accuracy on an independent test set, emphasizing its potential for tumor classification tasks. These findings underscore the effectiveness of transfer learning in brain tumor classification and reveal that, compared to existing state-of-the-art models, the Vim model is lightweight, efficient, and highly accurate, offering a new perspective for clinical applications. Furthermore, the framework proposed in this study for brain tumor classification, based on transfer learning and the Vision Mamba model, is broadly applicable to other medical imaging classification problems.",
+    "published": "2024-10-29",
+    "link": "http://arxiv.org/abs/2410.21872v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "ECMamba: Consolidating Selective State Space Model with Retinex Guidance for Efficient Multiple Exposure Correction",
+    "author": "Wei Dong, Han Zhou, Yulun Zhang, Xiaohong Liu, Jun Chen",
+    "summary": "Exposure Correction (EC) aims to recover proper exposure conditions for images captured under over-exposure or under-exposure scenarios. While existing deep learning models have shown promising results, few have fully embedded Retinex theory into their architecture, highlighting a gap in current methodologies. Additionally, the balance between high performance and efficiency remains an under-explored problem for exposure correction task. Inspired by Mamba which demonstrates powerful and highly efficient sequence modeling, we introduce a novel framework based on Mamba for Exposure Correction (ECMamba) with dual pathways, each dedicated to the restoration of reflectance and illumination map, respectively. Specifically, we firstly derive the Retinex theory and we train a Retinex estimator capable of mapping inputs into two intermediary spaces, each approximating the target reflectance and illumination map, respectively. This setup facilitates the refined restoration process of the subsequent Exposure Correction Mamba Module (ECMM). Moreover, we develop a novel 2D Selective State-space layer guided by Retinex information (Retinex-SS2D) as the core operator of ECMM. This architecture incorporates an innovative 2D scanning strategy based on deformable feature aggregation, thereby enhancing both efficiency and effectiveness. Extensive experiment results and comprehensive ablation studies demonstrate the outstanding performance and the importance of each component of our proposed ECMamba. Code is available at https://github.com/LowlevelAI/ECMamba.",
+    "published": "2024-10-28",
+    "link": "http://arxiv.org/abs/2410.21535v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
   }
 ]
