@@ -304,5 +304,41 @@
     "link": "http://arxiv.org/abs/2410.21535v1",
     "code_url": null,
     "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "Revisiting MAE pre-training for 3D medical image segmentation",
+    "author": "Tassilo Wald, Constantin Ulrich, Stanislav Lukyanenko, Andrei Goncharov, Alberto Paderno, Leander Maerkisch, Paul F. J\u00e4ger, Klaus Maier-Hein",
+    "summary": "Self-Supervised Learning (SSL) presents an exciting opportunity to unlock the potential of vast, untapped clinical datasets, for various downstream applications that suffer from the scarcity of labeled data. While SSL has revolutionized fields like natural language processing and computer vision, their adoption in 3D medical image computing has been limited by three key pitfalls: Small pre-training dataset sizes, architectures inadequate for 3D medical image analysis, and insufficient evaluation practices. We address these issues by i) leveraging a large-scale dataset of 44k 3D brain MRI volumes and ii) using a Residual Encoder U-Net architecture within the state-of-the-art nnU-Net framework. iii) A robust development framework, incorporating 5 development and 8 testing brain MRI segmentation datasets, allowed performance-driven design decisions to optimize the simple concept of Masked Auto Encoders (MAEs) for 3D CNNs. The resulting model not only surpasses previous SSL methods but also outperforms the strong nnU-Net baseline by an average of approximately 3 Dice points. Furthermore, our model demonstrates exceptional stability, achieving the highest average rank of 2 out of 7 methods, compared to the second-best method's mean rank of 3.",
+    "published": "2024-10-30",
+    "link": "http://arxiv.org/abs/2410.23132v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "The Auger-Meitner Radioisotope Microscope: an instrument for characterization of Auger electron multiplicities and energy distributions",
+    "author": "Patrick R. Stollenwerk, Stephen H. Southworth, Francesco Granato, Amy Renne, Brahim Mustapha, Kevin G. Bailey, Peter Mueller, Jerry Nolen, Thomas P. O'Connor, Junqi Xie, Linda Young, Matthew R. Dietrich",
+    "summary": "We describe a new instrument, the Argonne Auger-Meitner Radioisotope Microscope (ARM), capable of characterizing the Auger-Meitner electron emission of radionuclides, including candidates relevant in nuclear medicine. Our approach relies on event-by-event coincidence ion, electron time-of-flight and spatial readout measurement to determine correlated electron multiplicity and energy distributions of Auger-Meitner decays. We present a proof-of-principle measurement with the ARM using X-ray photoionization of stable krypton beyond the K-edge and identify a bifurcation in the electron multiplicity distribution depending on the emission of K-LX electrons. Extension of the ARM to the characterization of radioactive sources of Auger-Meitner electron emissions is enabled by the combination of two recent developments: (1) cryogenic buffer gas beam technology, which enables well-defined initial conditions, gas-phase, high activity introduction of Auger-Meitner emitters into the detection region, and (2) large-area micro-channel plate detectors with multi-hit detection capabilities, which enables the simultaneous detection of many electrons emitted in a single decay.   The ARM will generate new experimental data on Auger-Meitner multiplicities that can be used to benchmark atomic relaxation and decay models. As the multiplicities are binned by energy, this data will provide insight into the low-energy regime of Auger-Meitner electrons where intensity calculations are most challenging and experimental data is limited. In particular, accurate multiplicity data of the low-energy regime can be used to inform oncological dosimetry models, where electron energies less than 500 eV are known to be effective in damaging DNA and cell membranes.",
+    "published": "2024-10-30",
+    "link": "http://arxiv.org/abs/2410.23103v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Adaptive Multi Scale Document Binarisation Using Vision Mamba",
+    "author": "Mohd. Azfar, Siddhant Bharadwaj, Ashwin Sasikumar",
+    "summary": "Enhancing and preserving the readability of document images, particularly historical ones, is crucial for effective document image analysis. Numerous models have been proposed for this task, including convolutional-based, transformer-based, and hybrid convolutional-transformer architectures. While hybrid models address the limitations of purely convolutional or transformer-based methods, they often suffer from issues like quadratic time complexity. In this work, we propose a Mamba-based architecture for document binarisation, which efficiently handles long sequences by scaling linearly and optimizing memory usage. Additionally, we introduce novel modifications to the skip connections by incorporating Difference of Gaussians (DoG) features, inspired by conventional signal processing techniques. These multiscale high-frequency features enable the model to produce high-quality, detailed outputs.",
+    "published": "2024-10-30",
+    "link": "http://arxiv.org/abs/2410.22811v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "A Large Recurrent Action Model: xLSTM enables Fast Inference for Robotics Tasks",
+    "author": "Thomas Schmied, Thomas Adler, Vihang Patil, Maximilian Beck, Korbinian P\u00f6ppel, Johannes Brandstetter, G\u00fcnter Klambauer, Razvan Pascanu, Sepp Hochreiter",
+    "summary": "In recent years, there has been a trend in the field of Reinforcement Learning (RL) towards large action models trained offline on large-scale datasets via sequence modeling. Existing models are primarily based on the Transformer architecture, which result in powerful agents. However, due to slow inference times, Transformer-based approaches are impractical for real-time applications, such as robotics. Recently, modern recurrent architectures, such as xLSTM and Mamba, have been proposed that exhibit parallelization benefits during training similar to the Transformer architecture while offering fast inference. In this work, we study the aptitude of these modern recurrent architectures for large action models. Consequently, we propose a Large Recurrent Action Model (LRAM) with an xLSTM at its core that comes with linear-time inference complexity and natural sequence length extrapolation abilities. Experiments on 432 tasks from 6 domains show that LRAM compares favorably to Transformers in terms of performance and speed.",
+    "published": "2024-10-29",
+    "link": "http://arxiv.org/abs/2410.22391v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
   }
 ]
