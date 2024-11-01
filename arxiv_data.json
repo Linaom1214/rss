@@ -340,5 +340,41 @@
     "link": "http://arxiv.org/abs/2410.22391v1",
     "code_url": null,
     "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "Federated Black-Box Adaptation for Semantic Segmentation",
+    "author": "Jay N. Paranjape, Shameema Sikder, S. Swaroop Vedula, Vishal M. Patel",
+    "summary": "Federated Learning (FL) is a form of distributed learning that allows multiple institutions or clients to collaboratively learn a global model to solve a task. This allows the model to utilize the information from every institute while preserving data privacy. However, recent studies show that the promise of protecting the privacy of data is not upheld by existing methods and that it is possible to recreate the training data from the different institutions. This is done by utilizing gradients transferred between the clients and the global server during training or by knowing the model architecture at the client end. In this paper, we propose a federated learning framework for semantic segmentation without knowing the model architecture nor transferring gradients between the client and the server, thus enabling better privacy preservation. We propose BlackFed - a black-box adaptation of neural networks that utilizes zero order optimization (ZOO) to update the client model weights and first order optimization (FOO) to update the server weights. We evaluate our approach on several computer vision and medical imaging datasets to demonstrate its effectiveness. To the best of our knowledge, this work is one of the first works in employing federated learning for segmentation, devoid of gradients or model information exchange. Code: https://github.com/JayParanjape/blackfed/tree/master",
+    "published": "2024-10-31",
+    "link": "http://arxiv.org/abs/2410.24181v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Impact of normal lung volume choices on radiation pneumonitis risk prediction in locally advanced NSCLC radiotherapy",
+    "author": "Alyssa Gadsby, Tian Liu, Robert Samstein, Jiahan Zhang, Yang Lei, Kenneth E. Rosenzweig, Ming Chao",
+    "summary": "This study is to evaluate the impact of different normal lung volumes on radiation pneumonitis (RP) prediction in patients with locally advanced non-small-cell-lung-cancer (LA-NSCLC) receiving radiotherapy. Three dosimetric variables (V20, V5, and mean lung dose (MLD)) were calculated using treatment plans from 442 patients with LA-NSCLC enrolled in NRG Oncology RTOG 0617. Three lung volumes were defined based on the treatment plan: total lung excluding gross-tumor-target (TL-GTV), total lung excluding clinical-target-volume (TL-CTV), and total lung excluding planning-target-volume (TL-PTV). Binary classification was used for clinical endpoints: no-RP2 (N = 377) for patients with acute RP grades 0 or 1, and RP2 (N = 65) for patients with acute grades 2 or higher. The impact of lung volume definition on RP prediction was investigated with statistical analyses and two supervised machine learning (ML) models: logistic regression (LR) and random forest (RF). Balanced data was generated for comparison to prediction obtained with the imbalanced data. Areas under curve (AUCs) and the Shapley Additive eXplanations (SHAP) were used to examine ML performance and explain the contribution of each feature to the prediction, respectively. Statistical analyses revealed that V20 and MLD were associated with RP but no difference among different lung volume definitions. Mean AUC values from 10-fold cross validation using imbalanced and balanced datasets were < 0.6 except that RF from the latter dataset yielded AUC values > 0.7. SHAP values indicated that MLD and V20 were the most prominent features in RP prediction. In all assessments, no difference among various volume definitions was found. Different lung volumes showed insignificant impact on RP prediction. Low AUC values suggest limited effectiveness of these dosimetric variables in predicting RP risk and more powerful predictors are needed.",
+    "published": "2024-10-31",
+    "link": "http://arxiv.org/abs/2410.24120v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Dynamical similarity analysis uniquely captures how computations develop in RNNs",
+    "author": "Quentin Guilhot, Jascha Achterberg, Micha\u0142 W\u00f3jcik, Rui Ponte Costa",
+    "summary": "Methods for analyzing representations in neural systems are increasingly popular tools in neuroscience and mechanistic interpretability. Measures comparing neural activations across conditions, architectures, and species give scalable ways to understand information transformation within different neural networks. However, recent findings show that some metrics respond to spurious signals, leading to misleading results. Establishing benchmark test cases is thus essential for identifying the most reliable metric and potential improvements. We propose that compositional learning in recurrent neural networks (RNNs) can provide a test case for dynamical representation alignment metrics. Implementing this case allows us to evaluate if metrics can identify representations that develop throughout learning and determine if representations identified by metrics reflect the network's actual computations. Building both attractor and RNN based test cases, we show that the recently proposed Dynamical Similarity Analysis (DSA) is more noise robust and reliably identifies behaviorally relevant representations compared to prior metrics (Procrustes, CKA). We also demonstrate how such test cases can extend beyond metric evaluation to study new architectures. Specifically, testing DSA in modern (Mamba) state space models suggests that these models, unlike RNNs, may not require changes in recurrent dynamics due to their expressive hidden states. Overall, we develop test cases that showcase how DSA's enhanced ability to detect dynamical motifs makes it highly effective for identifying ongoing computations in RNNs and revealing how networks learn tasks.",
+    "published": "2024-10-31",
+    "link": "http://arxiv.org/abs/2410.24070v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "MLLA-UNet: Mamba-like Linear Attention in an Efficient U-Shape Model for Medical Image Segmentation",
+    "author": "Yufeng Jiang, Zongxi Li, Xiangyan Chen, Haoran Xie, Jing Cai",
+    "summary": "Recent advancements in medical imaging have resulted in more complex and diverse images, with challenges such as high anatomical variability, blurred tissue boundaries, low organ contrast, and noise. Traditional segmentation methods struggle to address these challenges, making deep learning approaches, particularly U-shaped architectures, increasingly prominent. However, the quadratic complexity of standard self-attention makes Transformers computationally prohibitive for high-resolution images. To address these challenges, we propose MLLA-UNet (Mamba-Like Linear Attention UNet), a novel architecture that achieves linear computational complexity while maintaining high segmentation accuracy through its innovative combination of linear attention and Mamba-inspired adaptive mechanisms, complemented by an efficient symmetric sampling structure for enhanced feature processing. Our architecture effectively preserves essential spatial features while capturing long-range dependencies at reduced computational complexity. Additionally, we introduce a novel sampling strategy for multi-scale feature fusion. Experiments demonstrate that MLLA-UNet achieves state-of-the-art performance on six challenging datasets with 24 different segmentation tasks, including but not limited to FLARE22, AMOS CT, and ACDC, with an average DSC of 88.32%. These results underscore the superiority of MLLA-UNet over existing methods. Our contributions include the novel 2D segmentation architecture and its empirical validation. The code is available via https://github.com/csyfjiang/MLLA-UNet.",
+    "published": "2024-10-31",
+    "link": "http://arxiv.org/abs/2410.23738v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
   }
 ]
