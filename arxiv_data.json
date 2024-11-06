@@ -412,5 +412,41 @@
     "link": "http://arxiv.org/abs/2411.01647v1",
     "code_url": null,
     "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "Using Assurance Cases to Guide Verification and Validation of Research Software",
+    "author": "W. Spencer Smith, Jingyi Lin",
+    "summary": "Research software engineers can use Assurance Cases (ACs) to guide Verification and Validation (VnV) efforts. An AC is a structured argument that a property like correctness holds. We illustrate how ACs can guide VnV activities via a case study of software for automatically extracting the 3D segmentation of the aorta from medical images of the chest. The AC argument suggests that the following evidence is required: comparison to a pseudo-oracle; traceability between requirements, design, code and tests; review of all artifacts by a domain expert with proper credentials; documentation of input assumptions; and a warning that only qualified people should use the software. The case study highlights that code is not the only artifact of interest for building confidence and that making an explicit distinction between software and user responsibilities is useful.",
+    "published": "2024-11-05",
+    "link": "http://arxiv.org/abs/2411.03291v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Inward-Outward Ring Permanent Magnet Array for Portable Magnetic Resonance Imaging (MRI)",
+    "author": "Ting-Ou Liang, MinXuan Xu, Wenwei Yu, Shao Ying Huang",
+    "summary": "Permanent magnet array (PMA) is a popular option to provide the main magnetic field in a dedicated portable magnetic resonance imaging (MRI) system because it does not need power or a cooling system and has a much stronger field strength compared to a resistive magnet. Aside from the popular Halbach array that has a transversal field direction, the Inward-Outward ring (IO ring) array is a promising candidate that offers a longitudinal field direction. In this article, a thorough study of IO ring arrays is conducted by examining the relation between the design parameters and its field patterns, its variants that lead to different applications and their properties. A detailed comparison between an IO ring array and Halbach array was conducted and reported. Moreover, the feasibility of building an IO ring array in a lab is demonstrated. The investigations strongly indicate that IO ring is a promising candidate that can offer high and homogeneous fields or a desired field pattern to portable MRI systems. With a longitudinal field direction, an IO ring array opens up opportunities to adopt MRI advanced technology and techniques in a portable system to improve image quality ans shorten scan time.",
+    "published": "2024-11-05",
+    "link": "http://arxiv.org/abs/2411.03249v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "ShadowMamba: State-Space Model with Boundary-Region Selective Scan for Shadow Removal",
+    "author": "Xiujin Zhu, Chee-Onn Chow, Joon Huang Chuah",
+    "summary": "Image shadow removal is a typical low-level vision problem, where the presence of shadows leads to abrupt changes in brightness in certain regions, affecting the accuracy of upstream tasks. Current shadow removal methods still face challenges such as residual boundary artifacts, and capturing feature information at shadow boundaries is crucial for removing shadows and eliminating residual boundary artifacts. Recently, Mamba has achieved remarkable success in computer vision by globally modeling long-sequence information with linear complexity. However, when applied to image shadow removal, the original Mamba scanning method overlooks the semantic continuity of shadow boundaries as well as the continuity of semantics within the same region. Based on the unique characteristics of shadow images, this paper proposes a novel selective scanning method called boundary-region selective scanning. This method scans boundary regions, shadow regions, and non-shadow regions independently, bringing pixels of the same region type closer together in the long sequence, especially focusing on the local information at the boundaries, which is crucial for shadow removal. This method combines with global scanning and channel scanning to jointly accomplish the shadow removal. We name our model ShadowMamba, the first Mamba-based model for shadow removal. Extensive experimental results show that our method outperforms current state-of-the-art models across most metrics on multiple datasets. The code for ShadowMamba is available at (Code will be released upon acceptance).",
+    "published": "2024-11-05",
+    "link": "http://arxiv.org/abs/2411.03260v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "A Mamba Foundation Model for Time Series Forecasting",
+    "author": "Haoyu Ma, Yushu Chen, Wenlai Zhao, Jinzhe Yang, Yingsheng Ji, Xinghua Xu, Xiaozhu Liu, Hao Jing, Shengzhuo Liu, Guangwen Yang",
+    "summary": "Time series foundation models have demonstrated strong performance in zero-shot learning, making them well-suited for predicting rapidly evolving patterns in real-world applications where relevant training data are scarce. However, most of these models rely on the Transformer architecture, which incurs quadratic complexity as input length increases. To address this, we introduce TSMamba, a linear-complexity foundation model for time series forecasting built on the Mamba architecture. The model captures temporal dependencies through both forward and backward Mamba encoders, achieving high prediction accuracy. To reduce reliance on large datasets and lower training costs, TSMamba employs a two-stage transfer learning process that leverages pretrained Mamba LLMs, allowing effective time series modeling with a moderate training set. In the first stage, the forward and backward backbones are optimized via patch-wise autoregressive prediction; in the second stage, the model trains a prediction head and refines other components for long-term forecasting. While the backbone assumes channel independence to manage varying channel numbers across datasets, a channel-wise compressed attention module is introduced to capture cross-channel dependencies during fine-tuning on specific multivariate datasets. Experiments show that TSMamba's zero-shot performance is comparable to state-of-the-art time series foundation models, despite using significantly less training data. It also achieves competitive or superior full-shot performance compared to task-specific prediction models. The code will be made publicly available.",
+    "published": "2024-11-05",
+    "link": "http://arxiv.org/abs/2411.02941v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
   }
 ]
