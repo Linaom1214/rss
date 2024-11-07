@@ -448,5 +448,14 @@
     "link": "http://arxiv.org/abs/2411.02941v1",
     "code_url": null,
     "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "Investigation of Inward-Outward Ring Permanent Magnet Array for Portable Magnetic Resonance Imaging (MRI)",
+    "author": "Ting-Ou Liang, MinXuan Xu, Wenwei Yu, Shao Ying Huang",
+    "summary": "Permanent magnet array (PMA) is a popular option to provide the main magnetic field in a dedicated portable magnetic resonance imaging (MRI) system because it does not need power or a cooling system and has a much stronger field strength compared to a resistive magnet. Aside from the popular Halbach array that has a transversal field direction, the Inward-Outward ring (IO ring) array is a promising candidate that offers a longitudinal field direction with various design and engineering possibilities. In this article, a thorough study of IO ring arrays is conducted by examining the relation between the design parameters and its field patterns, its variants that lead to different applications and their properties. A detailed comparison between an IO ring array and Halbach array was conducted and reported. Moreover, the feasibility of building an IO ring array in a lab is demonstrated. The investigations strongly indicate that IO ring is a promising candidate that can offer high and homogeneous fields or a desired field pattern to portable MRI systems. With a longitudinal field direction, an IO ring array opens up opportunities to adopt MRI advanced technology and techniques in a portable system to improve image quality and shorten scan time.",
+    "published": "2024-11-05",
+    "link": "http://arxiv.org/abs/2411.03249v2",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
   }
 ]
