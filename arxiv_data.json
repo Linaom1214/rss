@@ -493,5 +493,32 @@
     "link": "http://arxiv.org/abs/2411.03855v1",
     "code_url": null,
     "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "Development of a Service Robot for Hospital Environments in Rehabilitation Medicine with LiDAR Based Simultaneous Localization and Mapping",
+    "author": "Sayat Ibrayev, Arman Ibrayeva, Bekzat Amanov, Serik Tolenov",
+    "summary": "This paper presents the development and evaluation of a medical service robot equipped with 3D LiDAR and advanced localization capabilities for use in hospital environments. The robot employs LiDAR-based Simultaneous Localization and Mapping SLAM to navigate autonomously and interact effectively within complex and dynamic healthcare settings. A comparative analysis with established 3D SLAM technology in Autoware version 1.14.0, under a Linux ROS framework, provided a benchmark for evaluating our system performance. The adaptation of Normal Distribution Transform NDT Matching to indoor navigation allowed for precise real-time mapping and enhanced obstacle avoidance capabilities. Empirical validation was conducted through manual maneuvers in various environments, supplemented by ROS simulations to test the system response to simulated challenges. The findings demonstrate that the robot integration of 3D LiDAR and NDT Matching significantly improves navigation accuracy and operational reliability in a healthcare context. This study highlights the robot ability to perform essential tasks with high efficiency and identifies potential areas for further improvement, particularly in sensor performance under diverse environmental conditions. The successful deployment of this technology in a hospital setting illustrates its potential to support medical staff and contribute to patient care, suggesting a promising direction for future research and development in healthcare robotics.",
+    "published": "2024-11-07",
+    "link": "http://arxiv.org/abs/2411.04797v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Quantum Neural Network Classifier for Cancer Registry System Testing: A Feasibility Study",
+    "author": "Xinyi Wang, Shaukat Ali, Paolo Arcaini, Narasimha Raghavan Veeraragavan, Jan F. Nyg\u00e5rd",
+    "summary": "The Cancer Registry of Norway (CRN) is a part of the Norwegian Institute of Public Health (NIPH) and is tasked with producing statistics on cancer among the Norwegian population. For this task, CRN develops, tests, and evolves a software system called Cancer Registration Support System (CaReSS). It is a complex socio-technical software system that interacts with many entities (e.g., hospitals, medical laboratories, and other patient registries) to achieve its task. For cost-effective testing of CaReSS, CRN has employed EvoMaster, an AI-based REST API testing tool combined with an integrated classical machine learning model. Within this context, we propose Qlinical to investigate the feasibility of using, inside EvoMaster, a Quantum Neural Network (QNN) classifier, i.e., a quantum machine learning model, instead of the existing classical machine learning model. Results indicate that Qlinical can achieve performance comparable to that of EvoClass. We further explore the effects of various QNN configurations on performance and offer recommendations for optimal QNN settings for future QNN developers.",
+    "published": "2024-11-07",
+    "link": "http://arxiv.org/abs/2411.04740v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "DiMSUM: Diffusion Mamba -- A Scalable and Unified Spatial-Frequency Method for Image Generation",
+    "author": "Hao Phung, Quan Dao, Trung Dao, Hoang Phan, Dimitris Metaxas, Anh Tran",
+    "summary": "We introduce a novel state-space architecture for diffusion models, effectively harnessing spatial and frequency information to enhance the inductive bias towards local features in input images for image generation tasks. While state-space networks, including Mamba, a revolutionary advancement in recurrent neural networks, typically scan input sequences from left to right, they face difficulties in designing effective scanning strategies, especially in the processing of image data. Our method demonstrates that integrating wavelet transformation into Mamba enhances the local structure awareness of visual inputs and better captures long-range relations of frequencies by disentangling them into wavelet subbands, representing both low- and high-frequency components. These wavelet-based outputs are then processed and seamlessly fused with the original Mamba outputs through a cross-attention fusion layer, combining both spatial and frequency information to optimize the order awareness of state-space models which is essential for the details and overall quality of image generation. Besides, we introduce a globally-shared transformer to supercharge the performance of Mamba, harnessing its exceptional power to capture global relationships. Through extensive experiments on standard benchmarks, our method demonstrates superior results compared to DiT and DIFFUSSM, achieving faster training convergence and delivering high-quality outputs. The codes and pretrained models are released at https://github.com/VinAIResearch/DiMSUM.git.",
+    "published": "2024-11-06",
+    "link": "http://arxiv.org/abs/2411.04168v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
   }
 ]
