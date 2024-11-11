@@ -520,5 +520,23 @@
     "link": "http://arxiv.org/abs/2411.04168v1",
     "code_url": null,
     "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "GazeSearch: Radiology Findings Search Benchmark",
+    "author": "Trong Thang Pham, Tien-Phat Nguyen, Yuki Ikebe, Akash Awasthi, Zhigang Deng, Carol C. Wu, Hien Nguyen, Ngan Le",
+    "summary": "Medical eye-tracking data is an important information source for understanding how radiologists visually interpret medical images. This information not only improves the accuracy of deep learning models for X-ray analysis but also their interpretability, enhancing transparency in decision-making. However, the current eye-tracking data is dispersed, unprocessed, and ambiguous, making it difficult to derive meaningful insights. Therefore, there is a need to create a new dataset with more focus and purposeful eyetracking data, improving its utility for diagnostic applications. In this work, we propose a refinement method inspired by the target-present visual search challenge: there is a specific finding and fixations are guided to locate it. After refining the existing eye-tracking datasets, we transform them into a curated visual search dataset, called GazeSearch, specifically for radiology findings, where each fixation sequence is purposefully aligned to the task of locating a particular finding. Subsequently, we introduce a scan path prediction baseline, called ChestSearch, specifically tailored to GazeSearch. Finally, we employ the newly introduced GazeSearch as a benchmark to evaluate the performance of current state-of-the-art methods, offering a comprehensive assessment for visual search in the medical imaging domain.",
+    "published": "2024-11-08",
+    "link": "http://arxiv.org/abs/2411.05780v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "IPMN Risk Assessment under Federated Learning Paradigm",
+    "author": "Hongyi Pan, Ziliang Hong, Gorkem Durak, Elif Keles, Halil Ertugrul Aktas, Yavuz Taktak, Alpay Medetalibeyoglu, Zheyuan Zhang, Yury Velichko, Concetto Spampinato, Ivo Schoots, Marco J. Bruno, Pallavi Tiwari, Candice Bolan, Tamas Gonda, Frank Miller, Rajesh N. Keswani, Michael B. Wallace, Ziyue Xu, Ulas Bagci",
+    "summary": "Accurate classification of Intraductal Papillary Mucinous Neoplasms (IPMN) is essential for identifying high-risk cases that require timely intervention. In this study, we develop a federated learning framework for multi-center IPMN classification utilizing a comprehensive pancreas MRI dataset. This dataset includes 653 T1-weighted and 656 T2-weighted MRI images, accompanied by corresponding IPMN risk scores from 7 leading medical institutions, making it the largest and most diverse dataset for IPMN classification to date. We assess the performance of DenseNet-121 in both centralized and federated settings for training on distributed data. Our results demonstrate that the federated learning approach achieves high classification accuracy comparable to centralized learning while ensuring data privacy across institutions. This work marks a significant advancement in collaborative IPMN classification, facilitating secure and high-accuracy model training across multiple centers.",
+    "published": "2024-11-08",
+    "link": "http://arxiv.org/abs/2411.05697v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
   }
 ]
