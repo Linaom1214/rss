@@ -538,5 +538,41 @@
     "link": "http://arxiv.org/abs/2411.05697v1",
     "code_url": null,
     "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Arctique: An artificial histopathological dataset unifying realism and controllability for uncertainty quantification",
+    "author": "Jannik Franzen, Claudia Winklmayr, Vanessa E. Guarino, Christoph Karg, Xiaoyan Yu, Nora Koreuber, Jan P. Albrecht, Philip Bischoff, Dagmar Kainmueller",
+    "summary": "Uncertainty Quantification (UQ) is crucial for reliable image segmentation. Yet, while the field sees continual development of novel methods, a lack of agreed-upon benchmarks limits their systematic comparison and evaluation: Current UQ methods are typically tested either on overly simplistic toy datasets or on complex real-world datasets that do not allow to discern true uncertainty. To unify both controllability and complexity, we introduce Arctique, a procedurally generated dataset modeled after histopathological colon images. We chose histopathological images for two reasons: 1) their complexity in terms of intricate object structures and highly variable appearance, which yields challenging segmentation problems, and 2) their broad prevalence for medical diagnosis and respective relevance of high-quality UQ. To generate Arctique, we established a Blender-based framework for 3D scene creation with intrinsic noise manipulation. Arctique contains 50,000 rendered images with precise masks as well as noisy label simulations. We show that by independently controlling the uncertainty in both images and labels, we can effectively study the performance of several commonly used UQ methods. Hence, Arctique serves as a critical resource for benchmarking and advancing UQ techniques and other methodologies in complex, multi-object environments, bridging the gap between realism and controllability. All code is publicly available, allowing re-creation and controlled manipulations of our shipped images as well as creation and rendering of new scenes.",
+    "published": "2024-11-11",
+    "link": "http://arxiv.org/abs/2411.07097v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Increasing Rosacea Awareness Among Population Using Deep Learning and Statistical Approaches",
+    "author": "Chengyu Yang, Chengjun Liu",
+    "summary": "Approximately 16 million Americans suffer from rosacea according to the National Rosacea Society. To increase rosacea awareness, automatic rosacea detection methods using deep learning and explainable statistical approaches are presented in this paper. The deep learning method applies the ResNet-18 for rosacea detection, and the statistical approaches utilize the means of the two classes, namely, the rosacea class vs. the normal class, and the principal component analysis to extract features from the facial images for automatic rosacea detection. The contributions of the proposed methods are three-fold. First, the proposed methods are able to automatically distinguish patients who are suffering from rosacea from people who are clean of this disease. Second, the statistical approaches address the explainability issue that allows doctors and patients to understand and trust the results. And finally, the proposed methods will not only help increase rosacea awareness in the general population but also help remind the patients who suffer from this disease of possible early treatment since rosacea is more treatable at its early stages. The code and data are available at https://github.com/cyang322/rosacea_detection.git.",
+    "published": "2024-11-11",
+    "link": "http://arxiv.org/abs/2411.07074v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Mamba-based Decoder-Only Approach with Bidirectional Speech Modeling for Speech Recognition",
+    "author": "Yoshiki Masuyama, Koichi Miyazaki, Masato Murata",
+    "summary": "Selective state space models (SSMs) represented by Mamba have demonstrated their computational efficiency and promising outcomes in various tasks, including automatic speech recognition (ASR). Mamba has been applied to ASR task with the attention-based encoder-decoder framework, where the cross-attention mechanism between encoder and decoder remains. This paper explores the capability of Mamba as the decoder-only architecture in ASR task. Our MAmba-based DEcoder-ONly approach (MADEON) consists of a single decoder that takes speech tokens as a condition and predicts text tokens in an autoregressive manner. To enhance MADEON, we further propose speech prefixing that performs bidirectional processing on speech tokens, which enriches the contextual information in the hidden states. Our experiments show that MADEON significantly outperforms a non-selective SSM. The combination of speech prefixing and the recently proposed Mamba-2 yields comparable performance to Transformer-based models on large datasets.",
+    "published": "2024-11-11",
+    "link": "http://arxiv.org/abs/2411.06968v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "LA4SR: illuminating the dark proteome with generative AI",
+    "author": "David R. Nelson, Ashish Kumar Jaiswal, Noha Ismail, Alexandra Mystikou, Kourosh Salehi-Ashtiani",
+    "summary": "AI language models (LMs) show promise for biological sequence analysis. We re-engineered open-source LMs (GPT-2, BLOOM, DistilRoBERTa, ELECTRA, and Mamba, ranging from 70M to 12B parameters) for microbial sequence classification. The models achieved F1 scores up to 95 and operated 16,580x faster and at 2.9x the recall of BLASTP. They effectively classified the algal dark proteome - uncharacterized proteins comprising about 65% of total proteins - validated on new data including a new, complete Hi-C/Pacbio Chlamydomonas genome. Larger (>1B) LA4SR models reached high accuracy (F1 > 86) when trained on less than 2% of available data, rapidly achieving strong generalization capacity. High accuracy was achieved when training data had intact or scrambled terminal information, demonstrating robust generalization to incomplete sequences. Finally, we provide custom AI explainability software tools for attributing amino acid patterns to AI generative processes and interpret their outputs in evolutionary and biophysical contexts.",
+    "published": "2024-11-11",
+    "link": "http://arxiv.org/abs/2411.06798v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
   }
 ]
