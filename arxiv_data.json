@@ -574,5 +574,41 @@
     "link": "http://arxiv.org/abs/2411.06798v1",
     "code_url": null,
     "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "Optimal Control of Mechanical Ventilators with Learned Respiratory Dynamics",
+    "author": "Isaac Ronald Ward, Dylan M. Asmar, Mansur Arief, Jana Krystofova Mike, Mykel J. Kochenderfer",
+    "summary": "Deciding on appropriate mechanical ventilator management strategies significantly impacts the health outcomes for patients with respiratory diseases. Acute Respiratory Distress Syndrome (ARDS) is one such disease that requires careful ventilator operation to be effectively treated. In this work, we frame the management of ventilators for patients with ARDS as a sequential decision making problem using the Markov decision process framework. We implement and compare controllers based on clinical guidelines contained in the ARDSnet protocol, optimal control theory, and learned latent dynamics represented as neural networks. The Pulse Physiology Engine's respiratory dynamics simulator is used to establish a repeatable benchmark, gather simulated data, and quantitatively compare these controllers. We score performance in terms of measured improvement in established ARDS health markers (pertaining to improved respiratory rate, oxygenation, and vital signs). Our results demonstrate that techniques leveraging neural networks and optimal control can automatically discover effective ventilation management strategies without access to explicit ventilator management procedures or guidelines (such as those defined in the ARDSnet protocol).",
+    "published": "2024-11-12",
+    "link": "http://arxiv.org/abs/2411.07971v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "DuoLift-GAN:Reconstructing CT from Single-view and Biplanar X-Rays with Generative Adversarial Networks",
+    "author": "Zhaoxi Zhang, Yueliang Ying",
+    "summary": "Computed tomography (CT) provides highly detailed three-dimensional (3D) medical images but is costly, time-consuming, and often inaccessible in intraoperative settings (Organization et al. 2011). Recent advancements have explored reconstructing 3D chest volumes from sparse 2D X-rays, such as single-view or orthogonal double-view images. However, current models tend to process 2D images in a planar manner, prioritizing visual realism over structural accuracy. In this work, we introduce DuoLift Generative Adversarial Networks (DuoLift-GAN), a novel architecture with dual branches that independently elevate 2D images and their features into 3D representations. These 3D outputs are merged into a unified 3D feature map and decoded into a complete 3D chest volume, enabling richer 3D information capture. We also present a masked loss function that directs reconstruction towards critical anatomical regions, improving structural accuracy and visual quality. This paper demonstrates that DuoLift-GAN significantly enhances reconstruction accuracy while achieving superior visual realism compared to existing methods.",
+    "published": "2024-11-12",
+    "link": "http://arxiv.org/abs/2411.07941v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "CT-Mamba: A Hybrid Convolutional State Space Model for Low-Dose CT Denoising",
+    "author": "Linxuan Li, Wenjia Wei, Luyao Yang, Wenwen Zhang, Jiashu Dong, Wei Zhao",
+    "summary": "Low-dose CT (LDCT) significantly reduces the radiation dose received by patients, thereby decreasing potential health risks. However, dose reduction introduces additional noise and artifacts, adversely affecting image quality and clinical diagnosis. Currently, denoising methods based on convolutional neural networks (CNNs) face limitations in long-range modeling capabilities, while Transformer-based denoising methods, although capable of powerful long-range modeling, suffer from high computational complexity. Furthermore, the denoised images predicted by deep learning-based techniques inevitably exhibit differences in noise distribution compared to Normal-dose CT (NDCT) images, which can also impact the final image quality and diagnostic outcomes. In recent years, the feasibility of applying deep learning methods to low-dose CT imaging has been demonstrated, leading to significant achievements. This paper proposes CT-Mamba, a hybrid convolutional State Space Model for LDCT image denoising. The model combines the local feature extraction advantages of CNNs with Mamba's global modeling capability, enabling it to capture both local details and global context. Additionally, a Mamba-driven deep noise power spectrum (NPS) loss function was designed to guide model training, ensuring that the noise texture of the denoised LDCT images closely resembles that of NDCT images, thereby enhancing overall image quality and diagnostic value. Experimental results have demonstrated that CT-Mamba performs excellently in reducing noise in LDCT images, enhancing detail preservation, and optimizing noise texture distribution, while demonstrating statistically similar radiomics features to those of NDCT images (p > 0.05). The proposed CT-Mamba demonstrates outstanding performance in LDCT denoising and holds promise as a representative approach for applying the Mamba framework to LDCT denoising tasks.",
+    "published": "2024-11-12",
+    "link": "http://arxiv.org/abs/2411.07930v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "Diverse capability and scaling of diffusion and auto-regressive models when learning abstract rules",
+    "author": "Binxu Wang, Jiaqi Shang, Haim Sompolinsky",
+    "summary": "Humans excel at discovering regular structures from limited samples and applying inferred rules to novel settings. We investigate whether modern generative models can similarly learn underlying rules from finite samples and perform reasoning through conditional sampling. Inspired by Raven's Progressive Matrices task, we designed GenRAVEN dataset, where each sample consists of three rows, and one of 40 relational rules governing the object position, number, or attributes applies to all rows. We trained generative models to learn the data distribution, where samples are encoded as integer arrays to focus on rule learning. We compared two generative model families: diffusion (EDM, DiT, SiT) and autoregressive models (GPT2, Mamba). We evaluated their ability to generate structurally consistent samples and perform panel completion via unconditional and conditional sampling. We found diffusion models excel at unconditional generation, producing more novel and consistent samples from scratch and memorizing less, but performing less well in panel completion, even with advanced conditional sampling methods. Conversely, autoregressive models excel at completing missing panels in a rule-consistent manner but generate less consistent samples unconditionally. We observe diverse data scaling behaviors: for both model families, rule learning emerges at a certain dataset size - around 1000s examples per rule. With more training data, diffusion models improve both their unconditional and conditional generation capabilities. However, for autoregressive models, while panel completion improves with more training data, unconditional generation consistency declines. Our findings highlight complementary capabilities and limitations of diffusion and autoregressive models in rule learning and reasoning tasks, suggesting avenues for further research into their mechanisms and potential for human-like reasoning.",
+    "published": "2024-11-12",
+    "link": "http://arxiv.org/abs/2411.07873v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
   }
 ]
