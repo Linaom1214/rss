@@ -646,5 +646,32 @@
     "link": "http://arxiv.org/abs/2411.08395v1",
     "code_url": null,
     "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "Med-Bot: An AI-Powered Assistant to Provide Accurate and Reliable Medical Information",
+    "author": "Ahan Bhatt, Nandan Vaghela",
+    "summary": "This paper introduces Med-Bot, an AI-powered chatbot designed to provide users with accurate and reliable medical information. Utilizing advanced libraries and frameworks such as PyTorch, Chromadb, Langchain and Autogptq, Med-Bot is built to handle the complexities of natural language understanding in a healthcare context. The integration of llamaassisted data processing and AutoGPT-Q provides enhanced performance in processing and responding to queries based on PDFs of medical literature, ensuring that users receive precise and trustworthy information. This research details the methodologies employed in developing Med-Bot and evaluates its effectiveness in disseminating healthcare information.",
+    "published": "2024-11-14",
+    "link": "http://arxiv.org/abs/2411.09648v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Exploring the capabilities of CNNs for 3D angiographic reconstructions from limited projection data using rotational angiography",
+    "author": "Ahmad Rahmatpour, Allison Shields, Parmita Mondal, Parisa Naghdi, Michael Udin, Kyle A Williams, Mohammad Mahdi Shiraz Bhurwani, Swetadri Vasan Setlur Nagesh, Ciprian N Ionita",
+    "summary": "This study leverages convolutional neural networks to enhance the temporal resolution of 3D angiography in intracranial aneurysms focusing on the reconstruction of volumetric contrast data from sparse and limited projections. Three patient-specific IA geometries were segmented and converted into stereolithography files to facilitate computational fluid dynamics simulations. These simulations first modeled blood flow under steady conditions with varying inlet velocities: 0.25 m/s, 0.35 m/s, and 0.45 m/s. Subsequently, 3D angiograms were simulated by labeling inlet particles to represent contrast bolus injections over durations of 0.5s, 1.0s, 1.5s, and 2.0s. The angiographic simulations were then used within a simulated cone beam C arm CT system to generate in-silico rotational DSAs, capturing projections every 10 ms over a 220-degree arc at 27 frames per second. From these simulations, both fully sampled (108 projections) and truncated projection datasets were generated the latter using a maximum of 49 projections. High fidelity volumetric images were reconstructed using a Parker weighted Feldkamp Davis Kress algorithm. A modified U Net CNN was subsequently trained on these datasets to reconstruct 3D angiographic volumes from the truncated projections. The network incorporated multiple convolutional layers with ReLU activations and Max pooling, complemented by upsampling and concatenation to preserve spatial detail. Model performance was evaluated using mean squared error (MSE). Evaluating our U net model across the test set yielded a MSE of 0.0001, indicating good agreement with ground truth reconstructions and demonstrating acceptable capabilities in capturing relevant transient angiographic features. This study confirms the feasibility of using CNNs for reconstructing 3D angiographic images from truncated projections.",
+    "published": "2024-11-14",
+    "link": "http://arxiv.org/abs/2411.09632v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "When Mamba Meets xLSTM: An Efficient and Precise Method with the XLSTM-VMUNet Model for Skin lesion Segmentation",
+    "author": "Zhuoyi Fang, KeXuan Shi, Qiang Han",
+    "summary": "Automatic melanoma segmentation is essential for early skin cancer detection, yet challenges arise from the heterogeneity of melanoma, as well as interfering factors like blurred boundaries, low contrast, and imaging artifacts. While numerous algorithms have been developed to address these issues, previous approaches have often overlooked the need to jointly capture spatial and sequential features within dermatological images. This limitation hampers segmentation accuracy, especially in cases with indistinct borders or structurally similar lesions. Additionally, previous models lacked both a global receptive field and high computational efficiency. In this work, we present the XLSTM-VMUNet Model, which jointly capture spatial and sequential features within derma-tological images successfully. XLSTM-VMUNet can not only specialize in extracting spatial features from images, focusing on the structural characteristics of skin lesions, but also enhance contextual understanding, allowing more effective handling of complex medical image structures. Experiment results on the ISIC2018 dataset demonstrate that XLSTM-VMUNet outperforms VMUNet by 1.25% on DSC and 2.07% on IoU, with faster convergence and consistently high segmentation perfor-mance. Our code of XLSTM-VMUNet is available at https://github.com/MrFang/xLSTM-VMUNet.",
+    "published": "2024-11-14",
+    "link": "http://arxiv.org/abs/2411.09363v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
   }
 ]
