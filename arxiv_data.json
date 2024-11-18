@@ -673,5 +673,41 @@
     "link": "http://arxiv.org/abs/2411.09363v1",
     "code_url": null,
     "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "Framework for Co-distillation Driven Federated Learning to Address Class Imbalance in Healthcare",
+    "author": "Suraj Racha, Shubh Gupta, Humaira Firdowse, Aastik Solanki, Ganesh Ramakrishnan, Kshitij S. Jadhav",
+    "summary": "Federated Learning (FL) is a pioneering approach in distributed machine learning, enabling collaborative model training across multiple clients while retaining data privacy. However, the inherent heterogeneity due to imbalanced resource representations across multiple clients poses significant challenges, often introducing bias towards the majority class. This issue is particularly prevalent in healthcare settings, where hospitals acting as clients share medical images. To address class imbalance and reduce bias, we propose a co-distillation driven framework in a federated healthcare setting. Unlike traditional federated setups with a designated server client, our framework promotes knowledge sharing among clients to collectively improve learning outcomes. Our experiments demonstrate that in a federated healthcare setting, co-distillation outperforms other federated methods in handling class imbalance. Additionally, we demonstrate that our framework has the least standard deviation with increasing imbalance while outperforming other baselines, signifying the robustness of our framework for FL in healthcare.",
+    "published": "2024-11-15",
+    "link": "http://arxiv.org/abs/2411.10383v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Weakly-Supervised Multimodal Learning on MIMIC-CXR",
+    "author": "Andrea Agostini, Daphn\u00e9 Chopard, Yang Meng, Norbert Fortin, Babak Shahbaba, Stephan Mandt, Thomas M. Sutter, Julia E. Vogt",
+    "summary": "Multimodal data integration and label scarcity pose significant challenges for machine learning in medical settings. To address these issues, we conduct an in-depth evaluation of the newly proposed Multimodal Variational Mixture-of-Experts (MMVM) VAE on the challenging MIMIC-CXR dataset. Our analysis demonstrates that the MMVM VAE consistently outperforms other multimodal VAEs and fully supervised approaches, highlighting its strong potential for real-world medical applications.",
+    "published": "2024-11-15",
+    "link": "http://arxiv.org/abs/2411.10356v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "M-VAR: Decoupled Scale-wise Autoregressive Modeling for High-Quality Image Generation",
+    "author": "Sucheng Ren, Yaodong Yu, Nataniel Ruiz, Feng Wang, Alan Yuille, Cihang Xie",
+    "summary": "There exists recent work in computer vision, named VAR, that proposes a new autoregressive paradigm for image generation. Diverging from the vanilla next-token prediction, VAR structurally reformulates the image generation into a coarse to fine next-scale prediction. In this paper, we show that this scale-wise autoregressive framework can be effectively decoupled into \\textit{intra-scale modeling}, which captures local spatial dependencies within each scale, and \\textit{inter-scale modeling}, which models cross-scale relationships progressively from coarse-to-fine scales. This decoupling structure allows to rebuild VAR in a more computationally efficient manner. Specifically, for intra-scale modeling -- crucial for generating high-fidelity images -- we retain the original bidirectional self-attention design to ensure comprehensive modeling; for inter-scale modeling, which semantically connects different scales but is computationally intensive, we apply linear-complexity mechanisms like Mamba to substantially reduce computational overhead. We term this new framework M-VAR. Extensive experiments demonstrate that our method outperforms existing models in both image quality and generation speed. For example, our 1.5B model, with fewer parameters and faster inference speed, outperforms the largest VAR-d30-2B. Moreover, our largest model M-VAR-d32 impressively registers 1.78 FID on ImageNet 256$\\times$256 and outperforms the prior-art autoregressive models LlamaGen/VAR by 0.4/0.19 and popular diffusion models LDM/DiT by 1.82/0.49, respectively. Code is avaiable at \\url{https://github.com/OliverRensu/MVAR}.",
+    "published": "2024-11-15",
+    "link": "http://arxiv.org/abs/2411.10433v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "XLSR-Mamba: A Dual-Column Bidirectional State Space Model for Spoofing Attack Detection",
+    "author": "Yang Xiao, Rohan Kumar Das",
+    "summary": "Transformers and their variants have achieved great success in speech processing. However, their multi-head self-attention mechanism is computationally expensive. Therefore, one novel selective state space model, Mamba, has been proposed as an alternative. Building on its success in automatic speech recognition, we apply Mamba for spoofing attack detection. Mamba is well-suited for this task as it can capture the artifacts in spoofed speech signals by handling long-length sequences. However, Mamba's performance may suffer when it is trained with limited labeled data. To mitigate this, we propose combining a new structure of Mamba based on a dual-column architecture with self-supervised learning, using the pre-trained wav2vec 2.0 model. The experiments show that our proposed approach achieves competitive results and faster inference on the ASVspoof 2021 LA and DF datasets, and on the more challenging In-the-Wild dataset, it emerges as the strongest candidate for spoofing attack detection. The code will be publicly released in due course.",
+    "published": "2024-11-15",
+    "link": "http://arxiv.org/abs/2411.10027v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
   }
 ]
