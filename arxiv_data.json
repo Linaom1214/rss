@@ -709,5 +709,41 @@
     "link": "http://arxiv.org/abs/2411.10027v1",
     "code_url": null,
     "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "Edge-Enhanced Dilated Residual Attention Network for Multimodal Medical Image Fusion",
+    "author": "Meng Zhou, Yuxuan Zhang, Xiaolan Xu, Jiayi Wang, Farzad Khalvati",
+    "summary": "Multimodal medical image fusion is a crucial task that combines complementary information from different imaging modalities into a unified representation, thereby enhancing diagnostic accuracy and treatment planning. While deep learning methods, particularly Convolutional Neural Networks (CNNs) and Transformers, have significantly advanced fusion performance, some of the existing CNN-based methods fall short in capturing fine-grained multiscale and edge features, leading to suboptimal feature integration. Transformer-based models, on the other hand, are computationally intensive in both the training and fusion stages, making them impractical for real-time clinical use. Moreover, the clinical application of fused images remains unexplored. In this paper, we propose a novel CNN-based architecture that addresses these limitations by introducing a Dilated Residual Attention Network Module for effective multiscale feature extraction, coupled with a gradient operator to enhance edge detail learning. To ensure fast and efficient fusion, we present a parameter-free fusion strategy based on the weighted nuclear norm of softmax, which requires no additional computations during training or inference. Extensive experiments, including a downstream brain tumor classification task, demonstrate that our approach outperforms various baseline methods in terms of visual quality, texture preservation, and fusion speed, making it a possible practical solution for real-world clinical applications. The code will be released at https://github.com/simonZhou86/en_dran.",
+    "published": "2024-11-18",
+    "link": "http://arxiv.org/abs/2411.11799v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "SP${ }^3$ : Superpixel-propagated pseudo-label learning for weakly semi-supervised medical image segmentation",
+    "author": "Shiman Li, Jiayue Zhao, Shaolei Liu, Xiaokun Dai, Chenxi Zhang, Zhijian Song",
+    "summary": "Deep learning-based medical image segmentation helps assist diagnosis and accelerate the treatment process while the model training usually requires large-scale dense annotation datasets. Weakly semi-supervised medical image segmentation is an essential application because it only requires a small amount of scribbles and a large number of unlabeled data to train the model, which greatly reduces the clinician's effort to fully annotate images. To handle the inadequate supervisory information challenge in weakly semi-supervised segmentation (WSSS), a SuperPixel-Propagated Pseudo-label (SP${}^3$) learning method is proposed, using the structural information contained in superpixel for supplemental information. Specifically, the annotation of scribbles is propagated to superpixels and thus obtains a dense annotation for supervised training. Since the quality of pseudo-labels is limited by the low-quality annotation, the beneficial superpixels selected by dynamic thresholding are used to refine pseudo-labels. Furthermore, aiming to alleviate the negative impact of noise in pseudo-label, superpixel-level uncertainty is incorporated to guide the pseudo-label supervision for stable learning. Our method achieves state-of-the-art performance on both tumor and organ segmentation datasets under the WSSS setting, using only 3\\% of the annotation workload compared to fully supervised methods and attaining approximately 80\\% Dice score. Additionally, our method outperforms eight weakly and semi-supervised methods under both weakly supervised and semi-supervised settings. Results of extensive experiments validate the effectiveness and annotation efficiency of our weakly semi-supervised segmentation, which can assist clinicians in achieving automated segmentation for organs or tumors quickly and ultimately benefit patients.",
+    "published": "2024-11-18",
+    "link": "http://arxiv.org/abs/2411.11636v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Bi-Mamba: Towards Accurate 1-Bit State Space Models",
+    "author": "Shengkun Tang, Liqun Ma, Haonan Li, Mingjie Sun, Zhiqiang Shen",
+    "summary": "The typical selective state-space model (SSM) of Mamba addresses several limitations of Transformers, such as quadratic computational complexity with sequence length and significant inference-time memory requirements due to the key-value cache. However, the growing size of Mamba models continues to pose training and deployment challenges and raises environmental concerns due to considerable energy consumption. In this work, we introduce Bi-Mamba, a scalable and powerful 1-bit Mamba architecture designed for more efficient large language models with multiple sizes across 780M, 1.3B, and 2.7B. Bi-Mamba models are trained from scratch on data volume as regular LLM pertaining using an autoregressive distillation loss. Extensive experimental results on language modeling demonstrate that Bi-Mamba achieves performance comparable to its full-precision counterparts (e.g., FP16 or BF16) and much better accuracy than post-training-binarization (PTB) Mamba baselines, while significantly reducing memory footprint and energy consumption compared to the original Mamba model. Our study pioneers a new linear computational complexity LLM framework under low-bit representation and facilitates the future design of specialized hardware tailored for efficient 1-bit Mamba-based LLMs.",
+    "published": "2024-11-18",
+    "link": "http://arxiv.org/abs/2411.11843v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "RAWMamba: Unified sRGB-to-RAW De-rendering With State Space Model",
+    "author": "Hongjun Chen, Wencheng Han, Huan Zheng, Jianbing Shen",
+    "summary": "Recent advancements in sRGB-to-RAW de-rendering have increasingly emphasized metadata-driven approaches to reconstruct RAW data from sRGB images, supplemented by partial RAW information. In image-based de-rendering, metadata is commonly obtained through sampling, whereas in video tasks, it is typically derived from the initial frame. The distinct metadata requirements necessitate specialized network architectures, leading to architectural incompatibilities that increase deployment complexity. In this paper, we propose RAWMamba, a Mamba-based unified framework developed for sRGB-to-RAW de-rendering across both image and video domains. The core of RAWMamba is the Unified Metadata Embedding (UME) module, which harmonizes diverse metadata types into a unified representation. In detail, a multi-perspective affinity modeling method is proposed to promote the extraction of reference information. In addition, we introduce the Local Tone-Aware Mamba (LTA-Mamba) module, which captures long-range dependencies to enable effective global propagation of metadata. Experimental results demonstrate that the proposed RAWMamba achieves state-of-the-art performance, yielding high-quality RAW data reconstruction.",
+    "published": "2024-11-18",
+    "link": "http://arxiv.org/abs/2411.11717v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
   }
 ]
