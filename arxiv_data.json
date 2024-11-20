@@ -745,5 +745,41 @@
     "link": "http://arxiv.org/abs/2411.11717v1",
     "code_url": null,
     "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "Enhancing Multi-Class Disease Classification: Neoplasms, Cardiovascular, Nervous System, and Digestive Disorders Using Advanced LLMs",
+    "author": "Ahmed Akib Jawad Karim, Muhammad Zawad Mahmud, Samiha Islam, Aznur Azam",
+    "summary": "In this research, we explored the improvement in terms of multi-class disease classification via pre-trained language models over Medical-Abstracts-TC-Corpus that spans five medical conditions. We excluded non-cancer conditions and examined four specific diseases. We assessed four LLMs, BioBERT, XLNet, and BERT, as well as a novel base model (Last-BERT). BioBERT, which was pre-trained on medical data, demonstrated superior performance in medical text classification (97% accuracy). Surprisingly, XLNet followed closely (96% accuracy), demonstrating its generalizability across domains even though it was not pre-trained on medical data. LastBERT, a custom model based on the lighter version of BERT, also proved competitive with 87.10% accuracy (just under BERT's 89.33%). Our findings confirm the importance of specialized models such as BioBERT and also support impressions around more general solutions like XLNet and well-tuned transformer architectures with fewer parameters (in this case, LastBERT) in medical domain tasks.",
+    "published": "2024-11-19",
+    "link": "http://arxiv.org/abs/2411.12712v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Barttender: An approachable & interpretable way to compare medical imaging and non-imaging data",
+    "author": "Ayush Singla, Shakson Isaac, Chirag J. Patel",
+    "summary": "Imaging-based deep learning has transformed healthcare research, yet its clinical adoption remains limited due to challenges in comparing imaging models with traditional non-imaging and tabular data. To bridge this gap, we introduce Barttender, an interpretable framework that uses deep learning for the direct comparison of the utility of imaging versus non-imaging tabular data for tasks like disease prediction.   Barttender converts non-imaging tabular features, such as scalar data from electronic health records, into grayscale bars, facilitating an interpretable and scalable deep learning based modeling of both data modalities. Our framework allows researchers to evaluate differences in utility through performance measures, as well as local (sample-level) and global (population-level) explanations. We introduce a novel measure to define global feature importances for image-based deep learning models, which we call gIoU. Experiments on the CheXpert and MIMIC datasets with chest X-rays and scalar data from electronic health records show that Barttender performs comparably to traditional methods and offers enhanced explainability using deep learning models.",
+    "published": "2024-11-19",
+    "link": "http://arxiv.org/abs/2411.12707v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "STREAM: A Universal State-Space Model for Sparse Geometric Data",
+    "author": "Mark Sch\u00f6ne, Yash Bhisikar, Karan Bania, Khaleelulla Khan Nazeer, Christian Mayr, Anand Subramoney, David Kappel",
+    "summary": "Handling sparse and unstructured geometric data, such as point clouds or event-based vision, is a pressing challenge in the field of machine vision. Recently, sequence models such as Transformers and state-space models entered the domain of geometric data. These methods require specialized preprocessing to create a sequential view of a set of points. Furthermore, prior works involving sequence models iterate geometric data with either uniform or learned step sizes, implicitly relying on the model to infer the underlying geometric structure. In this work, we propose to encode geometric structure explicitly into the parameterization of a state-space model. State-space models are based on linear dynamics governed by a one-dimensional variable such as time or a spatial coordinate. We exploit this dynamic variable to inject relative differences of coordinates into the step size of the state-space model. The resulting geometric operation computes interactions between all pairs of N points in O(N) steps. Our model deploys the Mamba selective state-space model with a modified CUDA kernel to efficiently map sparse geometric data to modern hardware. The resulting sequence model, which we call STREAM, achieves competitive results on a range of benchmarks from point-cloud classification to event-based vision and audio classification. STREAM demonstrates a powerful inductive bias for sparse geometric data by improving the PointMamba baseline when trained from scratch on the ModelNet40 and ScanObjectNN point cloud analysis datasets. It further achieves, for the first time, 100% test accuracy on all 11 classes of the DVS128 Gestures dataset.",
+    "published": "2024-11-19",
+    "link": "http://arxiv.org/abs/2411.12603v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "Unlocking State-Tracking in Linear RNNs Through Negative Eigenvalues",
+    "author": "Riccardo Grazzi, Julien Siems, J\u00f6rg K. H. Franke, Arber Zela, Frank Hutter, Massimiliano Pontil",
+    "summary": "Linear Recurrent Neural Networks (LRNNs) such as Mamba, RWKV, GLA, mLSTM, and DeltaNet have emerged as efficient alternatives to Transformers in large language modeling, offering linear scaling with sequence length and improved training efficiency. However, LRNNs struggle to perform state-tracking which may impair performance in tasks such as code evaluation or tracking a chess game. Even parity, the simplest state-tracking task, which non-linear RNNs like LSTM handle effectively, cannot be solved by current LRNNs. Recently, Sarrof et al. (2024) demonstrated that the failure of LRNNs like Mamba to solve parity stems from restricting the value range of their diagonal state-transition matrices to $[0, 1]$ and that incorporating negative values can resolve this issue. We extend this result to non-diagonal LRNNs, which have recently shown promise in models such as DeltaNet. We prove that finite precision LRNNs with state-transition matrices having only positive eigenvalues cannot solve parity, while complex eigenvalues are needed to count modulo $3$. Notably, we also prove that LRNNs can learn any regular language when their state-transition matrices are products of identity minus vector outer product matrices, each with eigenvalues in the range $[-1, 1]$. Our empirical results confirm that extending the eigenvalue range of models like Mamba and DeltaNet to include negative values not only enables them to solve parity but consistently improves their performance on state-tracking tasks. Furthermore, pre-training LRNNs with an extended eigenvalue range for language modeling achieves comparable performance and stability while showing promise on code and math data. Our work enhances the expressivity of modern LRNNs, broadening their applicability without changing the cost of training or inference.",
+    "published": "2024-11-19",
+    "link": "http://arxiv.org/abs/2411.12537v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
   }
 ]
