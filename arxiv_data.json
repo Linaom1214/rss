@@ -781,5 +781,32 @@
     "link": "http://arxiv.org/abs/2411.12537v1",
     "code_url": null,
     "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "Paying more attention to local contrast: improving infrared small target detection performance via prior knowledge",
+    "author": "Peichao Wang, Jiabao Wang, Yao Chen, Rui Zhang, Yang Li, Zhuang Miao",
+    "summary": "The data-driven method for infrared small target detection (IRSTD) has achieved promising results. However, due to the small scale of infrared small target datasets and the limited number of pixels occupied by the targets themselves, it is a challenging task for deep learning methods to directly learn from these samples. Utilizing human expert knowledge to assist deep learning methods in better learning is worthy of exploration. To effectively guide the model to focus on targets' spatial features, this paper proposes the Local Contrast Attention Enhanced infrared small target detection Network (LCAE-Net), combining prior knowledge with data-driven deep learning methods. LCAE-Net is a U-shaped neural network model which consists of two developed modules: a Local Contrast Enhancement (LCE) module and a Channel Attention Enhancement (CAE) module. The LCE module takes advantages of prior knowledge, leveraging handcrafted convolution operator to acquire Local Contrast Attention (LCA), which could realize background suppression while enhance the potential target region, thus guiding the neural network to pay more attention to potential infrared small targets' location information. To effectively utilize the response information throughout downsampling progresses, the CAE module is proposed to achieve the information fusion among feature maps' different channels. Experimental results indicate that our LCAE-Net outperforms existing state-of-the-art methods on the three public datasets NUDT-SIRST, NUAA-SIRST, and IRSTD-1K, and its detection speed could reach up to 70 fps. Meanwhile, our model has a parameter count and Floating-Point Operations (FLOPs) of 1.945M and 4.862G respectively, which is suitable for deployment on edge devices.",
+    "published": "2024-11-20",
+    "link": "http://arxiv.org/abs/2411.13260v1",
+    "code_url": null,
+    "category": "ISTD-\"infrared small target\""
+  },
+  {
+    "title": "Advancing Complex Medical Communication in Arabic with Sporo AraSum: Surpassing Existing Large Language Models",
+    "author": "Chanseo Lee, Sonu Kumar, Kimon A. Vogt, Sam Meraj, Antonia Vogt",
+    "summary": "The increasing demand for multilingual capabilities in healthcare underscores the need for AI models adept at processing diverse languages, particularly in clinical documentation and decision-making. Arabic, with its complex morphology, syntax, and diglossia, poses unique challenges for natural language processing (NLP) in medical contexts. This case study evaluates Sporo AraSum, a language model tailored for Arabic clinical documentation, against JAIS, the leading Arabic NLP model. Using synthetic datasets and modified PDQI-9 metrics modified ourselves for the purposes of assessing model performances in a different language. The study assessed the models' performance in summarizing patient-physician interactions, focusing on accuracy, comprehensiveness, clinical utility, and linguistic-cultural competence.   Results indicate that Sporo AraSum significantly outperforms JAIS in AI-centric quantitative metrics and all qualitative attributes measured in our modified version of the PDQI-9. AraSum's architecture enables precise and culturally sensitive documentation, addressing the linguistic nuances of Arabic while mitigating risks of AI hallucinations. These findings suggest that Sporo AraSum is better suited to meet the demands of Arabic-speaking healthcare environments, offering a transformative solution for multilingual clinical workflows. Future research should incorporate real-world data to further validate these findings and explore broader integration into healthcare systems.",
+    "published": "2024-11-20",
+    "link": "http://arxiv.org/abs/2411.13518v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Efficient Brain Imaging Analysis for Alzheimer's and Dementia Detection Using Convolution-Derivative Operations",
+    "author": "Yasmine Mustafa, Mohamed Elmahallawy, Tie Luo",
+    "summary": "Alzheimer's disease (AD) is characterized by progressive neurodegeneration and results in detrimental structural changes in human brains. Detecting these changes is crucial for early diagnosis and timely intervention of disease progression. Jacobian maps, derived from spatial normalization in voxel-based morphometry (VBM), have been instrumental in interpreting volume alterations associated with AD. However, the computational cost of generating Jacobian maps limits its clinical adoption. In this study, we explore alternative methods and propose Sobel kernel angle difference (SKAD) as a computationally efficient alternative. SKAD is a derivative operation that offers an optimized approach to quantifying volumetric alterations through localized analysis of the gradients. By efficiently extracting gradient amplitude changes at critical spatial regions, this derivative operation captures regional volume variations Evaluation of SKAD over various medical datasets demonstrates that it is 6.3x faster than Jacobian maps while still maintaining comparable accuracy. This makes it an efficient and competitive approach in neuroimaging research and clinical practice.",
+    "published": "2024-11-20",
+    "link": "http://arxiv.org/abs/2411.13490v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
   }
 ]
