@@ -808,5 +808,32 @@
     "link": "http://arxiv.org/abs/2411.13490v1",
     "code_url": null,
     "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Multimodal 3D Brain Tumor Segmentation with Adversarial Training and Conditional Random Field",
+    "author": "Lan Jiang, Yuchao Zheng, Miao Yu, Haiqing Zhang, Fatemah Aladwani, Alessandro Perelli",
+    "summary": "Accurate brain tumor segmentation remains a challenging task due to structural complexity and great individual differences of gliomas. Leveraging the pre-eminent detail resilience of CRF and spatial feature extraction capacity of V-net, we propose a multimodal 3D Volume Generative Adversarial Network (3D-vGAN) for precise segmentation. The model utilizes Pseudo-3D for V-net improvement, adds conditional random field after generator and use original image as supplemental guidance. Results, using the BraTS-2018 dataset, show that 3D-vGAN outperforms classical segmentation models, including U-net, Gan, FCN and 3D V-net, reaching specificity over 99.8%.",
+    "published": "2024-11-21",
+    "link": "http://arxiv.org/abs/2411.14418v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Exploring Methods for Integrating and Augmenting Multimodal Data to Improve Prognostic Accuracy in Imbalanced Datasets for Intraoperative Aneurysm Occlusion",
+    "author": "Parisa Naghdi, Mohammad Mahdi Shiraz Bhurwani, Ahmad Rahmatpour, Parmita Mondal, Michael Udin, Kyle A Williams, Swetadri Vasan Setlur Nagesh, Ciprian N Ionita",
+    "summary": "This study evaluates a multimodal machine learning framework for predicting treatment outcomes in intracranial aneurysms (IAs). Combining angiographic parametric imaging (API), patient biomarkers, and disease morphology, the framework aims to enhance prognostic accuracy. Data from 340 patients were analyzed, with separate deep neural networks processing quantitative and categorical data. These networks' pre decision layers were concatenated and inputted into a final predictive network. Various data augmentation strategies, including Synthetic Minority Oversampling Technique for Nominal and Continuous data (SMOTE NC), addressed dataset imbalances. Performance metrics, evaluated through Monte Carlo cross validation, showed significant improvements with augmentation, particularly in intermediate fusion models. This study validates the framework's efficacy in accurately predicting IA treatment outcomes, demonstrating that data augmentation techniques can substantially enhance model performance.",
+    "published": "2024-11-21",
+    "link": "http://arxiv.org/abs/2411.14407v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "BEST-STD: Bidirectional Mamba-Enhanced Speech Tokenization for Spoken Term Detection",
+    "author": "Anup Singh, Kris Demuynck, Vipul Arora",
+    "summary": "Spoken term detection (STD) is often hindered by reliance on frame-level features and the computationally intensive DTW-based template matching, limiting its practicality. To address these challenges, we propose a novel approach that encodes speech into discrete, speaker-agnostic semantic tokens. This facilitates fast retrieval using text-based search algorithms and effectively handles out-of-vocabulary terms. Our approach focuses on generating consistent token sequences across varying utterances of the same term. We also propose a bidirectional state space modeling within the Mamba encoder, trained in a self-supervised learning framework, to learn contextual frame-level features that are further encoded into discrete tokens. Our analysis shows that our speech tokens exhibit greater speaker invariance than those from existing tokenizers, making them more suitable for STD tasks. Empirical evaluation on LibriSpeech and TIMIT databases indicates that our method outperforms existing STD baselines while being more efficient.",
+    "published": "2024-11-21",
+    "link": "http://arxiv.org/abs/2411.14100v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
   }
 ]
