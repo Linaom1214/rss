@@ -853,5 +853,41 @@
     "link": "http://arxiv.org/abs/2411.15122v1",
     "code_url": null,
     "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Automated Registration of 3D Neurovascular Territory Atlas to 2D DSA for Targeted Quantitative Angiography Analysis",
+    "author": "George Dimopoulos, Sabrina De Los Angeles Reverol Parra, Parmita Mondal, Michael Udin, Kyle Williams, Parisa Naghdi, Ahmad Rahmatpour, Swetadri Vasan Setlur Nagesh, Mohammad Mahdi Shiraz Bhurwani, Jason Davies, Ciprian N. Ionita",
+    "summary": "Subarachnoid hemorrhage (SAH), typically due to intracranial aneurysms, demands precise imaging for effective treatment. Digital Subtraction Angiography (DSA), despite being the gold standard, broadly visualizes cerebral blood flow, potentially masking key details in areas. This study introduces an approach integrating a 3D vascular atlas with 2D DSA images to allow targeted quantitative analysis in these crucial regions, thus enhancing diagnostic accuracy during interventions. Initially, DSA data was examined to ascertain the injection site. Following this, the appropriate viewing angle was determined to align accurately with the 3D vascular atlas. Utilizing this atlas, regions corresponding to the areas indicated as perfused were selected. Concurrently, a mask representing the perfused areas was created from the DSA sequence. This mask facilitated the initial coarse alignment of the projected 3D atlas to the DSA perfused territory deformable registration techniques, ensuring a precise overlay with the DSAs perfused territories. The performance of each overlay was measured using the Structural Similarity Index Measure (SSIM). The coregistration process revealed that deformable registrations was essential to achieve precise overlays of the 3D atlas projections with the 2D DSA perfused areas. This approach enabled the extraction of targeted quantitative angiography parameters, essential for detailed vascular assessment in subarachnoid hemorrhage cases. The integration of 3D atlas registration with 2D DSA projections facilitates a more precise and targeted diagnostic process for SAH during critical interventions. This image processing strategy enhances the visualization of affected arterial territories, potentially improving the accuracy of diagnostics and supporting better informed clinical decisions at the time of intervention",
+    "published": "2024-11-25",
+    "link": "http://arxiv.org/abs/2411.16637v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "J-CaPA : Joint Channel and Pyramid Attention Improves Medical Image Segmentation",
+    "author": "Marzia Binta Nizam, Marian Zlateva, James Davis",
+    "summary": "Medical image segmentation is crucial for diagnosis and treatment planning. Traditional CNN-based models, like U-Net, have shown promising results but struggle to capture long-range dependencies and global context. To address these limitations, we propose a transformer-based architecture that jointly applies Channel Attention and Pyramid Attention mechanisms to improve multi-scale feature extraction and enhance segmentation performance for medical images. Increasing model complexity requires more training data, and we further improve model generalization with CutMix data augmentation. Our approach is evaluated on the Synapse multi-organ segmentation dataset, achieving a 6.9% improvement in Mean Dice score and a 39.9% improvement in Hausdorff Distance (HD95) over an implementation without our enhancements. Our proposed model demonstrates improved segmentation accuracy for complex anatomical structures, outperforming existing state-of-the-art methods.",
+    "published": "2024-11-25",
+    "link": "http://arxiv.org/abs/2411.16568v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Deformable Mamba for Wide Field of View Segmentation",
+    "author": "Jie Hu, Junwei Zheng, Jiale Wei, Jiaming Zhang, Rainer Stiefelhagen",
+    "summary": "Wide-FoV cameras, like fisheye and panoramic setups, are essential for broader perception but introduce significant distortions in 180{\\deg} and 360{\\deg} images, complicating dense prediction tasks. For instance, existing MAMBA models lacking distortion-aware capacity cannot perform well in panoramic semantic segmentation. To address this problem, this work presents Deformable Mamba, a unified framework specifically designed to address imaging distortions within the context of panoramic and fisheye semantic segmentation. At the core is a decoder constructed with a series of Deformable Mamba Fusion (DMF) blocks, making the whole framework more deformable, efficient, and accurate, when handling extreme distortions. Extensive evaluations across five datasets demonstrate that our method consistently improves segmentation accuracy compared to the previous state-of-the-art methods tailored for specific FoVs. Notably, Deformable Mamba achieves a +2.5% performance improvement on the 360{\\deg} Stanford2D3D dataset, and shows better results across FoVs from 60{\\deg} to 360{\\deg}.",
+    "published": "2024-11-25",
+    "link": "http://arxiv.org/abs/2411.16481v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "M3: Mamba-assisted Multi-Circuit Optimization via MBRL with Effective Scheduling",
+    "author": "Youngmin Oh, Jinje Park, Seunggeun Kim, Taejin Paik, David Pan, Bosun Hwang",
+    "summary": "Recent advancements in reinforcement learning (RL) for analog circuit optimization have demonstrated significant potential for improving sample efficiency and generalization across diverse circuit topologies and target specifications. However, there are challenges such as high computational overhead, the need for bespoke models for each circuit. To address them, we propose M3, a novel Model-based RL (MBRL) method employing the Mamba architecture and effective scheduling. The Mamba architecture, known as a strong alternative to the transformer architecture, enables multi-circuit optimization with distinct parameters and target specifications. The effective scheduling strategy enhances sample efficiency by adjusting crucial MBRL training parameters. To the best of our knowledge, M3 is the first method for multi-circuit optimization by leveraging both the Mamba architecture and a MBRL with effective scheduling. As a result, it significantly improves sample efficiency compared to existing RL methods.",
+    "published": "2024-11-25",
+    "link": "http://arxiv.org/abs/2411.16019v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
   }
 ]
