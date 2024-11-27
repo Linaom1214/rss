@@ -889,5 +889,41 @@
     "link": "http://arxiv.org/abs/2411.16019v1",
     "code_url": null,
     "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "An Ensemble Approach for Brain Tumor Segmentation and Synthesis",
+    "author": "Juampablo E. Heras Rivera, Agamdeep S. Chopra, Tianyi Ren, Hitender Oswal, Yutong Pan, Zineb Sordo, Sophie Walters, William Henry, Hooman Mohammadi, Riley Olson, Fargol Rezayaraghi, Tyson Lam, Akshay Jaikanth, Pavan Kancharla, Jacob Ruzevick, Daniela Ushizima, Mehmet Kurt",
+    "summary": "The integration of machine learning in magnetic resonance imaging (MRI), specifically in neuroimaging, is proving to be incredibly effective, leading to better diagnostic accuracy, accelerated image analysis, and data-driven insights, which can potentially transform patient care. Deep learning models utilize multiple layers of processing to capture intricate details of complex data, which can then be used on a variety of tasks, including brain tumor classification, segmentation, image synthesis, and registration. Previous research demonstrates high accuracy in tumor segmentation using various model architectures, including nn-UNet and Swin-UNet. U-Mamba, which uses state space modeling, also achieves high accuracy in medical image segmentation. To leverage these models, we propose a deep learning framework that ensembles these state-of-the-art architectures to achieve accurate segmentation and produce finely synthesized images.",
+    "published": "2024-11-26",
+    "link": "http://arxiv.org/abs/2411.17617v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Pre-training for Action Recognition with Automatically Generated Fractal Datasets",
+    "author": "Davyd Svyezhentsev, George Retsinas, Petros Maragos",
+    "summary": "In recent years, interest in synthetic data has grown, particularly in the context of pre-training the image modality to support a range of computer vision tasks, including object classification, medical imaging etc. Previous work has demonstrated that synthetic samples, automatically produced by various generative processes, can replace real counterparts and yield strong visual representations. This approach resolves issues associated with real data such as collection and labeling costs, copyright and privacy.   We extend this trend to the video domain applying it to the task of action recognition. Employing fractal geometry, we present methods to automatically produce large-scale datasets of short synthetic video clips, which can be utilized for pre-training neural models. The generated video clips are characterized by notable variety, stemmed by the innate ability of fractals to generate complex multi-scale structures. To narrow the domain gap, we further identify key properties of real videos and carefully emulate them during pre-training. Through thorough ablations, we determine the attributes that strengthen downstream results and offer general guidelines for pre-training with synthetic videos. The proposed approach is evaluated by fine-tuning pre-trained models on established action recognition datasets HMDB51 and UCF101 as well as four other video benchmarks related to group action recognition, fine-grained action recognition and dynamic scenes. Compared to standard Kinetics pre-training, our reported results come close and are even superior on a portion of downstream datasets. Code and samples of synthetic videos are available at https://github.com/davidsvy/fractal_video .",
+    "published": "2024-11-26",
+    "link": "http://arxiv.org/abs/2411.17584v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "TinyViM: Frequency Decoupling for Tiny Hybrid Vision Mamba",
+    "author": "Xiaowen Ma, Zhenliang Ni, Xinghao Chen",
+    "summary": "Mamba has shown great potential for computer vision due to its linear complexity in modeling the global context with respect to the input length. However, existing lightweight Mamba-based backbones cannot demonstrate performance that matches Convolution or Transformer-based methods. We observe that simply modifying the scanning path in the image domain is not conducive to fully exploiting the potential of vision Mamba. In this paper, we first perform comprehensive spectral and quantitative analyses, and verify that the Mamba block mainly models low-frequency information under Convolution-Mamba hybrid architecture. Based on the analyses, we introduce a novel Laplace mixer to decouple the features in terms of frequency and input only the low-frequency components into the Mamba block. In addition, considering the redundancy of the features and the different requirements for high-frequency details and low-frequency global information at different stages, we introduce a frequency ramp inception, i.e., gradually reduce the input dimensions of the high-frequency branches, so as to efficiently trade-off the high-frequency and low-frequency components at different layers. By integrating mobile-friendly convolution and efficient Laplace mixer, we build a series of tiny hybrid vision Mamba called TinyViM. The proposed TinyViM achieves impressive performance on several downstream tasks including image classification, semantic segmentation, object detection and instance segmentation. In particular, TinyViM outperforms Convolution, Transformer and Mamba-based models with similar scales, and the throughput is about 2-3 times higher than that of other Mamba-based models. Code is available at https://github.com/xwmaxwma/TinyViM.",
+    "published": "2024-11-26",
+    "link": "http://arxiv.org/abs/2411.17473v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "On the Efficiency of NLP-Inspired Methods for Tabular Deep Learning",
+    "author": "Anton Frederik Thielmann, Soheila Samiee",
+    "summary": "Recent advancements in tabular deep learning (DL) have led to substantial performance improvements, surpassing the capabilities of traditional models. With the adoption of techniques from natural language processing (NLP), such as language model-based approaches, DL models for tabular data have also grown in complexity and size. Although tabular datasets do not typically pose scalability issues, the escalating size of these models has raised efficiency concerns. Despite its importance, efficiency has been relatively underexplored in tabular DL research. This paper critically examines the latest innovations in tabular DL, with a dual focus on performance and computational efficiency. The source code is available at https://github.com/basf/mamba-tabular.",
+    "published": "2024-11-26",
+    "link": "http://arxiv.org/abs/2411.17207v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
   }
 ]
