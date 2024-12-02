@@ -6,7 +6,7 @@ from semanticscholar import SemanticScholar
 
 app = Flask(__name__)
 
-ch = SemanticScholar(api_key="rckeUk4ySL4hhvWVn3TlT8My8uhjURC1vzYqaCn2")
+sch = SemanticScholar(api_key="rckeUk4ySL4hhvWVn3TlT8My8uhjURC1vzYqaCn2")
 
 @app.route("/")
 def index():
