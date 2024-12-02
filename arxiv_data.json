@@ -952,5 +952,41 @@
     "link": "http://arxiv.org/abs/2411.17980v1",
     "code_url": "https://github.com/boa2004plaust/vimd",
     "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "Neuroplasticity and Psychedelics: a comprehensive examination of classic and non-classic compounds in pre and clinical models",
+    "author": "Claudio Agnorelli, Meg Spriggs, Kate Godfrey, Gabriela Sawicka, Bettina Bohl, Hannah Douglass, Andrea Fagiolini, Hashemi Parastoo, Robin Carhart-Harris, David Nutt, David Erritzoe",
+    "summary": "Neuroplasticity, the ability of the nervous system to adapt throughout an organism's lifespan, offers potential as both a biomarker and treatment target for neuropsychiatric conditions. Psychedelics, a burgeoning category of drugs, are increasingly prominent in psychiatric research, prompting inquiries into their mechanisms of action. Distinguishing themselves from traditional medications, psychedelics demonstrate rapid and enduring therapeutic effects after a single or few administrations, believed to stem from their neuroplasticity-enhancing properties. This review examines how classic psychedelics (e.g., LSD, psilocybin, N,N-DMT) and non-classic psychedelics (e.g., ketamine, MDMA) influence neuroplasticity. Drawing from preclinical and clinical studies, we explore the molecular, structural, and functional changes triggered by these agents. Animal studies suggest psychedelics induce heightened sensitivity of the nervous system to environmental stimuli (meta-plasticity), re-opening developmental windows for long-term structural changes (hyper-plasticity), with implications for mood and behavior. Translating these findings to humans faces challenges due to limitations in current imaging techniques. Nonetheless, promising new directions for human research are emerging, including the employment of novel positron-emission tomography (PET) radioligands, non-invasive brain stimulation methods, and multimodal approaches. By elucidating the interplay between psychedelics and neuroplasticity, this review informs the development of targeted interventions for neuropsychiatric disorders and advances understanding of psychedelics' therapeutic potential.",
+    "published": "2024-11-29",
+    "link": "http://arxiv.org/abs/2411.19840v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "Graph Neural Networks for Heart Failure Prediction on an EHR-Based Patient Similarity Graph",
+    "author": "Heloisa Oss Boll, Ali Amirahmadi, Amira Soliman, Stefan Byttner, Mariana Recamonde-Mendoza",
+    "summary": "Objective: In modern healthcare, accurately predicting diseases is a crucial matter. This study introduces a novel approach using graph neural networks (GNNs) and a Graph Transformer (GT) to predict the incidence of heart failure (HF) on a patient similarity graph at the next hospital visit. Materials and Methods: We used electronic health records (EHR) from the MIMIC-III dataset and applied the K-Nearest Neighbors (KNN) algorithm to create a patient similarity graph using embeddings from diagnoses, procedures, and medications. Three models - GraphSAGE, Graph Attention Network (GAT), and Graph Transformer (GT) - were implemented to predict HF incidence. Model performance was evaluated using F1 score, AUROC, and AUPRC metrics, and results were compared against baseline algorithms. An interpretability analysis was performed to understand the model's decision-making process. Results: The GT model demonstrated the best performance (F1 score: 0.5361, AUROC: 0.7925, AUPRC: 0.5168). Although the Random Forest (RF) baseline achieved a similar AUPRC value, the GT model offered enhanced interpretability due to the use of patient relationships in the graph structure. A joint analysis of attention weights, graph connectivity, and clinical features provided insight into model predictions across different classification groups. Discussion and Conclusion: Graph-based approaches such as GNNs provide an effective framework for predicting HF. By leveraging a patient similarity graph, GNNs can capture complex relationships in EHR data, potentially improving prediction accuracy and clinical interpretability.",
+    "published": "2024-11-29",
+    "link": "http://arxiv.org/abs/2411.19742v1",
+    "code_url": null,
+    "category": "segmentation-medical OR seg"
+  },
+  {
+    "title": "RMIO: A Model-Based MARL Framework for Scenarios with Observation Loss in Some Agents",
+    "author": "Shi Zifeng, Liu Meiqin, Zhang Senlin, Zheng Ronghao, Dong Shanling",
+    "summary": "In recent years, model-based reinforcement learning (MBRL) has emerged as a solution to address sample complexity in multi-agent reinforcement learning (MARL) by modeling agent-environment dynamics to improve sample efficiency. However, most MBRL methods assume complete and continuous observations from each agent during the inference stage, which can be overly idealistic in practical applications. A novel model-based MARL approach called RMIO is introduced to address this limitation, specifically designed for scenarios where observation is lost in some agent. RMIO leverages the world model to reconstruct missing observations, and further reduces reconstruction errors through inter-agent information integration to ensure stable multi-agent decision-making. Secondly, unlike CTCE methods such as MAMBA, RMIO adopts the CTDE paradigm in standard environment, and enabling limited communication only when agents lack observation data, thereby reducing reliance on communication. Additionally, RMIO improves asymptotic performance through strategies such as reward smoothing, a dual-layer experience replay buffer, and an RNN-augmented policy model, surpassing previous work. Our experiments conducted in both the SMAC and MaMuJoCo environments demonstrate that RMIO outperforms current state-of-the-art approaches in terms of asymptotic convergence performance and policy robustness, both in standard mission settings and in scenarios involving observation loss.",
+    "published": "2024-11-29",
+    "link": "http://arxiv.org/abs/2411.19639v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
+  },
+  {
+    "title": "MSEMG: Surface Electromyography Denoising with a Mamba-based Efficient Network",
+    "author": "Yu-Tung Liu, Kuan-Chen Wang, Rong Chao, Sabato Marco Siniscalchi, Ping-Cheng Yeh, Yu Tsao",
+    "summary": "Surface electromyography (sEMG) recordings can be contaminated by electrocardiogram (ECG) signals when the monitored muscle is closed to the heart. Traditional signal-processing-based approaches, such as high-pass filtering and template subtraction, have been used to remove ECG interference but are often limited in their effectiveness. Recently, neural-network-based methods have shown greater promise for sEMG denoising, but they still struggle to balance both efficiency and effectiveness. In this study, we introduce MSEMG, a novel system that integrates the Mamba State Space Model with a convolutional neural network to serve as a lightweight sEMG denoising model. We evaluated MSEMG using sEMG data from the Non-Invasive Adaptive Prosthetics database and ECG signals from the MIT-BIH Normal Sinus Rhythm Database. The results show that MSEMG outperforms existing methods, generating higher-quality sEMG signals with fewer parameters. The source code for MSEMG is available at https://github.com/tonyliu0910/MSEMG.",
+    "published": "2024-11-28",
+    "link": "http://arxiv.org/abs/2411.18902v1",
+    "code_url": null,
+    "category": "mamba-mamba OR seg"
   }
 ]
