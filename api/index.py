@@ -15,29 +15,33 @@ def index():
         return jsonify({"error": "Invalid URL"}), 400
 
     try:
-        results = sch.search_paper(url, fields = ["title", "abstract", "venue", "year", "authors", "tldr", "embedding", "externalIds"])
-    except (results)== 0:
-        return jsonify({"error": "Request failed"}), 400
+        results = sch.search_paper(url, fields=["title", "abstract", "venue", "year", "authors", "tldr", "embedding", "externalIds"])
+    except Exception as e:
+        return jsonify({"error": f"Request failed: {str(e)}"}), 400
+
+    if not results:
+        return jsonify({"error": "No results found"}), 404
 
     paper_info = []
-    for index, item in enumerate(results):
+    for item in results:
         title = item.title
-        author = item.authors
-        author = [a.name for a in author]
-        author = ",".join(author)
+        authors = item.authors
+        authors = [a.name for a in authors]
+        author = ",".join(authors)  # Concatenate authors into a single string
         abstract = item.abstract
         year = item.year
-        citationCount = item.citationCount
+        citation_count = item.citationCount
+        doi_url = item.externalIds.get('doi', '')  # Assuming 'externalIds' contains a 'doi'
+
         paper_dict = {
-            "title":title,
-            "doi":dor_url,
-            "Cite":citationCount,
+            "title": title,
+            "doi": doi_url,
+            "Cite": citation_count,
             "author": author,
             "abstract": abstract,
             "year": year
         }
         paper_info.append(paper_dict)
-
 
     feed = {
         "version": "https://jsonfeed.org/version/1",
@@ -49,9 +53,9 @@ def index():
                 "content_text": p["abstract"],
                 "url": p["doi"],
                 "year": p["year"],
-                "author":p["author"],
+                "author": p["author"],
             }
-            for p in papers
+            for p in paper_info  # Corrected to use paper_info, not papers
         ]
     }
     return jsonify(feed)
