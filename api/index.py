@@ -10,7 +10,7 @@ sch = SemanticScholar()
 
 @app.route("/")
 def index():
-    url = request.args.get("url")
+    url = request.args.get("query")
     if not url:
         return jsonify({"error": "Invalid URL"}), 400
 
