@@ -14,7 +14,8 @@
   ],
   "functions": {
     "api/index.py": {
-      "maxDuration": 10  // 设置为最大执行时间，比如 10 秒
+      "maxDuration": 10,
+      "memory": 512
     }
   }
 }
