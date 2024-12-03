@@ -15,7 +15,7 @@ def index():
         return jsonify({"error": "Invalid URL"}), 400
 
     try:
-        results = sch.search_paper(str(url), year="2023-",fields=["title", "abstract", "venue", "year", "authors", "tldr", "embedding", "externalIds"])
+        results = sch.search_paper(str(url), year="2023-",fields=["title", "abstract", "venue", "year", "authors", "tldr", "embedding", "externalIds"], limit=10)
     except Exception as e:
         return jsonify({"error": f"Request failed: {str(e)}"}), 400
 
